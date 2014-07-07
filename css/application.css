@@ -1,6 +1,16 @@
-header{
-	height: 60px !important;
-}
 body{
 	margin-top: 60px;
+	list-style:none;
+}
+.top-bar{
+	height: 60px !important;
+}
+.top-bar ul li{
+	height: 60px;
+}
+footer{
+	padding: 15px;
+	background: #272822;
+	color: #fff; 
+  	z-index: 99999;
 }
