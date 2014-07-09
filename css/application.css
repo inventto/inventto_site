@@ -3,7 +3,6 @@ html, div, nav, h1,h2,h3,h4, a{
 	
 }
 body{
-	margin-top: 45px;
 	list-style:none;
 }
 footer{
@@ -33,7 +32,7 @@ ul{
 	padding: 2%;
 }
 
-.home_inventto, .home_who,.home_what{
+#home_inventto, .home_who,.home_what{
 	width: 100%;
 	text-align: center;
 	padding: 2%;
@@ -42,14 +41,26 @@ ul{
 	background:#2ECC71;
 	color: #ffffff !important;
 }
-.home_inventto{
+#home_inventto{
 	width: 100%;
 	height: 400px;
 	background: url("../img/1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.home_what >h1, .home_what > h3{
+	color:#333333;
+}
 #welcome{
 	font-weight: bold;
+
+}
+.icones{
+	width: 15px;
+	height: auto;
+}
+.large{
+	font-size: 50px;
+	line-height: 50px;
 
 }
