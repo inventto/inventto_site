@@ -1,4 +1,4 @@
-html, div, nav, h1,h2,h3,h4, a{
+html, div, nav, h1,h2,h3,h4, h5, a{
 	font-family: 'Open Sans', sans-serif !important;
 	
 }
@@ -84,12 +84,17 @@ ul{
 	text-align: center;
 }
 .bgverde{
-	padding: 5%;
 	background: #92D13D;
 }
-.bgbranco{
+.bgbranco{	
+	background: #ffffff;
+}
+.bgbranco, .bgverde{
 	padding: 5%;
-	background: #000000;
+	text-align: center;
+}
+.bgbranco h1, .bgbranco h4, .bgbranco h3,.bgbranco h5{
+		color: #000000;
 }
 .buttonKnow{
 	background:#1E824C;
@@ -101,4 +106,31 @@ ul{
     -o-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
+}
+.equipe{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.equipe ul{
+	width: 100%;
+	clear: both;
+	
+}
+.equipe ul>li{
+	width: 200px;
+	margin: 0 1% 20px 1%;
+	position: relative;
+	display: inline-block;
+	color: #333;
+}
+.equipe ul>li img, .equipe ul>li a img {
+	width: 350px;
+	height: auto;
+	background: #fff;
+	border-radius: 50%;
+	border: 3px solid #92D13D;
+}
+.equipe ul>li img:hover{
+	opacity: 0.6;
 }
