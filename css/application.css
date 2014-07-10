@@ -134,3 +134,16 @@ ul{
 .equipe ul>li img:hover{
 	opacity: 0.6;
 }
+.description{
+	width: 50%;
+	text-align: center;
+}
+.descEmpresa{
+	width: 100%;
+	background: url("../img/2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5%;	
+	text-align: center;
+
+}
