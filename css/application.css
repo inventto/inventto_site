@@ -147,3 +147,9 @@ ul{
 	text-align: center;
 
 }
+.txtdesc{
+	text-align: left;
+	max-width: 400px;
+	margin-left: 25%;
+	padding: 3%;
+}
