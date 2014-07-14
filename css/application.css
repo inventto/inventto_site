@@ -153,3 +153,11 @@ ul{
 	margin-left: 25%;
 	padding: 3%;
 }
+.descClient{
+	max-width: 60%;
+	text-align: justify;
+	margin: 0 auto;
+}
+.bgVerde ul{
+	margin-top: 10px;
+}
