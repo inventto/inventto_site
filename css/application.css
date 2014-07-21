@@ -1,4 +1,4 @@
-html, div, nav, h1,h2,h3,h4, h5, a{
+html, div, nav, h1,h2,h3,h4, h5, h6, a{
 	font-family: 'Open Sans', sans-serif !important;
 	
 }
@@ -86,15 +86,22 @@ ul{
 .bgverde{
 	background: #92D13D;
 }
+.bgverdenew{
+	background: #1E824C;
+	color: #333 !important;
+}
 .bgbranco{	
 	background: #ffffff;
 }
-.bgbranco, .bgverde{
+.bgbranco, .bgverde,.bgverdenew{
 	padding: 5%;
 	text-align: center;
 }
 .bgbranco h1, .bgbranco h4, .bgbranco h3,.bgbranco h5{
 		color: #000000;
+}
+.bgverdenew a{
+	color: #222;
 }
 .buttonKnow{
 	background:#1E824C;
@@ -160,4 +167,10 @@ ul{
 }
 .bgVerde ul{
 	margin-top: 10px;
+}
+.descInventto{
+	max-width: 40%;
+	text-align: justify;
+	margin: 0 auto;
+	color: #333 !important;
 }
