@@ -88,7 +88,7 @@ ul{
 }
 .bgverdenew{
 	background: #1E824C;
-	color: #333 !important;
+	color: #ffffff !important;
 }
 .bgbranco{	
 	background: #ffffff;
@@ -102,6 +102,9 @@ ul{
 }
 .bgverdenew a{
 	color: #222;
+}
+.bgverdenew h1, .bgverdenew h4, .bgverdenew h3,.bgverdenew h5{
+	color: #ffffff;
 }
 .buttonKnow{
 	background:#1E824C;
@@ -168,9 +171,14 @@ ul{
 .bgVerde ul{
 	margin-top: 10px;
 }
-.descInventto{
+.descInventto, .descInventtoGreen{
 	max-width: 40%;
 	text-align: justify;
 	margin: 0 auto;
-	color: #333 !important;
+}
+.descInventtoGreen{
+	color: #ffffff!important;
+}
+.descinventto{
+	color: #222222!important;
 }
