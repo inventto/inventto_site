@@ -122,9 +122,9 @@ input[type='submit']{
 	padding: 2%;
 	width: 200px;
 	color: #ffffff;
-	border: none;
-
+	border:1px solid #26A65B !important;
 }
+
 input{
 	padding: 2%;
 }
@@ -195,4 +195,7 @@ form{
 }
 .descinventto{
 	color: #222222!important;
+}
+.mailtext{
+	text-align: center;
 }
