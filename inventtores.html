@@ -8,11 +8,11 @@ layout: default
 <div class="bgbranco">
     <div class="equipe" ng-controller="Inventtores">
       <ul>
-        <li ng-repeat='(id,person) in team'>
-          <a href="#[[id]]">
+        <li ng-repeat='(id,person) in inventtores'>
+          <a href="#[[id]]" ng-mouseover="showOpinionsFor(id)" ng-mouseout="hideOpinionsFor(id)">
             <img src="../img/[[ person.profile || 'homer.jpg']]">
             <h5>[[person.name]]</h5>
-            <p>[[person.bio ]]</p>
+            <p>[[person.opinion || person.bio ]]</p>
           </a>
         </li>
       </ul>
