@@ -2,26 +2,24 @@
 layout: default
 ---
 <div class="bgverde">
-
-	<h1 style="font-weight:bold;">A nossa equipe</h1>
-		<h4>A melhor equipe, com os mais ágeis e produtivos desenvolvedores!</h4>
+  <h1 style="font-weight:bold;">Inventtores de plantão</h1>
+  <h4>Conheça um pouco da equipe que pode produzir seu invent.to!</h4>
 </div>
 <div class="bgbranco">
-	<div class="equipe">
-		<ul>
-			<li><a href="#"><img src="../img/homer.jpg"><h5>Jônatas Paganini</h5><p>Developer</p></a></li>
-			<li><a href="#"><img src="../img/time/tafarel.jpg"><h5>José Luiz Tafarel</h5><p>Developer</p></a></li>
-			<li><a href="#"><img src="../img/time/lucao.jpg"><h5>Lucas Cardoso</h5><p>Manager</p></a></li>
-			<li><a href="#"><img src="../img/homer.jpg"><h5>Lucas Rafagnin</h5><p>Tester</p></a></li>
-			<li><a href="#"><img src="../img/homer.jpg"><h5>Marlon Scalabrin</h5><p>Developer</p></a></li>
-			<li><a href="#"><img src="../img/time/jack.jpg"><h5>Mauricio Krzesinski</h5><p>Developer</p></a></li>
-			<li><a href="#"><img src="../img/time/mitrut.jpg"><h5>Wellington Mitrut</h5><p>Designer</p></a></li>
-		</ul>
-	</div>
-</div>
-<div class="bgverde">
-	<h1>Quer fazer parte desta equipe?</h1>
-	
-	<a href="/contato/" target="_top"><button class="buttonKnow"><h4>Entre em contato agora mesmo!</h4></button></a>
+    <div class="equipe" ng-controller="Inventtores">
+      <ul>
+        <li ng-repeat='(id,person) in team'>
+          <a href="#[[id]]">
+            <img src="../img/[[ person.profile || 'homer.jpg']]">
+            <h5>[[person.name]]</h5>
+            <p>[[person.bio ]]</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-</div>
+  <div class="bgverde">
+    <h1>Quer fazer parte desta equipe?</h1>
+    <a href="/contato/" target="_top"><button class="buttonKnow"><h4>Entre em contato agora mesmo!</h4></button></a>
+  </div>
