@@ -2,6 +2,10 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
 	font-family: 'Open Sans', sans-serif !important;
 	
 }
+
+.page-content > .wrap > h1,h2,h3,h4, h5, h6 {
+  color: gray;
+}
 body{
 	list-style:none;
 }
