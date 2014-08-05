@@ -4,7 +4,7 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
 }
 
 .page-content > .wrap > h1,h2,h3,h4, h5, h6 {
-  color: gray;
+  color: #333333;
 }
 .page-content > .wrap > .home_who > h1,h2,h3,h4, h5, h6 {
   color: white;
@@ -205,4 +205,11 @@ form{
 }
 .mailtext{
 	text-align: center;
+}
+.posts{
+	margin: 0 auto;
+	text-align: justify;
+	max-width: 1000px;
+	font-size: 20px;
+	padding: 2%;
 }
