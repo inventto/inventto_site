@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Teste, Uma forma nova de fazer posts com esses títulos imensos"
 date:   2014-07-03 16:43:08
 categories: jekyll update
 ---
