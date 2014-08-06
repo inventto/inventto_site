@@ -265,3 +265,8 @@ pre > code{
 	color: #333!important;
 	font-weight: normal !important;
 	font-size: 15px;
+}
+code{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !important;
+	color: #333!important;
+}
