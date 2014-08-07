@@ -15,6 +15,7 @@
     
        <!-- meta tags para compartilhamento-->
 
+     <!-- Facebook-->
      <!--Título-->
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
@@ -45,5 +46,27 @@
     <meta content="{{ site.url }}/assets/img/logobig.png" property="og:image">
     {% endif %}
 
+    <!-- twitter-->
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:site" content="@invent_to">
+    <meta name="twitter:creator" content="@invent_to">
+    {% if page.title %}
+        <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+         <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    {% if page.url %}
+         <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.description %}
+         <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+          <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.image %}
+         <meta name="twitter:image:src" content="{{ site.url }}/img/posts/{{ page.image }}">
+    {% else %}
+         <meta name="twitter:image:src" content="{{ site.url }}/img/logo.png">
+    {% endif %}
 
 </head>
