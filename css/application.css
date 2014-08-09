@@ -228,7 +228,7 @@ form{
 	font-size: 20px;
 	padding: 2%;
 }
-p.ng-binding{
+p.opinion.ng-binding{
 	position: relative;
     width: 180px;
     height: 75px;
@@ -240,7 +240,7 @@ p.ng-binding{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }  
- p.ng-binding:after {
+ p.opinion.ng-binding:after {
     content: "";
     position: absolute;
     top: -9px;
