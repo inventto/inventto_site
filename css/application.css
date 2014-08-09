@@ -228,3 +228,63 @@ form{
 	font-size: 20px;
 	padding: 2%;
 }
+p.ng-binding{
+	position: relative;
+    width: 180px;
+    height: 75px;
+    padding: 2%;
+    text-align: center;
+    color: #ffffff;
+    background: #26A65B;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}  
+ p.ng-binding:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 80px;
+    border-style: solid;
+    border-width: 0px 9px 9px;
+    border-color: #26A65B transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+pre{
+	border-radius: 5px;
+	background: #EEEEEE;
+	padding: 1%;
+	margin-left: 2%;
+ 	white-space: pre-wrap;       /* css-3 */
+ 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ 	white-space: -pre-wrap;      /* Opera 4-6 */
+ 	white-space: -o-pre-wrap;    /* Opera 7 */
+ 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+pre > code{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !important;
+	color: #333!important;
+	font-weight: normal !important;
+	font-size: 15px;
+}
+code{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !important;
+	color: #333!important;	
+}
+.social ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.social ul li { 
+	display: inline; 
+}
+.social ul li span {
+	padding: 2%;
+	display: inline-block;
+ 
+	/* visual do link */
+	text-decoration: none;
+}
