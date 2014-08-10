@@ -3,14 +3,14 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
 	
 }
 
-.page-content > .wrap > h1,h2,h3,h4, h5, h6 {
-  color: #333333;
-}
 .medium {
   font-size:1.2em;
 }
 .page-content > .wrap > .home_who > h1,h2,h3,h4, h5, h6 {
   color: white;
+}
+.page-content > .wrap > h1,h2,h3,h4, h5, h6 {
+  color: #333333;
 }
 body{
 	list-style:none;
