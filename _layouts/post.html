@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post" ng-controller="Inventtores">
 
 <div class="bgverde">
 		<img src="/img/white.png"/>
@@ -17,6 +17,10 @@ layout: default
 
 		  <article class="post-content">
 		  {{ content }}		    
+      <i>[[ inventtores.{{author}}.name ]]
+      <small>([[ inventtores.{{author}}.bio ]])</small>
+      </i>
+
 		  </article>
 
   <div class="social">
