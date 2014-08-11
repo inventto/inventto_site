@@ -10,3 +10,4 @@ url: "http://invent.to"
 markdown: kramdown
 permalink: pretty
 
+encoding: utf-8

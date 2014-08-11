@@ -6,6 +6,9 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
 .page-content > .wrap > h1,h2,h3,h4, h5, h6 {
   color: #333333;
 }
+.medium {
+  font-size:1.2em;
+}
 .page-content > .wrap > .home_who > h1,h2,h3,h4, h5, h6 {
   color: white;
 }
@@ -225,7 +228,7 @@ form{
 	font-size: 20px;
 	padding: 2%;
 }
-p.ng-binding{
+p.opinion.ng-binding{
 	position: relative;
     width: 180px;
     height: 75px;
@@ -237,7 +240,7 @@ p.ng-binding{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }  
- p.ng-binding:after {
+ p.opinion.ng-binding:after {
     content: "";
     position: absolute;
     top: -9px;

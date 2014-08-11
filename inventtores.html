@@ -10,10 +10,10 @@ layout: default
       <ul>
         <li ng-repeat='(id,person) in inventtores'>
           <a href="#[[id]]" ng-mouseover="showOpinionsFor(id)" ng-mouseout="hideOpinionsFor(id)">
-            <img src="../img/[[ person.profile || 'homer.jpg']]">
+            <img src="../img/[[ person.profile || 'homer.jpg']]" ></img>
             <h5>[[person.name]]</h5>
             <p><a href="http://[[person.site]]" ng-if="person.site">[[person.site]] </a><a ng-repeat="(network, username) in person.social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a></p>
-            <p>[[person.opinion || person.bio ]]</p>
+            <p ng-class="person.opinion==null ? 'bio' : 'opinion'">[[person.opinion || person.bio]]</p>
           </a>
         </li>
       </ul>
