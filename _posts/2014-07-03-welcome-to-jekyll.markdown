@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Teste, Uma forma nova de fazer posts com esses titulos imensos
+author: jonatas
 date:   2014-07-03 16:43:08
 categories: jekyll update
 ---

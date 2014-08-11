@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="post">
 
 <div class="bgverde">
@@ -11,7 +12,16 @@ layout: default
 
  
 </div>
-   
+	{% assign author = site.data.authors[page.author] %}
+ 
+<div class="author">
+  <div class="image">
+    <img src="{{ author.gravatar }}" alt="{{ author.name }}" width="50" height="50">
+  </div>
+  <div class="author_info">
+    <span class="name">{{ author.name }}</span>
+  </div>
+</div>
  
 	  <div class="bgbranco">
 

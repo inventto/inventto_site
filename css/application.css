@@ -291,3 +291,9 @@ code{
 	/* visual do link */
 	text-decoration: none;
 }
+.author{
+	background: #333;
+	color: #ffffff;
+	height: 150px;
+	text-align: center;
+}
