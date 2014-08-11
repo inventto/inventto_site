@@ -10,10 +10,7 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
   color: white;
 }
 .page-content > .wrap > h1,h2,h3,h4, h5, h6 {
-  color: #333333;
-}
-body{
-	list-style:none;
+  color: #ffffff;
 }
 footer{
 	padding: 15px;
@@ -215,8 +212,9 @@ form{
 	max-width: 1000px;
 	font-size: 20px;
 	padding: 2%;
+
 }
-.post h3{
+.posts h3{
 	text-align: center;
 	color: #333;
 	margin-top: 30px;
@@ -227,6 +225,11 @@ form{
 	max-width: 1000px;
 	font-size: 20px;
 	padding: 2%;
+
+}
+.post-content ul li{
+		list-style-type: square!important;
+		color: #333;
 }
 p.opinion.ng-binding{
 	position: relative;
