@@ -4,7 +4,7 @@
 angular.module("inventto", []).
   config(($interpolateProvider) -> $interpolateProvider.startSymbol('[[').endSymbol(']]')).
   controller "Inventtores", ($scope) ->
-    jonatas = name: "Jônatas Davi Paganini", email: "jonatas@invent.to", bio: "Developer", profile: "time/jonatas.png", site: "ideia.me", social: {twitter: "jonatasdp", instagram: "jonatasdp", facebook: "jonatas.paganini", github: "jonatas", skype: "jonatas.paganini", pinterest: "jonatasdp", youtube: "user/jonatasdp"}
+    jonatas = name: "Jônatas Davi Paganini", email: "jonatas@invent.to", bio: "Developer", profile: "time/jonatas.png", site: "ideia.me", social: {twitter: "jonatasdp", instagram: "jonatasdp", facebook: "jonatas.paganini", github: "jonatas", skype: "jonatas.paganini", pinterest: "jonatasdp", youtube: "user/jonatasdp", gravatar: "93b1c03b74dff7a41060d41a2da750ce"}
     tafarel = name: "José Luiz Tafarel", email: "tafarel@invent.to", bio: "Developer", profile: "time/tafarel.jpg", site: "jltafarel.github.io"
     lucao = name: "Lucas Cardoso", bio: "Developer", profile: "time/lucao.jpg", email: "lucao@invent.to"
     rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg"

@@ -2,41 +2,35 @@
 layout: default
 ---
 <div class="post" ng-controller="Inventtores">
-
-<div class="bgverde">
-		<img src="/img/white.png"/>
-
-
+  <div class="bgverde">
+    <img src="/img/white.png"/>
     <h1 style="font-weight:bold;">{{ page.title }}</h1>
-
- 
-</div>
-   
- 
-	  <div class="bgbranco">
-
-		  <article class="post-content">
-		  {{ content }}		    
-      <i>[[ inventtores.{{author}}.name ]]
-      <small>([[ inventtores.{{author}}.bio ]])</small>
-      </i>
-
-		  </article>
-
-  <div class="social">
-	    <ul id="horizontal-list">
-
-	      <li><span><div class="fb-like" data-href="https://www.facebook.com/pages/Inventto/100538040118577" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></span></li>
-
-
-	      <li><span><a href="https://twitter.com/share" class="twitter-share-button" data-via="invent_to">Tweet</a></span></li>
-	      <li><span><p><g:plusone size="medium"></g:plusone></p></span></li>  
-
-	    </ul>
   </div>
 
+  <div class="author">
+    <div class="image">
+      <a href="/inventtores#{{page.author}}">
+        <img src="http://gravatar.com/avatar/[[ inventtores.{{page.author}}.social.gravatar ]]" alt="[[ inventtores.{{page.author}}.name ]]" width="50" height="50">
+      </a>
+    </div>
+    <div class="author_info">
+      <span class="name">[[ inventtores.{{page.author}}.name ]]</span>
+    </div>
+  </div>
+  <div class="bgbranco">
+    <article class="post-content">
+      {{ content }}		    
+    </article>
 
-	  </div>
+    <div class="social">
+      <ul id="horizontal-list">
+
+        <li><span><div class="fb-like" data-href="https://www.facebook.com/pages/Inventto/100538040118577" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></span></li>
+
+
+        <li><span><a href="https://twitter.com/share" class="twitter-share-button" data-via="invent_to">Tweet</a></span></li>
+        <li><span><p><g:plusone size="medium"></g:plusone></p></span></li>  
+      </ul>
+    </div>
+  </div>
 </div>
-
-

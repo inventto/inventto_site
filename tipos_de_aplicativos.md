@@ -1,6 +1,7 @@
 ---
-  layout: default
+  layout: post
   title: Tipos de aplicativo
+  author: jonatas
 ---
 
 # Que tipo de programa fazemos?
@@ -19,7 +20,7 @@ As principais vantagens dos aplicativos nativos são:
 * Desfrutam de todo software nativo como: envio de sms, email, compartilhamento, recorte de imagens etc
 * São mais rápidos pois são compilados e ficam amarzenados no dispositivo
 * Trazem uma experiência mais agradável para o usuário
-* Você programa direto na plataforma e têm acesso as diveras vantagens dos componentes nativos
+* Você programa direto na plataforma e têm acesso as diversas vantagens dos componentes nativos
 
 As desvantagens são:
 
@@ -29,8 +30,7 @@ As desvantagens são:
 
 # Web / Mobile
 
-* Basicamente um website
-* Que funciona no mobile
+* Basicamente um website que funciona no mobile
 * E também funciona para múltiplas plataformas
 * Acesso limitado as capacidades nativas de hardware e da plataforma
 * Incompatibilidade de componentes entre plataformas

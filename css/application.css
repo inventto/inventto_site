@@ -10,10 +10,7 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
   color: white;
 }
 .page-content > .wrap > h1,h2,h3,h4, h5, h6 {
-  color: #333333;
-}
-body{
-	list-style:none;
+  color: #ffffff;
 }
 footer{
 	padding: 15px;
@@ -46,6 +43,10 @@ ul{
 	width: 100%;
 	text-align: center;
 	padding: 2%;
+}
+#home_inventto, .home_who,.home_what h4{
+	max-width: 1400px;
+	
 }
 .home_who{
 	background:#92D13D;
@@ -215,8 +216,9 @@ form{
 	max-width: 1000px;
 	font-size: 20px;
 	padding: 2%;
+
 }
-.post h3{
+.posts h3{
 	text-align: center;
 	color: #333;
 	margin-top: 30px;
@@ -227,6 +229,11 @@ form{
 	max-width: 1000px;
 	font-size: 20px;
 	padding: 2%;
+
+}
+.post-content ul li{
+		list-style-type: square!important;
+		color: #333;
 }
 p.opinion.ng-binding{
 	position: relative;
@@ -251,6 +258,11 @@ p.opinion.ng-binding{
     display: block;
     width: 0;
     z-index: 1;
+}
+
+p.opinion.ng-binding:after:hover, p.opinion.ng-binding:hover{
+    -webkit-transition: width 500ms; /* For Safari 3.1 to 6.0 */
+    transition: width 500ms;
 }
 pre{
 	border-radius: 5px;
@@ -287,4 +299,10 @@ code{
  
 	/* visual do link */
 	text-decoration: none;
+}
+.author{
+	background: #333;
+	color: #ffffff;
+	height: 150px;
+	text-align: center;
 }
