@@ -44,6 +44,10 @@ ul{
 	text-align: center;
 	padding: 2%;
 }
+#home_inventto, .home_who,.home_what h4{
+	max-width: 1400px;
+	
+}
 .home_who{
 	background:#92D13D;
 	color: #ffffff !important;
@@ -254,6 +258,11 @@ p.opinion.ng-binding{
     display: block;
     width: 0;
     z-index: 1;
+}
+
+p.opinion.ng-binding:after:hover, p.opinion.ng-binding:hover{
+    -webkit-transition: width 500ms; /* For Safari 3.1 to 6.0 */
+    transition: width 500ms;
 }
 pre{
 	border-radius: 5px;
