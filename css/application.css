@@ -108,13 +108,13 @@ ul{
 	padding: 5%;
 	text-align: center;
 }
-.bgbranco h1, .bgbranco h4, .bgbranco h3,.bgbranco h5{
+.bgbranco h1, .bgbranco h2, .bgbranco h3,.bgbranco h4,.bgbranco h5{
 	color: #000000;
 }
 .bgverdenew a{
 	color: #222;
 }
-.bgverdenew h1, .bgverdenew h4, .bgverdenew h3,.bgverdenew h5{
+.bgverdenew h1, .bgverdenew h2,.bgverdenew h3, .bgverdenew h4,.bgverdenew h5{
 	color: #ffffff;
 }
 .buttonKnow{
