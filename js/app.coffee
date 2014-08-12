@@ -5,12 +5,18 @@ angular.module("inventto", []).
   config(($interpolateProvider) -> $interpolateProvider.startSymbol('[[').endSymbol(']]')).
   controller "Inventtores", ($scope) ->
     jonatas = name: "Jônatas Davi Paganini", email: "jonatas@invent.to", bio: "Developer", profile: "time/jonatas.png", site: "ideia.me", social: {twitter: "jonatasdp", instagram: "jonatasdp", facebook: "jonatas.paganini", github: "jonatas", skype: "jonatas.paganini", pinterest: "jonatasdp", youtube: "user/jonatasdp", gravatar: "93b1c03b74dff7a41060d41a2da750ce"}
-    tafarel = name: "José Luiz Tafarel", email: "tafarel@invent.to", bio: "Developer", profile: "time/tafarel.jpg", site: "jltafarel.github.io", gravatar: "6d422e42d26918052106c661cd19e9b7"
+
+    tafarel = name: "José Luiz Tafarel", email: "tafarel@invent.to", bio: "Developer", profile: "time/tafarel.jpg", site: "jltafarel.github.io", social: {twitter: "jltafarel", github: "jltafarel", gravatar: "6d422e42d26918052106c661cd19e9b7"}
+
     lucao = name: "Lucas Cardoso", bio: "Developer", profile: "time/lucao.jpg", email: "lucao@invent.to"
+
     rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg"
+
     marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@invent.to", profile: "homer.jpg"
+
     jack = name: "Mauricio Krzesinski", bio: "Game developer", email: "jack@invent.to", profile: "time/jack.jpg"
-    mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to", profile: "time/mitrut.jpg", social: {twitter: "wmitrut", instagram: "wmitrut", github: "wmitrut", gravatar: "278d0b5b8f680ac2a39bb3d8a6e21be3"}
+
+    mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to", profile: "time/mitrut.jpg", site: "wmitrut.github.io", social: {twitter: "wmitrut", instagram: "wmitrut", github: "wmitrut", gravatar: "278d0b5b8f680ac2a39bb3d8a6e21be3"}
 
     inventtores =
       jonatas: jonatas
