@@ -100,7 +100,8 @@ ul{
 }
 .bgverde{
 	background: #92D13D;
-	width: 100%;
+	width: 100%;	
+	color: #ffffff !important;
 }
 .bgverdenew{
 	background: #1E824C;
