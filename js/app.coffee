@@ -12,7 +12,7 @@ angular.module("inventto", []).
 
     rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg"
 
-    marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@invent.to", profile: "homer.jpg"
+    marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@invent.to", profile: "time/marlon.jpg"
 
     jack = name: "Mauricio Krzesinski", bio: "Game developer", email: "jack@invent.to", profile: "time/jack.jpg"
 
