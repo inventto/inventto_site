@@ -10,7 +10,7 @@ angular.module("inventto", []).
 
     lucao = name: "Lucas Cardoso", bio: "Developer", profile: "time/lucao.jpg", email: "lucao@invent.to"
 
-    rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg"
+    rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg", social: {twitter: "lucas_rafagnin_", github: "lucasrafagnin", skype: "lucas.rafagnin", facebook: "lucas.rafagnin.9"}
 
     marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@invent.to", profile: "time/marlon.jpg"
 
@@ -34,7 +34,7 @@ angular.module("inventto", []).
     $scope.hideOpinionsFor = (id)->
       for userId, depoimento of $scope.depoimentos[id]
         $scope.inventtores[userId].opinion = null
-    $scope.depoimentos = 
+    $scope.depoimentos =
       jonatas:
         jack: "tem que ser on the fly"
         tafarel: "metaprogramando o mundo"
@@ -50,17 +50,17 @@ angular.module("inventto", []).
         rafagnin: "Conspirações"
         jonatas: "abre o irb ae lucão"
         jack: "o cara tem le mans na cabeça"
-      marlon: 
+      marlon:
         jack: "Então cara, é assim..."
         tafarel: "A solução!"
         mitrut: "Pra te resumir… o marlon é como se fosse o Neo"
         jonatas: "chega na grade ae tio Marlon!!!"
         rafagnin: "Me da um help?"
-      jack: 
+      jack:
         tafarel: "ahhh, o cara dos joguinho!"
         rafagnin: "vai um energético ae?” (Jack - Quem?, eu?)"
         jonatas: "e o pigeons? vamos jogar :D"
-      mitrut: 
+      mitrut:
         tafarel: "um cara que transborda conhecimento (literalmente)"
         jack: "Cara, ja fui la na tua casa perto da igreja(eu nunca morei perto da igreja…"
         jonatas: "e roda no IE6?"
