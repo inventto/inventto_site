@@ -159,6 +159,7 @@ Já integramos ele via bluetooth e também via porta serial. Ambos com Android.
 Também temos experiência apenas na integração de serviços de software.
 
 Este caso se aplica quando:
+
 * O usuário tem um programa e precisa transferir os dados dele para outro programa
 * Ou não deseja ter que realizar a mesma operação em dois lugares
 * Ou ainda não quer que exista a ação em dois softwares
