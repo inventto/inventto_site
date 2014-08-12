@@ -134,3 +134,32 @@ Também estamos aprendendo outras linguagens como:
 * Lua
 * Go
 * R
+
+# Integração entre hardware e Android
+
+Temos uma série de integrações interessantes entre hardware e Android. Entre elas as principais são:
+
+## Dispositivos Bluetooth integrado a hardware externo
+
+Temos experiência com gerenciando múltiplos dispositivos bluetooth em um único Android.
+
+##  Integração de hardware externo com MCP2200
+
+* Com catracas digitais
+* Com aparelhos de ginástica como: esteiras, bicicletas, steps, sensor de batimento cardíaco
+
+##  Integração de hardware externo com MSP430
+
+O MSP430 é um componente muito interessante para pequenas integrações de hardware. Estamos produzindo alguns protótipos com este hardware e apresenta um bom custo/benefício.
+
+Já integramos ele via bluetooth e também via porta serial. Ambos com Android.
+
+# Integração e migração entre software
+
+Também temos experiência apenas na integração de serviços de software.
+
+Este caso se aplica quando:
+* O usuário tem um programa e precisa transferir os dados dele para outro programa
+* Ou não deseja ter que realizar a mesma operação em dois lugares
+* Ou ainda não quer que exista a ação em dois softwares
+
