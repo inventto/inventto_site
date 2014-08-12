@@ -6,6 +6,9 @@ html, div, nav, h1,h2,h3,h4, h5, h6, a, input{
 .medium {
 	font-size:1.2em;
 }
+.page-content {
+	width: 100%;
+}
 .page-content > .wrap > .home_who > h1,h2,h3,h4, h5, h6 {
 	color: white;
 }
@@ -39,8 +42,8 @@ ul{
 	padding: 2%;
 }
 
-#home_inventto, .home_who,.home_what{
-	width: 100%;
+.home_inventto, .home_who,.home_what{
+	width: 100% !important;
 	text-align: center;
 	padding: 2%;
 }
@@ -49,10 +52,11 @@ ul{
 	
 }
 .home_who{
+	width: 100%;
 	background:#92D13D;
 	color: #ffffff !important;
 }
-#home_inventto{
+.home_inventto{
 	width: 100%;
 	background: url("../img/1.jpg");
 	background-repeat: no-repeat;
@@ -96,17 +100,21 @@ ul{
 }
 .bgverde{
 	background: #92D13D;
+	width: 100%;
 }
 .bgverdenew{
 	background: #1E824C;
 	color: #ffffff !important;
+	width: 100%;
 }
 .bgbranco{	
 	background: #ffffff;
+	width: 100%;
 }
 .bgbranco, .bgverde,.bgverdenew{
 	padding: 5%;
 	text-align: center;
+	width: 100%;
 }
 .bgbranco h1, .bgbranco h2, .bgbranco h3,.bgbranco h4,.bgbranco h5{
 	color: #000000;
