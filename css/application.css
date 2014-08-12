@@ -238,7 +238,7 @@ form{
 p.opinion.ng-binding{
 	position: relative;
 	width: 180px;
-	height: 75px;
+	height: auto;
 	padding: 2%;
 	text-align: center;
 	color: #ffffff;
@@ -246,7 +246,7 @@ p.opinion.ng-binding{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-}  
+}
 p.opinion.ng-binding:after {
 	content: "";
 	position: absolute;
