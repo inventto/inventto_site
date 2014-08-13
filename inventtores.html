@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-<div class="bgverde">
+<div ng-controller="Inventtores">
+<div class="bgverde" ng-mouseover="hideOpinions()" >
   <h1 style="font-weight:bold;">Inventtores de plantão</h1>
   <h4>Conheça um pouco da equipe que pode produzir seu invent.to!</h4>
 </div>
-<div class="bgbranco">
-    <div class="equipe" ng-controller="Inventtores">
+<div class="bgbranco" >
+    <div class="equipe" >
       <ul>
         <li ng-repeat='(id,person) in inventtores'>
-          <a href="#[[id]]" ng-mouseup="showOpinionsFor(id)" ng-mousedown="hideOpinionsFor(id)">
+          <a href="#[[id]]" ng-mouseover="showOpinionsFor(id)" >
             <img src="../img/[[ person.profile || 'homer.jpg']]" ></img>
             <h5>[[person.name]]</h5>
             <p><a href="http://[[person.site]]" ng-if="person.site">[[person.site]] </a><a ng-repeat="(network, username) in person.social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a></p>
@@ -23,7 +24,7 @@ layout: default
     <h1>Quer fazer parte desta equipe?</h1>
     <a href="/contato/" target="_top"><button class="buttonKnow"><h4>Entre em contato agora mesmo!</h4></button></a>
   </div>
-
+</div>
 
   
 

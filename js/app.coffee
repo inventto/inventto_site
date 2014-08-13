@@ -30,11 +30,12 @@ angular.module("inventto", []).
 
     $scope.inventtores = inventtores
     $scope.showOpinionsFor = (id)->
-      for userId, depoimento of $scope.depoimentos[id]
+      $scope.hideOpinions()
+      for userId, depoimento of $scope.depoimentos[ id]
         $scope.inventtores[userId].opinion = depoimento
-    $scope.hideOpinionsFor = (id)->
-      for userId, depoimento of $scope.depoimentos[id]
-        $scope.inventtores[userId].opinion = null
+    $scope.hideOpinions = ()->
+      for userId, inventtor of $scope.inventtores
+         $scope.inventtores[userId].opinion = null
     $scope.depoimentos =
       jonatas:
         jack: "tem que ser on the fly"
