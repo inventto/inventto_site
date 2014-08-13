@@ -161,8 +161,9 @@ form{
 	
 }
 .equipe ul>li{
-	width: 200px;
-	margin: 0 1% 20px 1%;
+	width: 180px;
+	margin: 0 2% 5px 2%;
+	padding: 1%;
 	position: relative;
 	display: inline-block;
 	color: #333;
@@ -177,6 +178,7 @@ form{
 .equipe ul>li img:hover{
 	opacity: 0.6;
 }
+
 .description{
 	width: 50%;
 	text-align: center;
@@ -267,10 +269,9 @@ p.opinion.ng-binding:after {
 	width: 0;
 	z-index: 1;
 }
-
-p.opinion.ng-binding:after:hover, p.opinion.ng-binding:hover{
-	-webkit-transition: width 500ms; /* For Safari 3.1 to 6.0 */
-	transition: width 500ms;
+.opinion{
+	transition:500ms;
+	-moz-transition:500ms;
 }
 pre{
 	border-radius: 5px;
