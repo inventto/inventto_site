@@ -2,11 +2,11 @@
 layout: default
 ---
 <div ng-controller="Inventtores">
-<div class="bgverde" ng-mouseover="hideOpinions()" >
-  <h1 style="font-weight:bold;">Inventtores de plantão</h1>
-  <h4>Conheça um pouco da equipe que pode produzir seu invent.to!</h4>
-</div>
-<div class="bgbranco" >
+  <div class="bgverde" ng-mouseover="hideOpinions()" >
+    <h1 style="font-weight:bold;">Inventtores de plantão</h1>
+    <h4>Conheça um pouco da equipe que pode produzir seu invent.to!</h4>
+  </div>
+  <div class="bgbranco" >
     <div class="equipe" >
       <ul>
         <li ng-repeat='(id,person) in inventtores'>
@@ -21,11 +21,43 @@ layout: default
     </div>
   </div>
   <div class="bgverde">
+    <span class="fi-paw large"></span>
+    <h1> Tecnologias que abraçamos</h1>
+    <h4>Na maioria dos projetos, a empresa faz uso de ferramentas open-source para o desenvolvimento dos inventtos.</h4>
+    <h4>    Dessas tecnologias podemos destacar:</h4>
+  
+     <h4> Ruby e Ruby on Rails
+      Android
+      Marketcetera
+      HTML5,  CSS3 e JS
+      Frameworks responsivos, foundation, bootstrap
+      Inúmeras bibliotecas ruby, as chamadas gems.
+      Java
+      C
+      C#
+      Lua
+      WSO2</h4>
+      <h4> Redmine
+       Git
+       Vim
+       Gimp
+       Trello
+       Sublime Text
+       Unity 3D
+       CoronaSDK</h4>
+
+   </div>
+
+   <div class="bgbranco">
+    <h4 >Os colaboradores também fazem uso de ambientes linux e unix-like para desenvolvimento e hospedagem de serviços.</h4>
+  </div>
+
+  <div class="bgverde">
     <h1>Quer fazer parte desta equipe?</h1>
     <a href="/contato/" target="_top"><button class="buttonKnow"><h4>Entre em contato agora mesmo!</h4></button></a>
   </div>
 </div>
 
-  
+
 
 
