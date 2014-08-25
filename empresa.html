@@ -1,84 +1,80 @@
 ---
 layout: default
 ---
-<div class="descEmpresa">
-	<div class="left description">
-		<h1 style="font-weight:bold;">Missão</h1>
-		<h5 class="txtdesc">Desenvolver soluções tecnológicas com denodo para a resolução problemas computacionais complexos e inovadores. Oferecendo à inventores nosso aparato técnico e experiência para transformar suas ideias em produtos ou serviços.
-		</h5>
-
-	</div>
-
-	<div class="right description">
-		<h1  style="font-weight:bold;" >Visão</h1>
-		<h5 class="txtdesc">Ser referência em inovação tecnológica não apenas pela qualidade e complexidade das invenções desenvolvidas mas também pela ênfase no processo aberto e transparente.</h5>
-	</div>
-	<i> <hr></i>
-	<span class="fi-asterisk large" style="color:white;"></span>
+ <div ng-controller="Inventtores">
+   <div class="descEmpresa">
+     <div class="left description">
+       <h1 style="font-weight:bold;">Missão</h1>
+       <h5 class="txtdesc"> [[empresa.missao]] </h5>
+     </div>
+     <div class="right description">
+       <h1  style="font-weight:bold;" >Visão</h1>
+       <h5 class="txtdesc">[[empresa.visao]]</h5>
+     </div>
+     <i> <hr></i>
+     <span class="fi-asterisk large" style="color:white;"></span>
+   </div>
+   <div class="bgbranco">
+     <span class="fi-universal-access large"></span>
+     <h1>[[ acreditamos.open_proccess.titulo ]]</h1>
+     <h4>[[ acreditamos.open_proccess.porque ]] </h4>
+     <a href="http://github.com/inventto" target="_blank"><button class="buttonKnow"><span class="fi-social-github medium"></span> Acesse nosso Github</button></a>
+   </div>
+   <div class="bgverde">
+     <span class="fi-safety-cone large"></span>
+     <h1>[[ acreditamos.rotatividade_de_demandas.titulo ]]</h1>
+     <h4>[[ acreditamos.rotatividade_de_demandas.porque ]]</h4>
+   </div>	
+   <div class="bgbranco">
+     <span class="fi-book large"></span>
+     <h1>[[ iniciativas.grupo_de_estudo.titulo ]]</h1>
+     <h4>[[ iniciativas.grupo_de_estudo.porque ]] </h4>
+     <a href="/games"><button class="buttonKnow">Veja nossos games</button></a>
+   </div>
+   <div class="bgverde">
+     <span class="fi-pencil large"></span>
+     <h1>[[ iniciativas.estudo_diario.titulo ]]</h1>
+     <h4>[[ iniciativas.estudo_diario.porque ]]</h4>
+   </div>
+   <div class="bgbranco">
+     <span class="fi-share large"></span>
+     <h1>[[acreditamos.open_knowledge.titulo]]</h1>
+     <h4>[[acreditamos.open_knowledge.porque]] </h4>
+   </h4>
+ </div>
+ <div class="bgverde">
+   <span class="fi-social-github large"></span>
+   <h1>[[acreditamos.open_source.titulo]]</h1>
+   <h4>[[acreditamos.open_source.porque]] </h4>
+   <a href="http://github.com/inventto" target="_blank"><button class="buttonKnow"><span class="fi-web medium"></span> Iniciativas open source</button></a>
+ </div>
+ <div class="bgbranco">
+   <span class="fi-thumbnails large"></span>
+   <h1>[[acreditamos.modelo_pre_pago_por_hora.titulo]]</h1>
+   <h4>[[acreditamos.modelo_pre_pago_por_hora.porque]]</h4>
+   <pre>
+    Mas sem saber o final como cobrar pelo trabalho?
+  </pre>
+   <h4>
+     Escolhemos trabalhar com o modelo pré pago como uma forma de nos proteger de possíveis mudanças de escopo e também dando o benefício da transparência de nosso modelo de trabalho. 
+     Nossos clientes tem acesso a qual demanda estamos produzindo, o custo estimado da demanda e o custo atual.
+     Eles podem interromper ou mesmo suspender o projeto quando bem entenderem.
+     Se sobrarem créditos agente devolve o dinheiro.
+   </h4>
+ </div>
+ <div class="bgverde">
+   <span class="fi-home large"></span>
+   <h1>[[acreditamos.escritorio_aberto.titulo]]</h1>
+   <h4>[[acreditamos.escritorio_aberto.porque]]</h4>
+ </div>
+ <div class="bgbranco">
+   <span class="fi-heart large"></span>
+   <h1> [[acreditamos.nosso_bem_estar.titulo]] </h1>
+   <h4> [[acreditamos.nosso_bem_estar.porque]] </h4>
+ </div>
+ <div class="bgverde">
+   <span class="fi-paperclip large"></span>
+   <h1> [[acreditamos.que_o_inventto_eh_seu.titulo]] </h1>
+   <h4> [[acreditamos.que_o_inventto_eh_seu.porque]] </h4>
+ </div>
 </div>
-<div class="bgbranco">
-	<span class="fi-universal-access large"></span>
-	<h1> Processo aberto e colaborativo</h1>
-	<h4>Acreditamos em nós como seres humanos. Conhecer a nós mesmos é parte disso. Para isso é necessário entender os limites do aprendizado e mesmo tomar rumos diferentes. Quando encaramos um problema de tecnologia e não conseguimos dar sequência, temos sempre tentado trocar experiência de aprendizado sobre o problema e até mesmo pedido ajuda para resolver o mais rápido possível. Desta forma ganhamos produtividade a aprendemos juntos. Temos buscado realizar as tarefas mais complexas te que exigem mais concentração em dupla e sempre que possível com desenvolvimento orientado a testes para garantir maior integridade. </h4>
-	<a href="http://github.com/inventto" target="_blank"><button class="buttonKnow"><span class="fi-social-github medium"></span> Acesse nosso Github</button></a>
-</div>
-<div class="bgverde">
-	<span class="fi-safety-cone large"></span>
-	<h1>Rotatividade de demandas</h1>
-	<h4>A base da filosofia de trabalho da Invent.to é a rotatividade de demandas e clientes. Trabalhar em um mesmo projetos por horas e horas consecutivas é cansativo, além de não ter um rendimento apropriado. Pensando nisso, a empresa usa um sistema de rotatividade de demandas, onde várias pessoas trabalham em diferentes atividades durante um espaço de tempo curto. Um exemplo disso, é que ninguém na Invent.to trabalha mais de 4 horas diárias no mesmo projeto, gerando uma troca de demandas dentro da empresa, que é bom para quem trabalha, e principalmente, para o cliente, que terá um produto de qualidade maior. Para que não haja conflitos com o cliente, tudo isso é combinado e na escala de tempo já consideramos no máximo 4 horas diárias.</h4>
-</div>	
-<div class="bgbranco">
-	<span class="fi-book large"></span>
-	<h1>Grupo de estudo</h1>
-	<h4>Iniciamos um grupo de estudos sobre Unity para aprender games. Também nos reunimos no final de tarde para aprender outras ferramentas como javascript ou melhores práticas de ferramentas do nosso dia a dia. Quando começamos a estudar em grupo percebemos que somos mais objetivos nos nossos estudos e vamos mais longe em nível de complexidade do projeto.</h4>
-	<a href="/games"><button class="buttonKnow">Veja nossos games</button></a>
-</div>
-
-<div class="bgverde">
-	<span class="fi-pencil large"></span>
-	<h1>Uma hora de estudo por dia</h1>
-	<h4>Uma iniciativa interna da empresa que visa o aprendizado e a expansão do conhecimento, os inventtores dedicam ao menos uma hora por dia à estudos de novas tecnologias e projetos  de forma a agregar maior conhecimento e melhorias no processo criativo da empresa. </h4>
-	<h4>A empresa também fornece vários ebooks como auxílio para estudo, oferecendo um conhecimento geral de todas as áreas necessárias para desenvolvimento de um sistema.</h4>
-	
-</div>
-<div class="bgbranco">
-	<span class="fi-share large"></span>
-	<h1>Compartilhamento de conhecimento</h1>
-	<h4>Na invent.to não existe ninguém que possua todo o conhecimento , ele é compartilhado, Ctodos contribuem de forma espontânea na difusão do mesmo. Workshops internos, pair proggramings, biblioteca digital compartilhada com todos
-	</h4>
-
-</div>
-<div class="bgverde">
-	<span class="fi-social-github large"></span>
-	<h1>Open Source</h1>
-	<h4>Um dos pilares da filosofia da Invent.to é o open-source. Tanto o uso de ferramentas abertas, como a disponibilidade dos projetos realizados na empresa. Temos como exemplo, o sistema Controle de Presença Magnus, feito em parceria com Magnus Personal Trainer. Um projeto comercial para personal trainers totalmente aberto. Confira </h4>
-	<a href="http://github.com/inventto" target="_blank"><button class="buttonKnow"><span class="fi-web medium"></span> Iniciativas open source</button></a>
-</div>
-<div class="bgbranco">
-	<span class="fi-thumbnails large"></span>
-	<h1>Modelo pré-pago por hora</h1>
-	<h4>Durante os últimos anos estamos trabalhando em busca de entregar algo de valor para o cliente. No entanto percebemos que o software é muito mais incremental do que estático. Desta forma não acreditamos em projetos longos e cruelmente complexos do tipo: “tudo ou nada”, e preferimos dar um passo de cada vez. Acreditamos que construir software é algo mutável  e que não podemos controlar isso. 
-	</h4>
-	<pre>
-		Mas sem saber o final como cobrar pelo trabalho?
-	</pre>
-	<h4>Escolhemos trabalhar com o modelo pré pago como uma forma de nos proteger de possíveis mudanças de escopo e também dando o benefício da transparência de nosso modelo de trabalho. Nossos clientes tem acesso a qual demanda estamos produzindo, o custo estimado da demanda e o custo atual. Eles podem interromper ou mesmo suspender o projeto quando bem entenderem. Se sobrarem créditos agente devolve o dinheiro.
-	</h4>
-</div>
-<div class="bgverde">
-	<span class="fi-home large"></span>
-	<h1>Escritório Aberto</h1>
-	<h4>O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando bem preferirem.</h4>
-</div>
-<div class="bgbranco">
-	<span class="fi-heart large"></span>
-	<h1>Bem estar</h1>
-	<h4>Em dois horarios diarios, são elaborados atividades laborais para garantir que nossa coluna não vai entortar e nossos dedos não irão atrofiar. Estamos tentando realizar as ginásticas diáriamente e este também tem sido um momento de descontração. O Jack além de programador é lutador de boxe e têm coordenado nossa ginastica laboral.    </h4>
-</div>
-<div class="bgverde">
-	<span class="fi-paperclip large"></span>
-	<h1>O invento é seu</h1>
-	<h4>
-		Não temos interesse em manter direitos autorais dos códigos ou ideias que aplicamos ao seu projeto. Elas são suas! O código fonte é seu! E se você optar pelo opensource podemos até lhe dar um desconto! Nós adoramos trabalhar com o open-source e fazer parte dele!
-		Se você têm visão e pretende escalar o seu invento também podemos lhe ajudar a organizar isso. Temos adquirido experiência trabalhando na nuvem :D</h4>
-	</div>
