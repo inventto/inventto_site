@@ -34,6 +34,11 @@ window.Inventto =
         Elas são suas! O código fonte também é seu! E se você optar pelo opensource podemos até lhe dar um desconto!
         Nós adoramos trabalhar com o open-source e fazer parte dele! Não apenas utilizando mas também devolvendo.
       """
+      slides: """
+        * O código fonte é do cliente
+        * Será alvancado pelas ferramentas opensource
+        * Se optar pelo opensource nós vamos adorar :)
+      """
     nosso_bem_estar:
       titulo: "Bem estar"
       porque: """
@@ -82,7 +87,7 @@ window.Inventto =
         ## Algumas iniciativas
         
         * [Magnus Personal Trainer]([[projetos.magnus.github]]) - [[projetos.magnus.oque_eh]]
-        * [Camera Ovelay]([[projetos.camera_overlay.github]]) - [[projetos.camera_overlay.oque_eh ]]
+        * [Camera Ovelay]([[projetos.cameraoverlay.github]]) - [[ projetos.cameraoverlay.oque_eh ]]
         * [Punch]([[projetos.punch.github]]) - [[projetos.punch.oque_eh ]]
         * [Galeria Tambo]([[projetos.tambo.github]]) - [[projetos.tambo.oque_eh ]]
       """
@@ -138,7 +143,6 @@ window.Inventto =
     estudo_diario:
       titulo: "Uma hora de estudo por dia"
       slides: """
-        ### A pergunta que não quer calar..
 
             Vale a pena estudar uma hora por dia?
 
@@ -164,7 +168,7 @@ window.Inventto =
       github: "https://github.com/inventto/punch"
       oque_eh: "Medidor de força de socos - para lutadores"
       como_funciona: "O aplicativo é capaz de medir a intensidade e velocidade do soco. Também analisa a frequência de socos e cria estatísticas de progressão do aluno entre sessões."
-    camera_overlay:
+    cameraoverlay:
       github: "https://github.com/jonatas/CameraOverlay"
       oque_eh: "Tire fotos sequênciais de um mesmo lugar"
       como_funciona: "Este app lhe ajuda a reposicionar a câmera, permitindo adicionar uma camada sobre a tela com a foto já tirada anteriormente."

@@ -146,7 +146,11 @@ Temos experiência com gerenciando múltiplos dispositivos bluetooth em um únic
 ##  Integração de hardware externo com MCP2200
 
 * Com catracas digitais
-* Com aparelhos de ginástica como: esteiras, bicicletas, steps, sensor de batimento cardíaco
+* Com aparelhos de ginástica 
+ * esteiras
+ * bicicletas
+ * step
+ * sensor de batimento cardíaco
 
 ##  Integração de hardware externo com MSP430
 
