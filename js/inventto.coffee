@@ -43,6 +43,12 @@ window.Inventto =
       """
     open_knowledge:
       titulo: "Compartilhamento de conhecimento"
+      slides: """
+        * Grupos de estudo
+        * Base de conhecimento [semente.invent.to](http://semente.invent.to)
+        * Programação em par
+        * Documentação acessível e sustentável
+      """
       porque: """
         Estamos sempre tentando compartilhar a melhor informação da nossa área possível.
         Assim estamos sempre fazendo: Workshops internos e  pair programming para enriquecer a equipe.
@@ -53,6 +59,12 @@ window.Inventto =
         O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando estamos trabalhando em seus projetos.
         Incentivamos nossos clientes a trabalhar presencialmente com agente e também convidamos nossos amigos para trabalhar em conjunto.
         Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem."""
+      slides: """
+        * Agregar pessoas interessantes
+        * Pessoas interessantes também trazem demandas interessantes
+        * Trocamos demandas e experiências
+        * Ganhamos juntos e rotacionamos mais demandas e projetos
+      """
     open_source:
       titulo: "Open Source"
       porque: """
@@ -60,8 +72,29 @@ window.Inventto =
         Tanto o uso de ferramentas abertas, como a disponibilidade dos projetos realizados na empresa.
         Temos como primeiro exemplo, o sistema Controle de Presença Magnus, feito em parceria com Magnus Personal Trainer.
         Um projeto comercial para personal trainers totalmente aberto. Confira:"""
+      slides: """
+
+            Desenvolvimento da mentalidade opensource nos clientes.
+
+        * Queremos que nossos clientes sejam livres de nós
+        * Gerenciamos nossos projetos fechados e abertos no modelo opensource
+
+        ## Algumas iniciativas
+        
+        * [Magnus Personal Trainer]([[projetos.magnus.github]]) - [[projetos.magnus.oque_eh]]
+        * [Camera Ovelay]([[projetos.camera_overlay.github]]) - [[projetos.camera_overlay.oque_eh ]]
+        * [Punch]([[projetos.punch.github]]) - [[projetos.punch.oque_eh ]]
+        * [Galeria Tambo]([[projetos.tambo.github]]) - [[projetos.tambo.oque_eh ]]
+      """
     open_proccess:
       titulo: "Processo aberto e colaborativo"
+      slides: """
+        * Projetos abertos - todos sabem quais projetos estão andando e as prioridades
+        * Demandas abertas - os colaboradores assumem conforme seu interesse e aptidão
+        * Informações abertas - todos sabem quanto ganhamos e como cobramos por isso
+        * Compartilhamento de demandas complexas - é mais legal trabalhar em dupla
+        * A demanda não fica na mão de apenas uma pessoa
+      """
       porque: """
         Acreditamos em nós como seres humanos. Conhecer a nós mesmos é parte disso.
         Para isso é necessário entender os limites do aprendizado e aprender tomar rumos diferentes de maneira inteligente.
@@ -70,6 +103,12 @@ window.Inventto =
         e informações não ficam reservadas a uma pessoa só e nem mesmo se simplifique ao simples algorítmo de resposta.."""
     rotatividade_de_demandas:
       titulo: "Rotatividade de demandas"
+      slides: """
+      * Todos trabalham em média meio período por projeto
+      * Desafio de ter novos clientes e projetos
+      * Trabalhar no mesmo projeto se torna massante e improdutivo
+      * Vida longa ao programador!
+      """
       porque: """
         A base da filosofia de trabalho da Invent.to é a rotatividade de demandas e clientes.
         Trabalhar em um mesmo projetos por horas e horas consecutivas é cansativo, além de não ter um
@@ -83,6 +122,13 @@ window.Inventto =
   iniciativas:
     grupo_de_estudo:
       titulo: "Grupo de estudo"
+      slides:
+        """
+        * Objetivo
+        * Aprendemos com games
+        * Melhoramos nossa lógica
+        * Estamos em um processo de gamification
+        """
       porque: """
         Iniciamos um grupo de estudos sobre Unity para aprender games.
         Também nos reunimos no final de tarde para aprender outras ferramentas como javascript ou 
@@ -91,6 +137,16 @@ window.Inventto =
         vamos mais longe em nível de complexidade do projeto."""
     estudo_diario:
       titulo: "Uma hora de estudo por dia"
+      slides: """
+        ### A pergunta que não quer calar..
+
+            Vale a pena estudar uma hora por dia?
+
+        * Primeiro temos o desafio de cumprir tudo em menos tempo
+        * Precisamos inovação todo dia
+        * Precisamos melhorar nosso processo interno diariamente
+        * Inovação é uma injeção nas veias das novas ideias
+        """
       porque: """
         Uma iniciativa interna da empresa que visa o aprendizado e a expansão do conhecimento, os inventtores
         dedicam ao menos uma hora por dia à estudos de novas tecnologias e projetos de forma a agregar maior
@@ -100,6 +156,28 @@ window.Inventto =
   projetos:
     magnus:
       github: "https://github.com/inventto/magnus"
+      oque_eh: "Sistema de gestão de frequências"
+    tambo:
+      github: "https://github.com/inventto/tambo"
+      oque_eh: "Projeto Arte Decoração"
+    punch:
+      github: "https://github.com/inventto/punch"
+      oque_eh: "Medidor de força de socos - para lutadores"
+      como_funciona: "O aplicativo é capaz de medir a intensidade e velocidade do soco. Também analisa a frequência de socos e cria estatísticas de progressão do aluno entre sessões."
+    camera_overlay:
+      github: "https://github.com/jonatas/CameraOverlay"
+      oque_eh: "Tire fotos sequênciais de um mesmo lugar"
+      como_funciona: "Este app lhe ajuda a reposicionar a câmera, permitindo adicionar uma camada sobre a tela com a foto já tirada anteriormente."
+      para_quem: "Pessoas que fazem acompanhamento de um tratamento de pele, comparação antes e depois ou retomar os atores na posição correta de uma cena."
+      playstore: "https://play.google.com/store/apps/details?id=me.ideia.cameraoverlay&hl=en"
+    reinventto:
+      github: "https://github.com/inventto/reinventto"
+      site: "http://re.invent.to"
+      oque_eh: "Extensão do camera overlay para web"
+    pixel:
+      github: "https://github.com/jonatas/pixel"
+      site: "http://pixel.ideia.me"
+      oque_eh: "Um espaço para desenhar em conjunto pela web. Uma espécie de 'paint' colaborativo."
 
   inventtores:
     jonatas: jonatas

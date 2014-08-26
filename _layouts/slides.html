@@ -30,12 +30,11 @@
   <body>
 <script type="text/ng-template" charset="utf-8" id="liveExample.html">
 <div class="playground"></div>
-<textarea editablesource class="source"></textarea>
-<button class="reload" ng-click="run()">Run</button>
+<textarea style="overflow: scroll;" class="source"></textarea>
+<button class="reload" ng-click="run()">Executar</button>
 <select ng-model="snippet" ng-options="s.code as s.title for s in snippets" ng-change="loadSnippet(snippet)">
 </script>
   {{ content }}
-  </script>
   <script src="../js/head.min.js"></script>
   <script src="../js/jquery-1.9.1.min.js"></script>
   <script src="../js/reveal.min.js"></script>
@@ -59,7 +58,7 @@
       { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
       { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
       // { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      // { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
       { src: '../codemirror/lib/codemirror.js'},
       { src: '../codemirror/mode/javascript/javascript.js'},
       { src: '../codemirror/mode/css/css.js'},

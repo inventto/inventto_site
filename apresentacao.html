@@ -16,11 +16,12 @@
     <section>
       <h2>Agenda</h2>
       <ul>
-        <li>Quem somos nós: 2 min</li>
-        <li>No que acreditamos: 5 min</li>
-        <li>O que queremos: 5 min</li>
-        <li>Como estamos fazendo: 5 min</li>
+        <li>Quem somos nós: 1 min</li>
+        <li>No que acreditamos: 3 min</li>
+        <li>O que queremos: 2 min</li>
+        <li>Como estamos fazendo: 3 min</li>
         <li>Nossa iniciativas: 2 min</li>
+        <li>Nossos invventos: 1 min</li>
       </ul>
     </section>
     <section>
@@ -43,32 +44,38 @@
       </section>
       <section>
         <h1>[[acreditamos.open_source.titulo]]</h1>
-        <p>[[acreditamos.open_source.porque]]</p>
-        <a href="[[projetos.magnus.github">[[projetos.magnus.github]]</a>
+        <div data-markdown> [[acreditamos.open_source.slides]] </div>
+        <aside class="notes">[[acreditamos.open_source.porque]]</aside>
       </section>
       <section>
         <h1>[[ acreditamos.open_proccess.titulo ]]</h1>
-        <p>[[ acreditamos.open_proccess.porque ]] </p>
+        <div data-markdown> [[acreditamos.open_proccess.slides]] </div>
+        <aside class="notes">[[ acreditamos.open_proccess.porque ]] </aside>
       </section>
       <section>
         <h1>[[ acreditamos.rotatividade_de_demandas.titulo ]]</h1>
-        <p>[[ acreditamos.rotatividade_de_demandas.porque ]]</p>
+        <div data-markdown> [[acreditamos.rotatividade_de_demandas.slides]] </div>
+        <aside class="notes">[[ acreditamos.rotatividade_de_demandas.porque ]] </aside>
       </section>
       <section>
         <h1>[[acreditamos.open_knowledge.titulo]]</h1>
-        <p>[[acreditamos.open_knowledge.porque]] </p>
+        <div data-markdown>[[acreditamos.open_knowledge.slides]] </div>
+        <aside class="notes"> [[acreditamos.open_knowledge.porque]] </aside>
       </section>
       <section>
         <h1>[[acreditamos.modelo_pre_pago_por_hora.titulo]]</h1>
-        <p>[[acreditamos.modelo_pre_pago_por_hora.porque]]</p>
+        <div>[[acreditamos.modelo_pre_pago_por_hora.slides]]</div>
+        <aside class="notes">[[acreditamos.modelo_pre_pago_por_hora.porque]]</aside>
       </section>
       <section>
         <h1>[[acreditamos.escritorio_aberto.titulo]]</h1>
-        <p>[[acreditamos.escritorio_aberto.porque]]</p>
+        <div data-markdown> [[acreditamos.escritorio_aberto.slides] </div>
+        <aside class="notes">[[acreditamos.escritorio_aberto.porque]]</aside>
       </section>
       <section>
         <h1> [[acreditamos.nosso_bem_estar.titulo]] </h1>
-        <p> [[acreditamos.nosso_bem_estar.porque]] </p>
+        <div data-markdown> [[acreditamos.nosso_bem_estar.slides]] </div>
+        <aside class="notes"> [[acreditamos.nosso_bem_estar.porque]] </aside>
       </section>
       <section>
         <h1> [[acreditamos.que_o_inventto_eh_seu.titulo]] </h1>
@@ -87,81 +94,69 @@
       </section>
       <section>
         <h1>[[iniciativas.grupo_de_estudo.titulo]]</h1>
-        <p class="fragment">[[iniciativas.grupo_de_estudo.porque]]</p>
+        <div class="fragment" data-markdown>[[iniciativas.grupo_de_estudo.slides]]</div>
+        <aside class="notes">[[iniciativas.grupo_de_estudo.porque]] </aside>
       </section>
       <section>
         <h1>[[iniciativas.estudo_diario.titulo]]</h1>
-        <p class="fragment">[[iniciativas.estudo_diario.porque]]</p>
+        <div class="fragment" data-markdown>[[iniciativas.estudo_diario.slides]]</div>
       </section>
       <section>
         <h1>Experimentos</h1>
         <pre><code contenteditable class="js">[[acreditamos| json]]</code></pre>
-      </section>
-      <section>
-				<section>
-					<h2>Why is that so powerful?</h2>
+        </section>
+        <section>
+          <h2>Exemplos de código?</h2>
           {% raw %}
           <live-example>
-            <script type="text/template" data-title="Listar inventores">
-              <code>
-                function ListarInventores($scope){
-                  $scope.inventtores = Inventto.inventtores;
-                }
-              </code>
-              <div ng-controller="ListarInventores">
-                <ul>
-                  <li ng-repeat='(id,person) in inventtores'>
-                    <a href="http://invent.to/{{id}}">
-                      <h5>{{person.name}}</h5>
-                      <p><a href="http://{{person.site}}" ng-if="person.site">{{person.site}} </a><a ng-repeat="(network, username) in person.social" href="http://{{network}}.com/{{username}}" class="fi-social-{{network}}"> </a></p>
-                    </a>
-                  </li>
-                </ul>
-    </div>
-              </form>
-            </script>
-            <script type="text/template" data-title="TODO">
-              <code>
-                function Foo($scope){
-                  $scope.tasks = [];
-                  $scope.addTask = function() {
-                    $scope.tasks.push($scope.newTask);
-                    $scope.newTask = null;
-                  };
-                  $scope.removeTask = function (index) {
-                    $scope.tasks.splice(index, 1);
-                  };
-                }
-              </code>
-              <form name="form" ng-controller="Foo">
-                <h2>{{tasks.length}} Tasks</h2>
-                <p>
-                  <input type="text" ng-model="newTask"/>
-                  <button ng-click="addTask()">Add</button>
-                </p>
-                <ul>
-                  <li ng-repeat="(index, task) in tasks">
-                    {{task}} <button ng-click="removeTask(index)">X</button>
-                  </li>
-                </ul>
-              </form>
-            </script>
-            <script type="text/template" data-title="Red Square">
-              X: <input type="text" ng-model="x">
-              <br>
-              Y: <input type="text" ng-model="y">
-
-              <div style="background-color: red; width: 20px; height: 20px; position: absolute; left: {{x}}; top: {{y}}"></div>
-                            
-            </script>
+          <script type="text/template" data-title="Listar inventtores">
+            <code>
+              function ListarInventtores($scope){
+                $scope.inventtores = Inventto.inventtores;
+              }
+            </code>
+            <div ng-controller="ListarInventtores">
+              <ul>
+                <li ng-repeat='(id,person) in inventtores'>
+                  <img src="../img/{{ person.profile || 'homer.jpg'}}" style="width:48px;height:48px;"/>
+                  {{ person.name }}
+                  <a href="http://{{person.site}}" ng-if="person.site">({{person.site}})</a>
+                </li>
+              </ul>
+            </div>
+          </script>
+          <script type="text/template" data-title="Detalhes da empresa">
+            <code>
+              function VerInventto($scope){
+                $scope.inventto = Inventto;
+              }
+            </code>
+            <div ng-controller="VerInventto">
+              <h1> {{ inventto.empresa.nome}} </h1>
+              <h2>Status</h2>
+              <ul>
+                <li>{{ Object.keys(inventto.inventtores).length}} inventtores</li>
+                <li>{{ Object.keys(inventto.projetos).length }} projetos</li>
+              </ul>
+              <h2>Missão</h2>
+              {{ inventto.empresa.missao }}
+              <h2>Visão</h2>
+              {{ inventto.empresa.visao }}
+            </div>
+          </script>
           </live-example>
-
           {% endraw %}
-				</section>
-
-
+        </section>
       </section>
+    <section>
+      <section>
+      <h1>O que fazemos?</h1>
+      <small><a href="http://invent.to/2014/08/12/tipos_de_aplicativos">http://invent.to/2014/08/12/tipos_de_aplicativos//</a></small>
+      </section>
+      <section>
 
+        
+      </section>
     </section>
     <section>
       <h1>Obrigado!</h1>
