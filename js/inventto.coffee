@@ -11,6 +11,9 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
 
 window.Inventto =
   empresa:
+    nome: "Inventto"
+    razao_social: "Inventto Soluções em Sistemas"
+    frase_curta: "Transformando sua ideia em realidade"
     quem_somos: "Somos uma equipe experiente, capaz de gerenciar projetos com autonomia, responsabilidade e eficiência."
     missao:
       """
@@ -43,66 +46,60 @@ window.Inventto =
       porque: """
         Estamos sempre tentando compartilhar a melhor informação da nossa área possível.
         Assim estamos sempre fazendo: Workshops internos e  pair programming para enriquecer a equipe.
-        Também promovemos grupos de estudo internos para a melhoria contínua nos fluxos de processos que realizamos diáriamente.
-      """
+        Também promovemos grupos de estudo internos para a melhoria contínua nos fluxos de processos que realizamos diáriamente."""
     escritorio_aberto:
       titulo: "Escritório Aberto"
       porque: """
         O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando estamos trabalhando em seus projetos.
         Incentivamos nossos clientes a trabalhar presencialmente com agente e também convidamos nossos amigos para trabalhar em conjunto.
-        Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem.
-      """
+        Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem."""
     open_source:
       titulo: "Open Source"
       porque: """
         Um dos pilares da filosofia da Invent.to é o open-source.
         Tanto o uso de ferramentas abertas, como a disponibilidade dos projetos realizados na empresa.
         Temos como primeiro exemplo, o sistema Controle de Presença Magnus, feito em parceria com Magnus Personal Trainer.
-        Um projeto comercial para personal trainers totalmente aberto. Confira:
-      """
+        Um projeto comercial para personal trainers totalmente aberto. Confira:"""
     open_proccess:
       titulo: "Processo aberto e colaborativo"
       porque: """
         Acreditamos em nós como seres humanos. Conhecer a nós mesmos é parte disso.
-        Para isso é necessário entender os limites do aprendizado e mesmo tomar rumos diferentes.
-        Quando encaramos um problema de tecnologia e não conseguimos dar sequência, temos sempre
-        tentado trocar experiência de aprendizado sobre o problema e até mesmo pedido ajuda para
-        resolver o mais rápido possível. Desta forma ganhamos produtividade a aprendemos juntos.
-        Temos buscado realizar as tarefas mais complexas te que exigem mais concentração em dupla
-        e sempre que possível com desenvolvimento orientado a testes para garantir maior integridade.
-      """
+        Para isso é necessário entender os limites do aprendizado e aprender tomar rumos diferentes de maneira inteligente.
+        Temos uma política de manter abertas para os colaboradores todas as informações e abrir todas as decisões da empresa.
+        Temos como princípio sempre realizar as tarefas mais complexas em dupla e orientado a testes para garantir que as decisões
+        e informações não ficam reservadas a uma pessoa só e nem mesmo se simplifique ao simples algorítmo de resposta.."""
     rotatividade_de_demandas:
       titulo: "Rotatividade de demandas"
       porque: """
         A base da filosofia de trabalho da Invent.to é a rotatividade de demandas e clientes.
         Trabalhar em um mesmo projetos por horas e horas consecutivas é cansativo, além de não ter um
-        rendimento apropriado. Pensando nisso, a empresa usa um sistema de rotatividade de demandas,
-        onde várias pessoas trabalham em diferentes atividades durante um espaço de tempo curto.
+        rendimento apropriado. Então decidimos por escalar diferentes atividades durante um espaço de tempo curto.
         Um exemplo disso, é que ninguém na Invent.to trabalha mais de 4 horas diárias no mesmo projeto,
         gerando uma troca de demandas dentro da empresa, que é bom para quem trabalha, e principalmente,
         para o cliente, que terá um produto de qualidade maior.
         Para que não haja conflitos com o cliente, tudo isso é combinado e na escala de tempo já consideramos
-        no máximo 4 horas diárias.
-      """
+        no máximo 4 horas diárias."""
+
   iniciativas:
-    grupo_de_estudo: 
+    grupo_de_estudo:
       titulo: "Grupo de estudo"
       porque: """
         Iniciamos um grupo de estudos sobre Unity para aprender games.
         Também nos reunimos no final de tarde para aprender outras ferramentas como javascript ou 
         melhores práticas de ferramentas do nosso dia a dia.
         Quando começamos a estudar em grupo percebemos que somos mais objetivos nos nossos estudos e
-        vamos mais longe em nível de complexidade do projeto.
-      """
-	  estudo_diario:
+        vamos mais longe em nível de complexidade do projeto."""
+    estudo_diario:
       titulo: "Uma hora de estudo por dia"
       porque: """
         Uma iniciativa interna da empresa que visa o aprendizado e a expansão do conhecimento, os inventtores
         dedicam ao menos uma hora por dia à estudos de novas tecnologias e projetos de forma a agregar maior
         conhecimento e melhorias no processo criativo da empresa.
         A empresa também fornece vários ebooks como auxílio para estudo, oferecendo um conhecimento geral de todas
-        as áreas necessárias para desenvolvimento de um sistema.
-      """
+        as áreas necessárias para desenvolvimento de um sistema."""
+  projetos:
+    magnus:
+      github: "https://github.com/inventto/magnus"
 
   inventtores:
     jonatas: jonatas
