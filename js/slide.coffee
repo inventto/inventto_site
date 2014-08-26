@@ -10,4 +10,6 @@ angular.module("inventto", []).
     $scope.inventtores = Inventto.inventtores
     $scope.jonatas = Inventto.inventtores.jonatas
     $scope.projetos = Inventto.projetos
+    $scope.servicos = Inventto.servicos
+    $scope.ferramentas = Inventto.ferramentas
 

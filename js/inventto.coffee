@@ -26,13 +26,27 @@ window.Inventto =
   acreditamos:
     modelo_pre_pago_por_hora:
       titulo: "Modelo pré-pago por hora"
-      porque: "Durante os últimos anos estamos trabalhando em busca de entregar algo de valor para o cliente.  No entanto percebemos que o software é muito mais incremental do que estático.  Desta forma não acreditamos em projetos longos e cruelmente complexos do tipo: 'tudo ou nada', e preferimos dar um passo de cada vez.  Acreditamos que construir software é algo mutável  e que não podemos controlar isso."
+      porque: """
+        Durante os últimos anos estamos trabalhando em busca de entregar algo de valor para o cliente.
+        No entanto percebemos que o software é muito mais incremental do que estático. 
+        Desta forma não acreditamos em projetos longos e cruelmente complexos do tipo: 'tudo ou nada', 
+        e preferimos dar um passo de cada vez. 
+        Acreditamos que construir software é algo mutável e que não podemos controlar isso."""
+      slides: """
+
+        * Escopo aberto
+        * Flexibilidade de horário e atendimentos
+        * Facilita na rotatividade de demandas
+        * Não acreditamos em "tudo ou nada"
+
+      """
+
     que_o_inventto_eh_seu:
       titulo: "O invento é seu"
       porque: """
         Não temos interesse em manter direitos autorais dos códigos ou ideias que aplicamos ao seu projeto.
         Elas são suas! O código fonte também é seu! E se você optar pelo opensource podemos até lhe dar um desconto!
-        Nós adoramos trabalhar com o open-source e fazer parte dele! Não apenas utilizando mas também devolvendo.
+        Nós adoramos trabalhar com o opensource e fazer parte dele! Não apenas utilizando mas também devolvendo.
       """
       slides: """
         * O código fonte é do cliente
@@ -41,6 +55,13 @@ window.Inventto =
       """
     nosso_bem_estar:
       titulo: "Bem estar"
+      slides: """
+
+      * Alongamento 2 vezes por dia
+      * Rotina de 6 horas
+      * Comemos frutas
+
+      """
       porque: """
         Em dois horarios diarios, são elaborados atividades laborais para garantir que nossa coluna não vai entortar e nossos dedos não irão atrofiar.
         Estamos tentando realizar as ginásticas diáriamente e este também tem sido um momento de descontração.
@@ -144,6 +165,8 @@ window.Inventto =
       titulo: "Uma hora de estudo por dia"
       slides: """
 
+        A pergunta que não quer calar...
+
             Vale a pena estudar uma hora por dia?
 
         * Primeiro temos o desafio de cumprir tudo em menos tempo
@@ -182,6 +205,117 @@ window.Inventto =
       github: "https://github.com/jonatas/pixel"
       site: "http://pixel.ideia.me"
       oque_eh: "Um espaço para desenhar em conjunto pela web. Uma espécie de 'paint' colaborativo."
+
+  servicos:
+
+    mobile: """
+      # Mobile Nativo 
+
+      * Android
+      * Integração com backgrounds existentes
+      * Funcionamento offline/sicronismo com servidor"""
+    webmobile: """
+      # Web / Mobile
+
+      * Basicamente um website que funciona no mobile
+      * E também funciona para múltiplas plataformas
+      * Acesso limitado as capacidades nativas de hardware e da plataforma
+      * Incompatibilidade de componentes entre plataformas
+      * Um código para todas plataformas"""
+    hibridos: """
+      # Híbridos
+
+      * Baixa pela loja da plataforma e roda localmente
+      * Usa todo conteúdo HTML5, CSS e JS como na web mas em uma "aplicação" separada para seu código
+      * Mapeia API's nativas das plataformas específicas para ser consumida por uma biblioteca única em javascript
+      * Possívelmente dá para manter rodando na web como um website normal"""
+    embarcados: """
+      # Embarcados
+        
+            Estamos abraçando a internet das coisas
+
+      #### Serviços
+
+      * Integração de hardware
+      * Prototipação de dispositivos
+      * Acessoria e consultoria na escolha do hardware
+      * MCP2200 e MSP430 - linguagem C
+      * Raspberry PI - linguagem Python
+      * Beaglebone Black II - linguagem javascript
+      * Arduino -  linguagem arduino (baseado em C e C++)
+      * Android - linguagem java"""
+    bigdata: """
+      # Algorítmos de processamento"
+
+      * Sem interação com o usuário
+      * Apenas processam e processam
+      * BIGDATA
+      * Processamento hardcore"""
+    hardware:
+      android: """
+        # Hardware + Android
+
+        * Dispositivos Bluetooth integrado a hardware externo
+        * Gerenciando múltiplos dispositivos bluetooth em um único Android"""
+      mcp2200: """
+        # MCP2200
+
+        * Com catracas digitais (3 marcas até o momento)
+        * Com aparelhos de ginástica 
+         * esteiras
+         * bicicletas
+         * step
+         * sensor de batimento cardíaco"""
+      msp430: """
+        # MSP430
+
+        * bluetooth e serial
+        * sensores diversos: ( ópticos, pressão )"""
+      integracao:
+        """
+        # Integração e migração entre software
+
+        * O usuário faz a mesma coisa em dois programas
+        * Gera dados duplicados
+        * Ou ainda não quer que exista a ação em dois softwares
+        """
+
+  ferramentas:
+    escolhas: """
+      # Nosso ferramental
+
+      As escolhas certas fazem toda diferença para o sucesso do projeto."""
+    linguagens: """
+      # Linguagens
+
+      * Ruby
+      * Java
+      * Javascript
+      * C
+      * Shell
+      * Python
+      * C++ e C#
+
+    """
+    frameworks: """
+      # Frameworks
+
+      * Rails
+      * Angular.js
+      * Grunt
+      * Yeoman
+      * Marketcetera
+      * Coffeescript
+      * Apache Cordova
+      * Twitter Bootstrap e Foundation"""
+
+    aprendendo: """
+      # Aprendendo
+
+      * Elixir, Lua, Go, R, C
+      * Meteor.js
+      * Track.js, Polymer.js
+    """
 
   inventtores:
     jonatas: jonatas
