@@ -13,11 +13,18 @@ window.Inventto =
   empresa:
     nome: "Inventto"
     razao_social: "Inventto Soluções em Sistemas"
+    endereco:
+      rua: "União da Vitória"
+      numero: "407"
+      bairro: "Vila Nova"
+      cep: "85605-040"
+      complemento: "último andar - cobertura"
+
     frase_curta: "Transformando sua ideia em realidade"
     quem_somos: "Somos uma equipe experiente, capaz de gerenciar projetos com autonomia, responsabilidade e eficiência."
     missao:
       """
-      Desenvolver soluções tecnológicas com denodo para a resolução problemas computacionais complexos e inovadores. Oferecendo à inventores nosso aparato técnico e experiência para transformar suas ideias em produtos ou serviços.
+      Desenvolver soluções tecnológicas com denodo para a resolução de problemas computacionais complexos e inovadores. Oferecendo à inventores nosso aparato técnico e experiência para transformar suas ideias em produtos ou serviços.
       """
     visao:
       """
@@ -68,7 +75,7 @@ window.Inventto =
         O Jack além de programador é lutador de boxe e têm coordenado nossa ginastica laboral.
       """
     open_knowledge:
-      titulo: "Compartilhamento de conhecimento"
+      titulo: "Conhecimento aberto"
       slides: """
         * Grupos de estudo
         * Base de conhecimento [semente.invent.to](http://semente.invent.to)
@@ -100,7 +107,7 @@ window.Inventto =
         Um projeto comercial para personal trainers totalmente aberto. Confira:"""
       slides: """
 
-            Desenvolvimento da mentalidade opensource nos clientes.
+            Desenvolvimento da mentalidade opensource para os clientes.
 
         * Queremos que nossos clientes sejam livres de nós
         * Gerenciamos nossos projetos fechados e abertos no modelo opensource
@@ -213,7 +220,7 @@ window.Inventto =
 
       * Android
       * Integração com backgrounds existentes
-      * Funcionamento offline/sicronismo com servidor"""
+      * Funcionamento offline/sincronismo com servidor"""
     webmobile: """
       # Web / Mobile
 
@@ -227,7 +234,7 @@ window.Inventto =
 
       * Baixa pela loja da plataforma e roda localmente
       * Usa todo conteúdo HTML5, CSS e JS como na web mas em uma "aplicação" separada para seu código
-      * Mapeia API's nativas das plataformas específicas para ser consumida por uma biblioteca única em javascript
+      * Mapeia API's nativas das plataformas específicas para serem consumidas por uma biblioteca única em javascript
       * Possívelmente dá para manter rodando na web como um website normal"""
     embarcados: """
       # Embarcados
@@ -282,9 +289,16 @@ window.Inventto =
 
   ferramentas:
     escolhas: """
-      # Nosso ferramental
+      # Escolhas
 
-      As escolhas certas fazem toda diferença para o sucesso do projeto."""
+      As escolhas certas fazem toda diferença para o sucesso do projeto.
+
+      * Não basta escolher
+      * é preciso conhecer
+      * Não basta conhecer
+      * é preciso ser especialista
+      
+      """
     linguagens: """
       # Linguagens
 
