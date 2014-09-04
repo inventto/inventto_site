@@ -375,3 +375,35 @@ window.Inventto =
       jack: "Yes Science"
       jonatas: "Yes Science!!!"
       mitrut: "eeeesse é o broder"
+  cursos:
+    duracao: "4 horas"
+    jonatas:
+      "Ruby": "A linguagem de programação Ruby."
+      "TDD/BDD": "Desenvolvimento orientado a testes e comportamento"
+      "Inglês instrumental": "entendendo inglês básico para TI"
+      "Linha de comando no linux/mac": "aprendendo a usar a linha de comando para ter agilidade na programação"
+      "Raspberry PI": "Bem vindo a internet das coisas"
+      "Como resolver problemas?": "Resolvendo problemas quando os problemas acontecem. Aprendendo a pensar e resolver problemas mais rapidamente."
+    tafarel:
+      "Introdução a programação de hardware" "Conhecendo o microcontrolador MSP430 e também Beaglebone Black"
+      "Android intermediário": "Primeiros passos integrando aplicativos Android com servidor em backend"
+    mitrut:
+      "HTML5 e CSS3": "criando sites com layout dinâmico para celulares e telas de diferentes tamanhos"
+      "Modelagem 3D": "primeiros passos na modelagem 3D com Blender 3D"
+      "Impressora 3D": "imprimindo objetos modelados em 3D em uma impressora 3D"
+    lucao:
+      "Iniciando com Ruby": "Primeiros passos com a linguagem Ruby"
+      "Iniciando com Rails": "Primeiros passos com o framework web Ruby On Rails"
+      "Clouds": "Manutenção de clouds e gerência de múltiplos sites com nginx"
+      "Segurança em linux": "Firewall e bloqueios básicos em servidores linux"
+    lucas:
+      "Android e ORMLite": "Criando aplicativos com persistência no Android"
+      "Android e Redes sociais": "Compartilhamento em redes sociais, como facebook/google+ e twitter"
+      "Funcionalidades Android": "Gerência de audio e widgets em aplicativos Android" # lembrei do Yes Science do rafagnin entre outras experiências.
+    jack:
+      "Iniciando com CoronaSDK"
+      "Iniciando com Unity3D"
+    marlon:
+      "Expressões Regulares": "Entendendo como as expressões regulares podem ser úteis na sua vida."
+      "Inteligência computacional": "Além do if/else"
+
