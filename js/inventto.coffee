@@ -35,9 +35,9 @@ window.Inventto =
       titulo: "Modelo pré-pago por hora"
       porque: """
         Durante os últimos anos estamos trabalhando em busca de entregar algo de valor para o cliente.
-        No entanto percebemos que o software é muito mais incremental do que estático. 
-        Desta forma não acreditamos em projetos longos e cruelmente complexos do tipo: 'tudo ou nada', 
-        e preferimos dar um passo de cada vez. 
+        No entanto percebemos que o software é muito mais incremental do que estático.
+        Desta forma não acreditamos em projetos longos e cruelmente complexos do tipo: 'tudo ou nada',
+        e preferimos dar um passo de cada vez.
         Acreditamos que construir software é algo mutável e que não podemos controlar isso."""
       slides: """
 
@@ -113,7 +113,7 @@ window.Inventto =
         * Gerenciamos nossos projetos fechados e abertos no modelo opensource
 
         ## Algumas iniciativas
-        
+
         * [Magnus Personal Trainer]([[projetos.magnus.github]]) - [[projetos.magnus.oque_eh]]
         * [Camera Ovelay]([[projetos.cameraoverlay.github]]) - [[ projetos.cameraoverlay.oque_eh ]]
         * [Punch]([[projetos.punch.github]]) - [[projetos.punch.oque_eh ]]
@@ -164,7 +164,7 @@ window.Inventto =
         """
       porque: """
         Iniciamos um grupo de estudos sobre Unity para aprender games.
-        Também nos reunimos no final de tarde para aprender outras ferramentas como javascript ou 
+        Também nos reunimos no final de tarde para aprender outras ferramentas como javascript ou
         melhores práticas de ferramentas do nosso dia a dia.
         Quando começamos a estudar em grupo percebemos que somos mais objetivos nos nossos estudos e
         vamos mais longe em nível de complexidade do projeto."""
@@ -216,7 +216,7 @@ window.Inventto =
   servicos:
 
     mobile: """
-      # Mobile Nativo 
+      # Mobile Nativo
 
       * Android
       * Integração com backgrounds existentes
@@ -238,7 +238,7 @@ window.Inventto =
       * Possívelmente dá para manter rodando na web como um website normal"""
     embarcados: """
       # Embarcados
-        
+
             Estamos abraçando a internet das coisas
 
       #### Serviços
@@ -268,7 +268,7 @@ window.Inventto =
         # MCP2200
 
         * Com catracas digitais (3 marcas até o momento)
-        * Com aparelhos de ginástica 
+        * Com aparelhos de ginástica
          * esteiras
          * bicicletas
          * step
@@ -297,7 +297,7 @@ window.Inventto =
       * é preciso conhecer
       * Não basta conhecer
       * é preciso ser especialista
-      
+
       """
     linguagens: """
       # Linguagens
@@ -505,13 +505,23 @@ window.Inventto =
       "Mozilla":
         descricao: "Além do Firefox"
         tipo: "palestra"
+        price: "FREE"
+        duracao: "50 min."
+        tags: ["Open Source", "mobile"]
 
       "Apresentando o FirefoxOS":
-        descricao: "Introdução ao Sistema Operacional Firefox OS."
+        descricao: "Introdução ao Sistema Operacional Firefox OS.Feito por uma grande comunidade global e são os únicos smartphones que entendem e oferecem o que você quer e precisa."
         tipo: "mini-curso"
+        price: "x"
+        duracao: "1,5 h"
+        tags: ["Open Source", "Mobile", "CSS", "HTML5", "JS"]
+
       "Gamification":
         descricao: "Como a Gamificação pode mudar o mundo"
         tipo: "palestra"
+        price: "x"
+        duracao: "50 min."
+        tags: ["Games", "Design", "UX"]
 
       "HTML5 e CSS3":
         descricao: """
@@ -554,12 +564,12 @@ window.Inventto =
                  * Rotas e endereços
 
                  ### Acesso remoto via SSH
-                 
+
                  * Gerênciando computadores remotos com SSH
                  * Configurando acesso automático via ssh
 
                  ### Emails
-                
+
                  * Configurando recebimento e envio de emails via ssh
                  """
         tipo: "mini-curso"

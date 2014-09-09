@@ -10,14 +10,20 @@ layout: post
       <h2 class="name">
          <img class="th rounded" width="64" height="64" src="../img/[[ inventtores[person].profile || 'homer.jpg']]" ></img>
         [[titulo]]
-        <span ng-if="detalhes.tipo" class="round label">[[detalhes.tipo]]</span>
-        <br/>
+
         <small> [[inventtores[person].name]]
           <a ng-repeat="(network, username) in inventtores[person].social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
         </small>
+        <br>
+        <span ng-if="detalhes.tipo" class="radius label">[[detalhes.tipo]]</span>
+        <span ng-if="detalhes.price" class="success radius label">[[detalhes.price]]</span>
+        <span ng-if="detalhes.duracao" class="alert radius label">[[detalhes.duracao]]</span>
+        <br>
+        <span ng-repeat="tag in detalhes.tags" class="secondary radius label">[[tag]]</span>
+        <br/>
       </h2>
       <div markdown>[[detalhes.descricao]]</div>
     </div>
   </a>
+  </div>
 </div>
-
