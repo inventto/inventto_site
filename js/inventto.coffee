@@ -9,7 +9,7 @@ marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@i
 jack = name: "Mauricio Krzesinski", bio: "Game developer", email: "jack@invent.to", profile: "time/jack.jpg", site:"http://migre.me/kZN5p",social: {twitter: "mauricio_junior", github: "mauriciokj"}
 mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to", profile: "time/mitrut.jpg", site: "wmitrut.github.io", social: {twitter: "wmitrut", instagram: "wmitrut", github: "wmitrut", gravatar: "278d0b5b8f680ac2a39bb3d8a6e21be3"}
 
-window.Inventto =
+@Inventto =
   empresa:
     nome: "Inventto"
     razao_social: "Inventto Soluções em Sistemas"
@@ -378,6 +378,8 @@ window.Inventto =
   cursos:
     jonatas:
       "Inventtos abertos":
+
+        tags: ["Open Source", "Openess"]
         descricao: """
                  Por que valorizar a invenção aberta?
 
@@ -386,6 +388,7 @@ window.Inventto =
                  * Conhecendo as licenças
                  """
       "Ruby":
+        tags: ["Iniciante", "Open Source", "Ruby"]
         descricao: """
                  A linguagem de programação Ruby.
 
@@ -402,6 +405,7 @@ window.Inventto =
                  """
         tipo: "palestra"
       "TDD/BDD":
+        tags: ["Open Source", "Ruby", "Testing"]
         descricao: """
                  Desenvolvimento orientado a testes e comportamento.
 
@@ -411,6 +415,7 @@ window.Inventto =
                  """
         tipo: "mini-curso"
       "Inglês instrumental":
+        tags: ["Inglês Instrumental", "Iniciante", "Pense"]
         descricao: """
                  Entendendo inglês básico para TI
 
@@ -419,7 +424,8 @@ window.Inventto =
                  * Arrisque-se a pensar em inglês
                  """
         tipo: "mini-curso"
-      "Linha de comando no linux/mac":
+      "Linha de comando no Linux":
+        tags: ["Open Source", "Shell", "Linux"]
         descricao: """
                  Aprendendo a usar a linha de comando para ter agilidade na programação.
 
@@ -432,6 +438,7 @@ window.Inventto =
                  """
         tipo: "mini-curso"
       "Raspberry PI":
+        tags: ["Hardware", "Shell", "Linux", "Iniciante", "Pense"]
         descricao: """
                  Bem vindo a internet das coisas!
 
@@ -441,6 +448,7 @@ window.Inventto =
                  """
         tipo: "mini-curso"
       "Como resolver problemas?":
+        tags: ["Iniciante", "Pense"]
         descricao: """
                  Resolvendo problemas quando os problemas acontecem. Aprendendo a pensar e resolver problemas mais rapidamente.
 
@@ -453,6 +461,7 @@ window.Inventto =
                  """
         tipo: "palestra"
       "Elixir":
+        tags: ["Iniciante", "Intermediário", "Pense"]
         descricao: """
                  Tomando a primeira dose de Elixir.
 
@@ -461,6 +470,7 @@ window.Inventto =
         tipo: "palestra"
         duracao: "45min"
       "Impressora 3D":
+        tags: ["Iniciante","Hardware", "Impressora 3D", "Intermediário", "Pense"]
         descricao: """
                  * Imprimindo objetos modelados em 3D em uma impressora 3D
                  * Desafios da impressão
@@ -470,6 +480,7 @@ window.Inventto =
         tipo: "palestra"
     tafarel:
       "Introdução a programação de hardware":
+        tags: ["Iniciante","Hardware", "Linux"]
         descricao: """
                  Conhecendo os hardwares:
 
@@ -485,6 +496,7 @@ window.Inventto =
                  """
         tipo: "mini-curso"
       "Android intermediário":
+        tags: ["Iniciante","Android", "Web"]
         descricao: """
                  Primeiros passos integrando aplicativos Android com servidor em backend.
 
@@ -501,6 +513,7 @@ window.Inventto =
       "UX design":
         descricao: "Design voltado para a experiência do usuário"
         tipo: "palestra"
+        tags: ["Iniciante","Intermediário","Web"]
 
       "Mozilla":
         descricao: "Além do Firefox"
@@ -512,27 +525,29 @@ window.Inventto =
       "Apresentando o FirefoxOS":
         descricao: "Introdução ao Sistema Operacional Firefox OS.Feito por uma grande comunidade global e são os únicos smartphones que entendem e oferecem o que você quer e precisa."
         tipo: "mini-curso"
-        price: "x"
+        price: "FREE"
         duracao: "1,5 h"
         tags: ["Open Source", "Mobile", "CSS", "HTML5", "JS"]
 
       "Gamification":
-        descricao: "Como a Gamificação pode mudar o mundo"
+        descricao: "Como a Gamificação pode mudar o mundo."
         tipo: "palestra"
-        price: "x"
+        price: "R$ 120,00"
         duracao: "50 min."
         tags: ["Games", "Design", "UX"]
 
       "HTML5 e CSS3":
+        tags: ["Iniciante", "Web", "Design", "UX"]
         descricao: """
-                 criando sites com layout dinâmico para celulares e telas de diferentes tamanhos
+                 Criando sites com layout dinâmico para celulares e telas de diferentes tamanhos.
                  """
       "Modelagem 3D":
         descricao: """
-                 primeiros passos na modelagem 3D com Blender 3D
+                 primeiros passos na modelagem 3D com Blender 3D.
                  """
     lucao:
       "Iniciando com Ruby":
+        tags: ["Iniciante", "Ruby"]
         descricao: """
                  Primeiros passos com a linguagem Ruby. A apresentação têm os seguintes tópicos:
 
@@ -547,6 +562,7 @@ window.Inventto =
                  """
         tipo: "mini-curso"
       "Iniciando com Rails":
+        tags: ["Iniciante", "Ruby", "Web", "Rails"]
         descricao: """
                  Primeiros passos com o framework web Ruby On Rails.
 

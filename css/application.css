@@ -337,3 +337,6 @@ code{
 	border:#dbdbdb 1px solid;
 	margin-left:5px;
 }
+.big {
+  font-size: 150%;
+}

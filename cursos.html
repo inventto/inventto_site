@@ -17,9 +17,9 @@ layout: post
         <br>
         <span ng-if="detalhes.tipo" class="radius label">[[detalhes.tipo]]</span>
         <span ng-if="detalhes.price" class="success radius label">[[detalhes.price]]</span>
-        <span ng-if="detalhes.duracao" class="alert radius label">[[detalhes.duracao]]</span>
+        <span ng-if="detalhes.duracao" class="alert label radius"><span class="fi-clock big"></span> [[detalhes.duracao]]</span>
         <br>
-        <span ng-repeat="tag in detalhes.tags" class="secondary radius label">[[tag]]</span>
+        <span ng-repeat="tag in detalhes.tags" class="secondary radius label"><span class="fi-bookmark"></span> [[tag]]</span>
         <br/>
       </h2>
       <div markdown>[[detalhes.descricao]]</div>
