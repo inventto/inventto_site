@@ -319,6 +319,6 @@ code{
 	text-align: center;
 	padding:1%;
 }
-.image img{
+.rounded, .image img{
 	border-radius: 50%;
 }

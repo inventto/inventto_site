@@ -376,34 +376,244 @@ window.Inventto =
       jonatas: "Yes Science!!!"
       mitrut: "eeeesse é o broder"
   cursos:
-    duracao: "4 horas"
     jonatas:
-      "Ruby": "A linguagem de programação Ruby."
-      "TDD/BDD": "Desenvolvimento orientado a testes e comportamento"
-      "Inglês instrumental": "entendendo inglês básico para TI"
-      "Linha de comando no linux/mac": "aprendendo a usar a linha de comando para ter agilidade na programação"
-      "Raspberry PI": "Bem vindo a internet das coisas"
-      "Como resolver problemas?": "Resolvendo problemas quando os problemas acontecem. Aprendendo a pensar e resolver problemas mais rapidamente."
-    tafarel:
-      "Introdução a programação de hardware" "Conhecendo o microcontrolador MSP430 e também Beaglebone Black"
-      "Android intermediário": "Primeiros passos integrando aplicativos Android com servidor em backend"
-    mitrut:
-      "HTML5 e CSS3": "criando sites com layout dinâmico para celulares e telas de diferentes tamanhos"
-      "Modelagem 3D": "primeiros passos na modelagem 3D com Blender 3D"
-      "Impressora 3D": "imprimindo objetos modelados em 3D em uma impressora 3D"
-    lucao:
-      "Iniciando com Ruby": "Primeiros passos com a linguagem Ruby"
-      "Iniciando com Rails": "Primeiros passos com o framework web Ruby On Rails"
-      "Clouds": "Manutenção de clouds e gerência de múltiplos sites com nginx"
-      "Segurança em linux": "Firewall e bloqueios básicos em servidores linux"
-    lucas:
-      "Android e ORMLite": "Criando aplicativos com persistência no Android"
-      "Android e Redes sociais": "Compartilhamento em redes sociais, como facebook/google+ e twitter"
-      "Funcionalidades Android": "Gerência de audio e widgets em aplicativos Android" # lembrei do Yes Science do rafagnin entre outras experiências.
-    jack:
-      "Iniciando com CoronaSDK"
-      "Iniciando com Unity3D"
-    marlon:
-      "Expressões Regulares": "Entendendo como as expressões regulares podem ser úteis na sua vida."
-      "Inteligência computacional": "Além do if/else"
+      "Inventtos abertos":
+        descricao: """
+                 Por que valorizar a invenção aberta?
 
+                 * Como ganhar dinheiro com isso?
+                 * Como manter tudo muito seguro?
+                 * Conhecendo as licenças
+                 """
+      "Ruby":
+        descricao: """
+                 A linguagem de programação Ruby.
+
+                 * Por que é a melhor amiga do programador
+                 * Como usufruir disso
+                 * Conhecendo o ecossitema e comunidade Ruby
+
+                 ## Alternativas interessantes
+
+                 * JRuby
+                 * Iron Ruby
+                 * Mac Ruby
+
+                 """
+        tipo: "palestra"
+      "TDD/BDD":
+        descricao: """
+                 Desenvolvimento orientado a testes e comportamento.
+
+                 * Encontrando a maneira certa de testar
+                 * Desenvolvimento red, green, refactor
+                 * Baby steps
+                 """
+        tipo: "mini-curso"
+      "Inglês instrumental":
+        descricao: """
+                 Entendendo inglês básico para TI
+
+                 * Conheça as palavras chaves
+                 * Entenda os conceitos básicos
+                 * Arrisque-se a pensar em inglês
+                 """
+        tipo: "mini-curso"
+      "Linha de comando no linux/mac":
+        descricao: """
+                 Aprendendo a usar a linha de comando para ter agilidade na programação.
+
+                 * Aprendendo sobre funções básicas no terminal
+                 * Escolhendo um editor
+                 * Aprendendo sobre os comandos básicos
+                 * Combinando comandos
+                 * Criando suas próprias funções
+                 * Empacotando suas funções para redistribuir
+                 """
+        tipo: "mini-curso"
+      "Raspberry PI":
+        descricao: """
+                 Bem vindo a internet das coisas!
+
+                 * Conheça o hardware
+                 * Conheça os Sistemas Operacionais disponíveis
+                 * Aprenda a integrar coisas fácilmente
+                 """
+        tipo: "mini-curso"
+      "Como resolver problemas?":
+        descricao: """
+                 Resolvendo problemas quando os problemas acontecem. Aprendendo a pensar e resolver problemas mais rapidamente.
+
+                 * Entendendo o desgaste de lidar com problemas
+                 * Identificando o problema
+                 * Rastreando causas e raízes
+                 * Levantando hipóteses
+                 * Analisando resultados
+                 * Analisando e melhorando tentativas
+                 """
+        tipo: "palestra"
+      "Elixir":
+        descricao: """
+                 Tomando a primeira dose de Elixir.
+
+                 Elixir é uma linguagem funcional criada em 2012 e têm chamado a atenção da comunidade.
+                 """
+        tipo: "palestra"
+        duracao: "45min"
+      "Impressora 3D":
+        descricao: """
+                 * Imprimindo objetos modelados em 3D em uma impressora 3D
+                 * Desafios da impressão
+                 * Desafios da impressora
+                 * Caminho das pedras - detalhes e plugins
+                 """
+        tipo: "palestra"
+    tafarel:
+      "Introdução a programação de hardware":
+        descricao: """
+                 Conhecendo os hardwares:
+
+                 * microcontrolador MSP430
+                 * Beaglebone Black
+
+                 Veja também:
+
+                 * Vantagens e desvantagens
+                 * Hardware barato vs desenvolvimento mais demorado
+                 * Hardware caro vs desenvolvimento mais rápido
+                 * Prototipação e avanços
+                 """
+        tipo: "mini-curso"
+      "Android intermediário":
+        descricao: """
+                 Primeiros passos integrando aplicativos Android com servidor em backend.
+
+                 * Escolhendo o formato ideal para transportar dados
+                  * JSON
+                  * XML
+                * Modelando detalhes dos dados e como sincronizar via RESTFULL
+                  * remote_id
+                  * GET, POST, DELETE, UPDATE
+                  * sync
+                 """
+        tipo: "mini-curso"
+    mitrut:
+      "UX design":
+        descricao: "Design voltado para a experiência do usuário"
+        tipo: "palestra"
+
+      "Mozilla":
+        descricao: "Além do Firefox"
+        tipo: "palestra"
+
+      "Apresentando o FirefoxOS":
+        descricao: "Introdução ao Sistema Operacional Firefox OS."
+        tipo: "mini-curso"
+      "Gamification":
+        descricao: "Como a Gamificação pode mudar o mundo"
+        tipo: "palestra"
+
+      "HTML5 e CSS3":
+        descricao: """
+                 criando sites com layout dinâmico para celulares e telas de diferentes tamanhos
+                 """
+      "Modelagem 3D":
+        descricao: """
+                 primeiros passos na modelagem 3D com Blender 3D
+                 """
+    lucao:
+      "Iniciando com Ruby":
+        descricao: """
+                 Primeiros passos com a linguagem Ruby. A apresentação têm os seguintes tópicos:
+
+                 * O que é Ruby
+                 * Usando o IRB (Interative Ruby)
+                 * Aprendendo a sintaxe
+                 * Como usar blocos
+                 * Como usar arrays e hashmaps
+                 * Como usar uma classe
+                 * Métodos de instância
+                 * Métodos dinâmicos
+                 """
+        tipo: "mini-curso"
+      "Iniciando com Rails":
+        descricao: """
+                 Primeiros passos com o framework web Ruby On Rails.
+
+                * Aprender a iniciar um projeto com o framework
+                * Entender como fazer um cadastro e criar relacionametnos
+                * Entender como instalar plugins e bibliotecas
+                 """
+        tipo: "mini-curso"
+      "Clouds":
+        descricao: """
+                 Gerenciamento de websites e aplicativos. Aprender o básico sobre:
+
+                 * Manutenção de clouds
+                 * Gerência de múltiplos sites com nginx
+                 * Rotas e endereços
+
+                 ### Acesso remoto via SSH
+                 
+                 * Gerênciando computadores remotos com SSH
+                 * Configurando acesso automático via ssh
+
+                 ### Emails
+                
+                 * Configurando recebimento e envio de emails via ssh
+                 """
+        tipo: "mini-curso"
+      "Segurança em linux":
+        descricao: """
+                 * Firewall
+                 * Bloqueios básicos de serviços em servidores linux
+                 * Acesso remoto e sistemas de autenticação
+                 """
+        tipo: "mini-curso"
+    rafagnin:
+      "Android e ORMLite":
+        descricao: """
+                 Criando aplicativos com persistência no Android
+                 """
+        tipo: "mini-curso"
+      "Android e Redes sociais":
+        descricao: """
+                 Compartilhamento em redes sociais, como facebook/google+ e twitter
+                 """
+        tipo: "mini-curso"
+      "Funcionalidades Android":
+        descricao: """
+                 Gerência de audio e widgets em aplicativos Android
+                 """
+        tipo: "mini-curso"
+      "Smart TV":
+        descricao: """
+                 Desbravando API's da Samsumg TV
+                 """
+        tipo: "mini-curso"
+    jack:
+      "Iniciando com CoronaSDK":
+        descricao: """
+                 Introdução a ferramenta de desenvolvimento de jogos WEB/MOBILE CoronaSDK
+                 """
+        tipo: "mini-curso"
+      "Iniciando com Unity3D":
+        descricao: """
+                 Introdução a plataforma de desenvolvimento de jogos multi dispositivos/sistemas operacionais/consoles
+                 """
+        tipo: "mini-curso"
+    marlon:
+      "Expressões Regulares":
+        descricao: """
+                 Entendendo como as expressões regulares podem ser úteis na sua vida.
+                 """
+      "Inteligência computacional":
+        descricao: """
+                 Além do if/else
+                 """
+        tipo: "palestra"
+
+    mitrut_e_tafarel:
+      "CSS e Javascript em aplicações MVC":
+        descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."
+        tipo: "mini-curso"

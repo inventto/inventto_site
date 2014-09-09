@@ -1,0 +1,23 @@
+---
+layout: post
+---
+<h1 style="font-weight:bold;">Cursos <small>Inventtores ensinando a inventar</small></h1>
+<p>Veja um pouco como nossa equipe pode contribuir com cursos e experiências específicas.</p>
+
+<div class="cursos" >
+  <div ng-repeat='(person, curso) in cursos'>
+    <div ng-repeat="(titulo,detalhes) in curso" class="curso">
+      <h2 class="name">
+         <img class="th rounded" width="64" height="64" src="../img/[[ inventtores[person].profile || 'homer.jpg']]" ></img>
+        [[titulo]]
+        <span ng-if="detalhes.tipo" class="round label">[[detalhes.tipo]]</span>
+        <br/>
+        <small> [[inventtores[person].name]]
+          <a ng-repeat="(network, username) in inventtores[person].social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
+        </small>
+      </h2>
+      <div markdown>[[detalhes.descricao]]</div>
+    </div>
+  </a>
+</div>
+
