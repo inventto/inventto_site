@@ -2,7 +2,6 @@
   layout: post
   title: Como iniciamos?
   author: jonatas
-  published: true
 ---
 
 Quando iniciamos a empresa, eu e o @marlon trabalhavamos de freelancer de forma independente para mesma empresa a qual tinhamos sido funcionários.  Então chamei ele para resolver uns problemas pra mim desta mesma empresa.
