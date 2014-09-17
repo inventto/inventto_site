@@ -378,7 +378,6 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
   cursos:
     jonatas:
       "Inventtos abertos":
-
         tags: ["Open Source", "Openess"]
         descricao: """
                  Por que valorizar a invenção aberta?
@@ -404,6 +403,33 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
 
                  """
         tipo: "palestra"
+      "Git - o controlador de versões":
+        tags: ["Iniciante", "Git", "Linux"]
+        descricao: """
+                 Git é um sistema controlador de versões distribuído. Foi criado pelo Linus Tolvards (criador do Linux) para integrar os diferentes programadores do kernel do linux.
+
+                 * Como instalar
+                 * Como usar comandos básicos
+                 * Trabalhando na rede
+                 * Trabalhando com serivdores próprios
+                 * Entendendo e usando hooks
+
+                 """
+        tipo: "mini-curso"
+      "VIM - o editor":
+        tags: ["Iniciante", "VIM", "Linux"]
+        descricao: """
+                 VIM é um editor criado em 1965. Até hoje é intensamente usado pelos programadores pela velocidade e filosofia na edição.
+
+                 * Como instalar
+                 * Como usar comandos, modo visual e modo inserção
+                 * Comandos e macros
+                 * Atalhos e configurações importantes
+                 * Adicionando plugins
+
+                 """
+        tipo: "mini-curso"
+        duracao: "2 horas"
       "TDD/BDD":
         tags: ["Open Source", "Ruby", "Testing"]
         descricao: """
@@ -469,6 +495,33 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  """
         tipo: "palestra"
         duracao: "45min"
+      "Meteor JS":
+        tags: ["Javascript", "Web", "Mobile"]
+        descricao: """
+                 Conhecendo a plataforma Meteor.
+
+                 * Entendendo os sistemas reativos
+                 * Entendendo as templates
+                 * Adicionando plugins
+                 * Fazendo deploy no heroku
+                 * Usando meteorpad.com
+
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+      "Introdução ao Angular JS":
+        tags: ["Javascript", "Web", "Mobile"]
+        descricao: """
+                 Conhecendo o framework Angular
+
+                 * O que é?
+                 * Vantagens
+                 * Um novo modelo de fazer aplicativos web
+                 * Mãos a obra - aplicativo de exemplo
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+
       "Impressora 3D":
         tags: ["Iniciante","Hardware", "Impressora 3D", "Intermediário", "Pense"]
         descricao: """
