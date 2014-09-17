@@ -4,7 +4,7 @@
 jonatas = name: "Jônatas Davi Paganini", email: "jonatas@invent.to", bio: "Developer", profile: "time/jonatas.png", site: "ideia.me", social: {twitter: "jonatasdp", instagram: "jonatasdp", facebook: "jonatas.paganini", github: "jonatas", skype: "jonatas.paganini", pinterest: "jonatasdp", youtube: "user/jonatasdp", gravatar: "93b1c03b74dff7a41060d41a2da750ce"}
 tafarel = name: "José Luiz Tafarel", email: "tafarel@invent.to", bio: "Developer", profile: "time/tafarel.jpg", site: "jltafarel.github.io", social: {twitter: "jltafarel", github: "jltafarel", gravatar: "6d422e42d26918052106c661cd19e9b7"}
 lucao = name: "Lucas Cardoso", bio: "Developer", profile: "time/lucao.jpg", email: "lucao@invent.to", social: { github: "lucascardoso"}
-rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "homer.jpg", social: {twitter: "lucas_rafagnin_", github: "lucasrafagnin", skype: "lucas.rafagnin", facebook: "lucas.rafagnin.9"}
+rafagnin = name: "Lucas Rafagnin", bio: "Developer", email: "rafagnin@invent.to", profile: "time/rafagnin.jpg", social: {twitter: "lucas_rafagnin_", github: "lucasrafagnin", skype: "lucas.rafagnin", facebook: "lucas.rafagnin.9"}
 marlon = name: "Marlon Henrique Scalabrin", bio: "Yoda master", email: "marlon@invent.to", profile: "time/marlon.jpg", social: {github: "marlonscalabrin"}
 jack = name: "Mauricio Krzesinski", bio: "Game developer", email: "jack@invent.to", profile: "time/jack.jpg", site:"http://migre.me/kZN5p",social: {twitter: "mauricio_junior", github: "mauriciokj"}
 mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to", profile: "time/mitrut.jpg", site: "wmitrut.github.io", social: {twitter: "wmitrut", instagram: "wmitrut", github: "wmitrut", gravatar: "278d0b5b8f680ac2a39bb3d8a6e21be3"}
@@ -72,7 +72,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       porque: """
         Em dois horarios diarios, são elaborados atividades laborais para garantir que nossa coluna não vai entortar e nossos dedos não irão atrofiar.
         Estamos tentando realizar as ginásticas diáriamente e este também tem sido um momento de descontração.
-        O Jack além de programador é lutador de boxe e têm coordenado nossa ginastica laboral.
+        O Jack além de programador é lutador de boxe e têm coordenado nossa ginástica laboral.
       """
     open_knowledge:
       titulo: "Conhecimento aberto"
@@ -83,15 +83,15 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
         * Documentação acessível e sustentável
       """
       porque: """
-        Estamos sempre tentando compartilhar a melhor informação da nossa área possível.
+        Estamos sempre tentando compartilhar a melhor informação possível da nossa área.
         Assim estamos sempre fazendo: Workshops internos e  pair programming para enriquecer a equipe.
         Também promovemos grupos de estudo internos para a melhoria contínua nos fluxos de processos que realizamos diáriamente."""
     escritorio_aberto:
       titulo: "Escritório Aberto"
       porque: """
         O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando estamos trabalhando em seus projetos.
-        Incentivamos nossos clientes a trabalhar presencialmente com agente e também convidamos nossos amigos para trabalhar em conjunto.
-        Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem."""
+        Incentivamos nossos clientes a trabalhar presencialmente conosco e também convidamos nossos amigos para trabalhar em conjunto.
+        Atualmente o Mauricio está com a gente neste modelo e tem funcionado muito bem."""
       slides: """
         * Agregar pessoas interessantes
         * Pessoas interessantes também trazem demandas interessantes
