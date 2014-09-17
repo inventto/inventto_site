@@ -72,7 +72,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       porque: """
         Em dois horarios diarios, são elaborados atividades laborais para garantir que nossa coluna não vai entortar e nossos dedos não irão atrofiar.
         Estamos tentando realizar as ginásticas diáriamente e este também tem sido um momento de descontração.
-        O Jack além de programador é lutador de boxe e têm coordenado nossa ginastica laboral.
+        O Jack além de programador é lutador de boxe e têm coordenado nossa ginástica laboral.
       """
     open_knowledge:
       titulo: "Conhecimento aberto"
@@ -83,15 +83,15 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
         * Documentação acessível e sustentável
       """
       porque: """
-        Estamos sempre tentando compartilhar a melhor informação da nossa área possível.
+        Estamos sempre tentando compartilhar a melhor informação possível da nossa área.
         Assim estamos sempre fazendo: Workshops internos e  pair programming para enriquecer a equipe.
         Também promovemos grupos de estudo internos para a melhoria contínua nos fluxos de processos que realizamos diáriamente."""
     escritorio_aberto:
       titulo: "Escritório Aberto"
       porque: """
         O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando estamos trabalhando em seus projetos.
-        Incentivamos nossos clientes a trabalhar presencialmente com agente e também convidamos nossos amigos para trabalhar em conjunto.
-        Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem."""
+        Incentivamos nossos clientes a trabalhar presencialmente conosco e também convidamos nossos amigos para trabalhar em conjunto.
+        Atualmente o Mauricio está com a gente neste modelo e tem funcionado muito bem."""
       slides: """
         * Agregar pessoas interessantes
         * Pessoas interessantes também trazem demandas interessantes
