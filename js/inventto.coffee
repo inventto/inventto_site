@@ -585,7 +585,6 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       "Gamification":
         descricao: "Como a Gamificação pode mudar o mundo."
         tipo: "palestra"
-        price: "R$ 120,00"
         duracao: "50 min."
         tags: ["Games", "Design", "UX"]
 
@@ -595,6 +594,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  Criando sites com layout dinâmico para celulares e telas de diferentes tamanhos.
                  """
       "Modelagem 3D":
+        tags: ["Iniciante","3D"]
         descricao: """
                  primeiros passos na modelagem 3D com Blender 3D.
                  """
@@ -642,6 +642,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  * Configurando recebimento e envio de emails via ssh
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Linux"]
       "Segurança em linux":
         descricao: """
                  * Firewall
@@ -649,49 +650,74 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  * Acesso remoto e sistemas de autenticação
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Linux", "Redes"]
     rafagnin:
       "Android e ORMLite":
         descricao: """
                  Criando aplicativos com persistência no Android
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Android", "Java"]
       "Android e Redes sociais":
         descricao: """
                  Compartilhamento em redes sociais, como facebook/google+ e twitter
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Android", "Java"]
       "Funcionalidades Android":
         descricao: """
                  Gerência de audio e widgets em aplicativos Android
                  """
         tipo: "mini-curso"
+        tags: ["Android", "Java"]
       "Smart TV":
         descricao: """
                  Desbravando API's da Samsumg TV
                  """
         tipo: "mini-curso"
+        tags: ["Smart TV","Javascript"]
     jack:
       "Iniciando com CoronaSDK":
         descricao: """
                  Introdução a ferramenta de desenvolvimento de jogos WEB/MOBILE CoronaSDK
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante", "Games", "Lua"]
       "Iniciando com Unity3D":
         descricao: """
                  Introdução a plataforma de desenvolvimento de jogos multi dispositivos/sistemas operacionais/consoles
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante", "Games", "C#"]
     marlon:
       "Expressões Regulares":
         descricao: """
                  Entendendo como as expressões regulares podem ser úteis na sua vida.
+
+                 * Reconhecendo padrões
+                 * Entendendo expressões
+                 * Capturando dados
                  """
+        tipo: "mini-curso"
+        tags: ["Iniciante", "Expressões Regulares"]
+      "Play Framework":
+        descricao: """
+                 Conhecendo o Framework Play.
+
+                 * Instalando
+                 * Conceitos básicos
+                 * Um pouco de Scala
+                 * Implementando um sistema simples
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+        tags: ["Iniciante", "Java","Web","Scala"]
       "Inteligência computacional":
         descricao: """
-                 Além do if/else
+                 Entendendo e aplicando conceitos de inteligência computacional.
                  """
         tipo: "palestra"
-
+        duracao: "45 min"
     mitrut_e_tafarel:
       "CSS e Javascript em aplicações MVC":
         descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."

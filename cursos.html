@@ -6,27 +6,22 @@ layout: post
 
 <div class="cursos" >
   <div ng-repeat='(person, curso) in cursos'>
-    <div ng-repeat="(titulo,detalhes) in curso" class="curso">
-      <h2 class="name">
-         <img class="th rounded" width="64" height="64" src="../img/[[ inventtores[person].profile || 'homer.jpg']]" ></img>
-        [[titulo]]
-
-        <small> [[inventtores[person].name]]
-          <a ng-repeat="(network, username) in inventtores[person].social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
-        </small>
-        <br>
-        <span ng-if="detalhes.tipo" class="radius label">
+    <div ng-repeat="(titulo,detalhes) in curso" class="curso row">
+      <span ng-repeat="tag in detalhes.tags" class="secondary radius label" style="float:right"><span class="fi-bookmark"></span> [[tag]]</span>
+        <span ng-if="detalhes.duracao" class="secondary alert label radius" style="float:right"><span class="fi-clock size-24"></span> [[detalhes.duracao]]</span>
+        <span ng-if="detalhes.tipo" class="secondary radius label" style="float:right">
           <span ng-if="detalhes.tipo == 'palestra'" class="fi-megaphone size-24" ></span>
-          <span ng-if="detalhes.tipo == 'mini-curso'" class="fi-book-bookmark size-24" ></span>
-          [[detalhes.tipo]]</span>
-        <span ng-if="detalhes.price" class="success radius label"><span class="fi-price-tag size-24"></span> [[detalhes.price]]</span>
-        <span ng-if="detalhes.duracao" class="alert label radius"><span class="fi-clock size-24"></span> [[detalhes.duracao]]</span>
-        <br>
-        <span ng-repeat="tag in detalhes.tags" class="secondary radius label"><span class="fi-bookmark"></span> [[tag]]</span>
-        <br/>
-      </h2>
-      <div markdown>[[detalhes.descricao]]</div>
+          <span ng-if="detalhes.tipo == 'mini-curso'" class="fi-book-bookmark size-24" ></span>&nbsp;[[detalhes.tipo]]
+        </span>
+        <span ng-if="detalhes.price" class="success secondary radius label" style="float:right"> <span class="fi-price-tag size-24"></span> [[detalhes.price]]</span>
+      <img style="float: left" class="th rounded col-xs-2"  width="64" height="64" src="../img/[[ inventtores[person].profile || 'homer.jpg']]" ></img>
+      <div class="col-xs-8">
+        <h2 class="name">[[titulo]]</h2>
+            <b>[[inventtores[person].name]] <a ng-repeat="(network, username) in inventtores[person].social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a> </b>
+          </div>
+          <br/>
+        </h2>
+        <div markdown>[[detalhes.descricao]]</div>
+      </div>
     </div>
-  </a>
-  </div>
 </div>
