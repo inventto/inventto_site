@@ -525,6 +525,8 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       "Impressora 3D":
         tags: ["Iniciante","Hardware", "Impressora 3D", "Intermediário", "Pense"]
         descricao: """
+                 Conhecendo a impressora 3D Open Source em detalhes.
+
                  * Imprimindo objetos modelados em 3D em uma impressora 3D
                  * Desafios da impressão
                  * Desafios da impressora
@@ -532,6 +534,10 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  """
         tipo: "palestra"
     tafarel:
+      "CSS e Javascript em aplicações MVC":
+        descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."
+        tipo: "mini-curso"
+        tags: ["Iniciante","Web", "CSS"]
       "Introdução a programação de hardware":
         tags: ["Iniciante","Hardware", "Linux"]
         descricao: """
@@ -718,7 +724,3 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  """
         tipo: "palestra"
         duracao: "45 min"
-    mitrut_e_tafarel:
-      "CSS e Javascript em aplicações MVC":
-        descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."
-        tipo: "mini-curso"

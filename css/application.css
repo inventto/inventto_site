@@ -340,3 +340,7 @@ code{
 .big {
   font-size: 150%;
 }
+.scrollit {
+ float: left;
+ width: 71%
+}
