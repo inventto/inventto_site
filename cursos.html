@@ -11,14 +11,14 @@ layout: post
     <div class="tags columns large-8">
       <h3>Tag</h3>
       <div ng-repeat='tag in tags_cursos'>
-        <a ng-click="filtrarPor({tag: tag})">
+        <a ng-click="filtrarPor($event,{tag: tag})" class="btn-toggle">
           <span class="label radius" style="font-size: [[12 + tag.count]]px; float:left; margin: 0.5%;"><span class="fi-bookmark"></span> [[tag.name]] ([[tag.count]])</span>
         </div>
       </div>
       <div class="tags columns large-4" >
         <h3>Pessoa</h3>
         <div ng-repeat='autor in autores'>
-          <a ng-click="filtrarPor({autor: autor})">
+          <a ng-click="filtrarPor($event,{autor: autor})" class="btn-toggle">
             <img class="th rounded col-xs-2"  width="48" height="48" ng-src="../img/[[ autor.profile || 'homer.jpg']]" ></img>
             <b>[[autor.name.split(" ")[0] ]] <span class="round label">[[sizeOf(autor.cursos)]]</span> </b>
           </a>
@@ -27,8 +27,8 @@ layout: post
       <hr />
     </div>
     <div class="row">
-      <div class="cursos">
-        <div ng-repeat='curso in cursos | filter: filtrar(filtro)' class="well">
+      <div class="cursos animate-container">
+        <div class="animate-repeat" ng-animate ng-repeat='curso in cursos | filter: filtrar(filtro)' class="well">
           <span ng-repeat="tag in curso.tags" class="secondary radius label" style="float:right"><span class="fi-bookmark"></span> [[tag]]</span>
           <span ng-if="curso.duracao" class="secondary alert label radius" style="float:right"><span class="fi-clock size-24"></span> [[curso.duracao]]</span>
           <span ng-if="curso.tipo" class="secondary radius label" style="float:right">
@@ -44,7 +44,6 @@ layout: post
           <br/>
         </h2>
         <div ng-bind-html="curso.descricaoHTML">
-          
         </div>
       </div>
     </div>

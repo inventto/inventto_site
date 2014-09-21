@@ -1,14 +1,15 @@
 ---
 ---
 
-converter = new Showdown.converter()
-angular.module("inventto", []).
+angular.module("inventto", ['ngAnimate']).
   config(($interpolateProvider) -> $interpolateProvider.startSymbol('[[').endSymbol(']]')).
   controller "Inventtores", ($scope, $sce) ->
     $scope.inventtores = Inventto.inventtores
     $scope.cursos = []
     $scope.autores = []
     $scope.filtro = {}
+
+    $scope.converter = new Showdown.converter()
     $scope.filtrar = (por) ->
       (curso) ->
         if por.tag
@@ -19,12 +20,14 @@ angular.module("inventto", []).
           true
     
     $scope.sizeOf = (obj) -> Object.keys(obj).length
-    $scope.filtrarPor = (obj) ->
+    $scope.filtrarPor = (  $event, obj) ->
       for field, value of obj
         if not $scope.filtro[field] or $scope.filtro[field] isnt value
+          $($event.srcElement).addClass("warning")
           $scope.filtro[field] = value
         else
           delete $scope.filtro[field]
+          $($event.srcElement).removeClass("warning")
 
     $scope.todosCursos = Inventto.cursos
     tags={}
@@ -34,7 +37,7 @@ angular.module("inventto", []).
       for titulo, curso of cursos
         curso.autor = _autor
         curso.titulo = titulo
-        curso.descricaoHTML =  $sce.trustAsHtml( converter.makeHtml(curso.descricao) )
+        curso.descricaoHTML =  $sce.trustAsHtml( $scope.converter.makeHtml(curso.descricao) )
         $scope.cursos.push curso
         continue if not curso.tags
         for tag in curso.tags
@@ -55,4 +58,6 @@ angular.module("inventto", []).
     $scope.empresa = Inventto.empresa
     $scope.acreditamos = Inventto.acreditamos
     $scope.iniciativas = Inventto.iniciativas
+    $scope.onLoad = ->
+      $('.btn-toggle').button('toggle')
 
