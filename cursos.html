@@ -12,15 +12,15 @@ layout: post
       <h3>Tag</h3>
       <div ng-repeat='tag in tags_cursos'>
         <a ng-click="filterBy($event,{tag: tag})">
-          <span class="label radius secondary" style="font-size: [[12 + tag.count]]px; float:left; margin: 0.5%;"><span class="fi-bookmark"></span> [[tag.name]] ([[tag.count]])</span>
+          <span class="label radius secondary" style="font-size: [[9 + tag.count]]px; float:right; margin: 0.5%;"><span class="fi-bookmark"></span> [[tag.name]] ([[tag.count]])</span>
         </div>
       </div>
       <div class="columns large-4" >
         <h3>Invent.tor</h3>
         <div ng-repeat='author in authors'>
           <a ng-click="filterBy($event, {author: author})">
-            <img class="th rounded col-xs-2"  width="48" height="48" ng-src="../img/[[ author.profile || 'homer.jpg']]" ></img>
-            <b>[[author.name.split(" ")[0] ]] <span class="round label">[[sizeOf(author.cursos)]]</span> </b>
+            <img class="th rounded col-xs-2"  width="32" height="32" ng-src="../img/[[ author.profile || 'homer.jpg']]" ></img>
+            <b>[[author.name.split(" ")[0] ]] <span class="round label">[[author.cursos_counter]]</span> </b>
           </a>
         </div>
       </div>
@@ -36,10 +36,11 @@ layout: post
             <span ng-if="curso.tipo == 'mini-curso'" class="fi-book-bookmark size-24" ></span>&nbsp;[[curso.tipo]]
           </span>
           <span ng-if="curso.price" class="success secondary radius label" style="float:right"> <span class="fi-price-tag size-24"></span> [[curso.price]]</span>
-          <img style="float: left" class="th rounded col-xs-2"  width="64" height="64" ng-src="../img/[[ curso.author.profile || 'homer.jpg']]" ></img>
           <div class="col-xs-8">
             <h2 class="name">[[curso.titulo]]</h2>
-            <span>
+            <div avatar theme="simple" person="curso.author"></div>
+            <span class="inventtor">
+              <img class="th rounded col-xs-2"  width="32" height="32" ng-src="../img/[[ curso.author.profile || 'homer.jpg']]" ></img>
               <b>[[curso.author.name]] </b> <a ng-repeat="(network, username) in curso.author.social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
             </span>
           </div>
