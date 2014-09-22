@@ -6,43 +6,47 @@ angular.module("inventto", ['ngAnimate']).
   controller "Inventtores", ($scope, $sce) ->
     $scope.inventtores = Inventto.inventtores
     $scope.cursos = []
-    $scope.autores = []
-    $scope.filtro = {}
-
+    $scope.authors = []
+    $scope.where = {}
     $scope.converter = new Showdown.converter()
-    $scope.filtrar = (por) ->
+    $scope.doFilter = (where)  ->
       (curso) ->
-        if por.tag
-          curso.tags and por.tag.name in curso.tags
-        else if por.autor
-          por.autor is curso.autor
+        if where.tag
+          curso.tags and where.tag.name in curso.tags
+        else if where.author
+          where.author is curso.author
         else
           true
     
     $scope.sizeOf = (obj) -> Object.keys(obj).length
-    $scope.filtrarPor = (  $event, obj) ->
+    $scope.filtering = -> $scope.sizeOf($scope.where) > 0
+    $scope.clearFilter = ->
+      $(".selected").removeClass("selected")
+      $scope.where = {}
+    $scope.filterBy = ($event, obj) ->
       for field, value of obj
-        if not $scope.filtro[field] or $scope.filtro[field] isnt value
-          $($event.srcElement).addClass("warning")
-          $scope.filtro[field] = value
+        if not $scope.where[field] or $scope.where[field] isnt value
+          $scope.clearFilter()
+          $($event.target).addClass("selected")
+          $scope.where[field] = value
         else
-          delete $scope.filtro[field]
-          $($event.srcElement).removeClass("warning")
+          $($event.target).removeClass("selected")
+          delete $scope.where[field]
 
     $scope.todosCursos = Inventto.cursos
     tags={}
-    for autor, cursos of $scope.todosCursos
-      _autor = Inventto.inventtores[autor]
-      _autor.cursos = cursos
+    for author, cursos of $scope.todosCursos
+      _author = Inventto.inventtores[author]
+      _author.cursos = cursos
       for titulo, curso of cursos
-        curso.autor = _autor
+        curso.author = _author
         curso.titulo = titulo
         curso.descricaoHTML =  $sce.trustAsHtml( $scope.converter.makeHtml(curso.descricao) )
         $scope.cursos.push curso
         continue if not curso.tags
         for tag in curso.tags
           tags[tag] = (tags[tag] or 0) + 1
-      $scope.autores.push _autor
+      $scope.authors.push _author
 
     $scope.tags_cursos = do (tags) ->
       keys = Object.keys(tags).sort (a, b) -> tags[b] - tags[a]
@@ -58,6 +62,3 @@ angular.module("inventto", ['ngAnimate']).
     $scope.empresa = Inventto.empresa
     $scope.acreditamos = Inventto.acreditamos
     $scope.iniciativas = Inventto.iniciativas
-    $scope.onLoad = ->
-      $('.btn-toggle').button('toggle')
-

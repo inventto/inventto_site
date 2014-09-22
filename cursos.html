@@ -6,21 +6,21 @@ layout: post
   <h1>Cursos <small>Inventtores ensinando a inventar</small></h1>
   <p>Veja um pouco como nossa equipe pode contribuir com cursos e experiências específicas.</p>
   <hr />
-  <h2>Filtre</h2>
+  <h2>Filtre <small ng-if="filtering()" class="button round label alert" ng-click="clearFilter()"><span class="fi-trash"></span> Limpar Filtro</small></h2>
   <div class="row">
     <div class="tags columns large-8">
       <h3>Tag</h3>
       <div ng-repeat='tag in tags_cursos'>
-        <a ng-click="filtrarPor($event,{tag: tag})" class="btn-toggle">
-          <span class="label radius" style="font-size: [[12 + tag.count]]px; float:left; margin: 0.5%;"><span class="fi-bookmark"></span> [[tag.name]] ([[tag.count]])</span>
+        <a ng-click="filterBy($event,{tag: tag})">
+          <span class="label radius secondary" style="font-size: [[12 + tag.count]]px; float:left; margin: 0.5%;"><span class="fi-bookmark"></span> [[tag.name]] ([[tag.count]])</span>
         </div>
       </div>
-      <div class="tags columns large-4" >
-        <h3>Pessoa</h3>
-        <div ng-repeat='autor in autores'>
-          <a ng-click="filtrarPor($event,{autor: autor})" class="btn-toggle">
-            <img class="th rounded col-xs-2"  width="48" height="48" ng-src="../img/[[ autor.profile || 'homer.jpg']]" ></img>
-            <b>[[autor.name.split(" ")[0] ]] <span class="round label">[[sizeOf(autor.cursos)]]</span> </b>
+      <div class="columns large-4" >
+        <h3>Invent.tor</h3>
+        <div ng-repeat='author in authors'>
+          <a ng-click="filterBy($event, {author: author})">
+            <img class="th rounded col-xs-2"  width="48" height="48" ng-src="../img/[[ author.profile || 'homer.jpg']]" ></img>
+            <b>[[author.name.split(" ")[0] ]] <span class="round label">[[sizeOf(author.cursos)]]</span> </b>
           </a>
         </div>
       </div>
@@ -28,7 +28,7 @@ layout: post
     </div>
     <div class="row">
       <div class="cursos animate-container">
-        <div class="animate-repeat" ng-animate ng-repeat='curso in cursos | filter: filtrar(filtro)' class="well">
+        <div class="animate-repeat" ng-animate ng-repeat='curso in cursos | filter: doFilter(where)' class="well">
           <span ng-repeat="tag in curso.tags" class="secondary radius label" style="float:right"><span class="fi-bookmark"></span> [[tag]]</span>
           <span ng-if="curso.duracao" class="secondary alert label radius" style="float:right"><span class="fi-clock size-24"></span> [[curso.duracao]]</span>
           <span ng-if="curso.tipo" class="secondary radius label" style="float:right">
@@ -36,10 +36,12 @@ layout: post
             <span ng-if="curso.tipo == 'mini-curso'" class="fi-book-bookmark size-24" ></span>&nbsp;[[curso.tipo]]
           </span>
           <span ng-if="curso.price" class="success secondary radius label" style="float:right"> <span class="fi-price-tag size-24"></span> [[curso.price]]</span>
-          <img style="float: left" class="th rounded col-xs-2"  width="64" height="64" ng-src="../img/[[ curso.autor.profile || 'homer.jpg']]" ></img>
+          <img style="float: left" class="th rounded col-xs-2"  width="64" height="64" ng-src="../img/[[ curso.author.profile || 'homer.jpg']]" ></img>
           <div class="col-xs-8">
             <h2 class="name">[[curso.titulo]]</h2>
-            <b>[[curso.autor.name]] </b> <a ng-repeat="(network, username) in curso.autor.social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
+            <span>
+              <b>[[curso.author.name]] </b> <a ng-repeat="(network, username) in curso.author.social" href="http://[[network]].com/[[username]]" class="fi-social-[[network]]"> </a>
+            </span>
           </div>
           <br/>
         </h2>
