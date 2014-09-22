@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div ng-controller="Inventtores" ng-init="inventtor = inventtores.{{page.inventtor}}">
+  <div class="bgverde">
+    <div class="image">
+      <img src="http://gravatar.com/avatar/[[ inventtor.social.gravatar ]]" alt="[[ inventtor.name ]]" width="80" height="80">
+    </div>
+    <h1 style="font-weight:bold;">[[inventtor.name]]</h1>
+    <h2>[[inventtor.nick]]</h2>
+    <h4>[[inventtor.bio]]</h4>
+  </div>
+  <div class="bgbranco" >
+    <div class="content">
+      {{content}}
+    </div>
+  </div>
+</div>
