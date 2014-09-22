@@ -72,7 +72,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       porque: """
         Em dois horarios diarios, são elaborados atividades laborais para garantir que nossa coluna não vai entortar e nossos dedos não irão atrofiar.
         Estamos tentando realizar as ginásticas diáriamente e este também tem sido um momento de descontração.
-        O Jack além de programador é lutador de boxe e têm coordenado nossa ginastica laboral.
+        O Jack além de programador é lutador de boxe e têm coordenado nossa ginástica laboral.
       """
     open_knowledge:
       titulo: "Conhecimento aberto"
@@ -83,15 +83,15 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
         * Documentação acessível e sustentável
       """
       porque: """
-        Estamos sempre tentando compartilhar a melhor informação da nossa área possível.
+        Estamos sempre tentando compartilhar a melhor informação possível da nossa área.
         Assim estamos sempre fazendo: Workshops internos e  pair programming para enriquecer a equipe.
         Também promovemos grupos de estudo internos para a melhoria contínua nos fluxos de processos que realizamos diáriamente."""
     escritorio_aberto:
       titulo: "Escritório Aberto"
       porque: """
         O escritório da invent.to é aberto aos seus parceiros para que eles trabalhem diretamente conosco quando estamos trabalhando em seus projetos.
-        Incentivamos nossos clientes a trabalhar presencialmente com agente e também convidamos nossos amigos para trabalhar em conjunto.
-        Atualmente o Mauricio está com agente neste modelo e tem funcionado muito bem."""
+        Incentivamos nossos clientes a trabalhar presencialmente conosco e também convidamos nossos amigos para trabalhar em conjunto.
+        Atualmente o Mauricio está com a gente neste modelo e tem funcionado muito bem."""
       slides: """
         * Agregar pessoas interessantes
         * Pessoas interessantes também trazem demandas interessantes
@@ -379,7 +379,6 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
   cursos:
     jonatas:
       "Inventtos abertos":
-
         tags: ["Open Source", "Openess"]
         descricao: """
                  Por que valorizar a invenção aberta?
@@ -405,6 +404,33 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
 
                  """
         tipo: "palestra"
+      "Git - o controlador de versões":
+        tags: ["Iniciante", "Git", "Linux"]
+        descricao: """
+                 Git é um sistema controlador de versões distribuído. Foi criado pelo Linus Tolvards (criador do Linux) para integrar os diferentes programadores do kernel do linux.
+
+                 * Como instalar
+                 * Como usar comandos básicos
+                 * Trabalhando na rede
+                 * Trabalhando com serivdores próprios
+                 * Entendendo e usando hooks
+
+                 """
+        tipo: "mini-curso"
+      "VIM - o editor":
+        tags: ["Iniciante", "VIM", "Linux"]
+        descricao: """
+                 VIM é um editor criado em 1965. Até hoje é intensamente usado pelos programadores pela velocidade e filosofia na edição.
+
+                 * Como instalar
+                 * Como usar comandos, modo visual e modo inserção
+                 * Comandos e macros
+                 * Atalhos e configurações importantes
+                 * Adicionando plugins
+
+                 """
+        tipo: "mini-curso"
+        duracao: "2 horas"
       "TDD/BDD":
         tags: ["Open Source", "Ruby", "Testing"]
         descricao: """
@@ -470,9 +496,38 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  """
         tipo: "palestra"
         duracao: "45min"
+      "Meteor JS":
+        tags: ["Javascript", "Web", "Mobile"]
+        descricao: """
+                 Conhecendo a plataforma Meteor.
+
+                 * Entendendo os sistemas reativos
+                 * Entendendo as templates
+                 * Adicionando plugins
+                 * Fazendo deploy no heroku
+                 * Usando meteorpad.com
+
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+      "Introdução ao Angular JS":
+        tags: ["Javascript", "Web", "Mobile"]
+        descricao: """
+                 Conhecendo o framework Angular
+
+                 * O que é?
+                 * Vantagens
+                 * Um novo modelo de fazer aplicativos web
+                 * Mãos a obra - aplicativo de exemplo
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+
       "Impressora 3D":
         tags: ["Iniciante","Hardware", "Impressora 3D", "Intermediário", "Pense"]
         descricao: """
+                 Conhecendo a impressora 3D Open Source em detalhes.
+
                  * Imprimindo objetos modelados em 3D em uma impressora 3D
                  * Desafios da impressão
                  * Desafios da impressora
@@ -480,6 +535,10 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  """
         tipo: "palestra"
     tafarel:
+      "CSS e Javascript em aplicações MVC":
+        descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."
+        tipo: "mini-curso"
+        tags: ["Iniciante","Web", "CSS"]
       "Introdução a programação de hardware":
         tags: ["Iniciante","Hardware", "Linux"]
         descricao: """
@@ -533,7 +592,6 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
       "Gamification":
         descricao: "Como a Gamificação pode mudar o mundo."
         tipo: "palestra"
-        price: "R$ 120,00"
         duracao: "50 min."
         tags: ["Games", "Design", "UX"]
 
@@ -543,6 +601,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  Criando sites com layout dinâmico para celulares e telas de diferentes tamanhos.
                  """
       "Modelagem 3D":
+        tags: ["Iniciante","3D"]
         descricao: """
                  primeiros passos na modelagem 3D com Blender 3D.
                  """
@@ -590,6 +649,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  * Configurando recebimento e envio de emails via ssh
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Linux"]
       "Segurança em linux":
         descricao: """
                  * Firewall
@@ -597,50 +657,71 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  * Acesso remoto e sistemas de autenticação
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Linux", "Redes"]
     rafagnin:
       "Android e ORMLite":
         descricao: """
                  Criando aplicativos com persistência no Android
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Android", "Java"]
       "Android e Redes sociais":
         descricao: """
                  Compartilhamento em redes sociais, como facebook/google+ e twitter
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante","Android", "Java"]
       "Funcionalidades Android":
         descricao: """
                  Gerência de audio e widgets em aplicativos Android
                  """
         tipo: "mini-curso"
+        tags: ["Android", "Java"]
       "Smart TV":
         descricao: """
                  Desbravando API's da Samsumg TV
                  """
         tipo: "mini-curso"
+        tags: ["Smart TV","Javascript"]
     jack:
       "Iniciando com CoronaSDK":
         descricao: """
                  Introdução a ferramenta de desenvolvimento de jogos WEB/MOBILE CoronaSDK
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante", "Games", "Lua"]
       "Iniciando com Unity3D":
         descricao: """
                  Introdução a plataforma de desenvolvimento de jogos multi dispositivos/sistemas operacionais/consoles
                  """
         tipo: "mini-curso"
+        tags: ["Iniciante", "Games", "C#"]
     marlon:
       "Expressões Regulares":
         descricao: """
                  Entendendo como as expressões regulares podem ser úteis na sua vida.
+
+                 * Reconhecendo padrões
+                 * Entendendo expressões
+                 * Capturando dados
                  """
+        tipo: "mini-curso"
+        tags: ["Iniciante", "Expressões Regulares"]
+      "Play Framework":
+        descricao: """
+                 Conhecendo o Framework Play.
+
+                 * Instalando
+                 * Conceitos básicos
+                 * Um pouco de Scala
+                 * Implementando um sistema simples
+                 """
+        tipo: "mini-curso"
+        duracao: "4 horas"
+        tags: ["Iniciante", "Java","Web","Scala"]
       "Inteligência computacional":
         descricao: """
-                 Além do if/else
+                 Entendendo e aplicando conceitos de inteligência computacional.
                  """
         tipo: "palestra"
-
-    mitrut_e_tafarel:
-      "CSS e Javascript em aplicações MVC":
-        descricao: "Como utilizar as melhores práticas de css e javascript em aplicações MVC."
-        tipo: "mini-curso"
+        duracao: "45 min"

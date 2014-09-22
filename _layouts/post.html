@@ -6,6 +6,7 @@ layout: default
   <div class="bgverde">
     <img src="/img/white.png"/>
     <h1 style="font-weight:bold;">{{ page.title }}</h1>
+    <p><span class="fi-calendar" style="color:white;"></span> {{ page.date  | date: "%-d/%m/%Y"  }}</p>
   </div>
   <div class="author">
     <div class="image">
@@ -14,9 +15,9 @@ layout: default
       </a>
     </div>
     <div class="author_info">
-      <span class="name">Texto por: [[ inventtores.{{page.author}}.name ]]</span>
+      <span class="name">[[ inventtores.{{page.author}}.name ]]</span>
       <br>
-      <span class="twitter"><a href="http://twitter.com/[[ inventtores.{{page.author}}.social.twitter]]" >@[[ inventtores.{{page.author}}.social.twitter]]</a></span>
+      <span class="twitter" ng-if="inventtores.{{page.author}}.social.twitter"><a href="http://twitter.com/[[ inventtores.{{page.author}}.social.twitter]]" >@[[ inventtores.{{page.author}}.social.twitter]]</a></span>
       <br>
     </div>
   </div>
@@ -27,10 +28,7 @@ layout: default
     </article>
     <div class="social">
       <ul id="horizontal-list">
-
         <li><span><div class="fb-like" data-href="https://www.facebook.com/pages/Inventto/100538040118577" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></span></li>
-
-
         <li><span><a href="https://twitter.com/share" class="twitter-share-button" data-via="invent_to">Tweet</a></span></li>
         <li><span><p><g:plusone size="medium"></g:plusone></p></span></li>  
       </ul>
