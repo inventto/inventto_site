@@ -37,7 +37,7 @@ angular.module("inventto", ['ngAnimate']).
     tags={}
     for author, cursos of $scope.todosCursos
       _author = Inventto.inventtores[author]
-      _author.cursos = cursos
+      _author.cursos_counter = $scope.sizeOf(cursos)
       for titulo, curso of cursos
         curso.author = _author
         curso.titulo = titulo
