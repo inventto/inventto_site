@@ -22,6 +22,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
   empresa:
     nome: "Inventto"
     razao_social: "Inventto Soluções em Sistemas"
+    cnpj: "17.490.039/0001-37"
     endereco:
       rua: "União da Vitória"
       numero: "407"
