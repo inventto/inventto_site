@@ -4,7 +4,7 @@
   author: jonatas
 ---
 
-Além de trabalhar nos inventos e inventar também temos participado de eventos de tecnologia. Sempre que podemos estamos colaborando com os eventos de nossa região e participando ativamente.
+Além de trabalhar nos inventos e inventar também temos participado de eventos de tecnologia. Sempre que podemos colaboramos com os eventos de nossa região e participando ativamente.
 
 Valorizar e participar dos eventos de nossa região engrandece o capital humano que temos aqui.
 
