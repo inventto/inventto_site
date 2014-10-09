@@ -10,6 +10,15 @@ jack = name: "Mauricio Krzesinski", bio: "Game developer", email: "jack@invent.t
 mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to", profile: "time/mitrut.jpg", site: "wmitrut.github.io", social: {twitter: "wmitrut", instagram: "wmitrut", github: "wmitrut", gravatar: "278d0b5b8f680ac2a39bb3d8a6e21be3"}
 
 @Inventto =
+  servicos:
+    "Desenvolvedor por hora":
+      senior: 90.0
+      pleno: 65.0
+      junior: 45.0
+    "Treinamento técnico":
+      senior: 180.0
+      pleno: 130.0
+      junior: 90.0
   empresa:
     nome: "Inventto"
     razao_social: "Inventto Soluções em Sistemas"
