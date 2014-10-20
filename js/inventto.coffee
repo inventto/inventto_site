@@ -422,7 +422,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
                  * Como instalar
                  * Como usar comandos básicos
                  * Trabalhando na rede
-                 * Trabalhando com serivdores próprios
+                 * Trabalhando com servidores próprios
                  * Entendendo e usando hooks
 
                  """
@@ -481,7 +481,7 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
 
                  * Conheça o hardware
                  * Conheça os Sistemas Operacionais disponíveis
-                 * Aprenda a integrar coisas fácilmente
+                 * Aprenda a integrar coisas facilmente
                  """
         tipo: "mini-curso"
       "Como resolver problemas?":
@@ -584,21 +584,6 @@ mitrut = name: "Wellington Mitrut", bio: "Pixel Man", email: "mitrut@invent.to",
         descricao: "Design voltado para a experiência do usuário"
         tipo: "palestra"
         tags: ["Iniciante","Intermediário","Web"]
-
-      "Mozilla":
-        descricao: "Além do Firefox"
-        tipo: "palestra"
-        price: "FREE"
-        duracao: "50 min."
-        tags: ["Open Source", "mobile"]
-
-      "Apresentando o FirefoxOS":
-        descricao: "Introdução ao Sistema Operacional Firefox OS.Feito por uma grande comunidade global e são os únicos smartphones que entendem e oferecem o que você quer e precisa."
-        tipo: "mini-curso"
-        price: "FREE"
-        duracao: "1,5 h"
-        tags: ["Open Source", "Mobile", "CSS", "HTML5", "JS"]
-
       "Gamification":
         descricao: "Como a Gamificação pode mudar o mundo."
         tipo: "palestra"
