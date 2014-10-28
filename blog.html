@@ -1,21 +1,32 @@
 ---
 layout: default
 ---
-<div class="bgverde">
-	<img src="/img/white.png"/>
-	<h1> Blog dos invent.tores</h1>
-	<h4>A visão dos invent.tores sobre o mundo</h4>
-</div>
+<div ng-controller="Inventtores" >
+  <div class="bgverde">
+    <img src="/img/white.png"/>
+    <h1> Blog dos invent.tores</h1>
+    <h4>A visão dos invent.tores sobre o mundo</h4>
+  </div>
 
-<div class="bgbranco">
-	<ul class="posts">
-		{% for post in site.posts limit 4 %}
-
-		<li> <h3><a href="{{ _posts}}{{ post.url }}" class="post_title">{{ post.title }}</a></h3></li>
-		{{ post.content | strip_html | truncatewords:75}}<br>
-		<a href="{{ post.url }}">Leia Mais...</a><br><br>
-		<hr>
-		{% endfor %}
-
-	</ul>
+  <div class="bgbranco">
+    <ul class="posts">
+      {% for post in site.posts limit 4 %}
+      <li>
+        <h3><a href="{{ _posts}}{{ post.url }}" class="post_title">{{ post.title }}</a></h3>
+        <div class="right spaced">
+          <a href="/inventtores#{{post.author}}">
+            <img src="http://gravatar.com/avatar/[[ inventtores.{{post.author}}.social.gravatar ]]" alt="[[ inventtores.{{post.author}}.name ]]" width="80" height="80" />
+            <br />
+            {{post.author}}
+          </a>
+          <br />
+          {{post.date | date: "%d/%m/%Y" }}
+        </div>
+      </li>
+      {{ post.content | strip_html | truncatewords:75}}<br>
+      <a href="{{ post.url }}">Leia Mais...</a><br><br>
+      <hr>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

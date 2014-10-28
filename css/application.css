@@ -379,3 +379,7 @@ code{
 .selected {
   border: 5px dotted #04B329;
 }
+.spaced {
+  padding-left: 20px;
+
+}
