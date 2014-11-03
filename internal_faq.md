@@ -239,13 +239,71 @@ Resumindo, uma US completa ficaria assim:
 
 ## como encontrar o erro?
 
+Encontre um erro que possa ser a causa. Analise os logs e observe os detalhes do ambiente.
+
 ## identificar a causa
+
+
+* Onde ocorreu o erro?
+* Qual máquina? Em todas? Apenas uma?
+* Quantas pessoas relataram o caso?
+* É um problema do usuário ou um erro do sistema?
 
 ## criar hipóteses
 
+Reveja o erro e descreva para você mesmo passo a passo como chegou até o problema.
+
 ## testar hipóteses
+
+Repita a sua ação e prove que a causa que descreveu é realmente o objeto de analise.
 
 ## executar soluções
 
+Teste possíveis soluções e reteste suas hipóteses. Caso necessário reformule ou crie novas hipóteses para validar a solução em diferentes aspectos.
 
+# Processos #TODO
 
+Descrição das tarefas organizacionais gerais da empresa. Fluxos de processos e procedimentos para solução de problemas.
+
+### Como mapear um processo
+
+![](http://yuml.me/diagram/scruffy/class/[Macro Processo]->[Processo])
+
+![](http://yuml.me/diagram/scruffy/class/[Processo]->[Atividade])
+
+![](http://yuml.me/diagram/scruffy/class/[Atividade]^-[Tarefa], [Atividade]^-[SubProcesso])
+
+### Divisão de processos
+
+* Guias de profissão
+* Manuais de instrução
+
+### Desenvolvimento
+
+* Análise do requisito
+* Desenvolvimento orientado a testes
+* Modelagem orientada a objetos
+* Escolha e aplicação de padrões (design patterns)
+* Adaptação e mantimento do modelo existente
+
+### Design e Arquitetura de Software
+
+* Conversa com cliente
+* Levantamento de requisitos
+* Definição de prioridades
+* Prototipação de telas
+* Estórias do usuário
+
+### Comercial
+
+### Suporte
+
+### Implantação
+
+### Macro processo
+
+### Tarefas organizacionais
+
+#### Convites por email
+#### Ligação para clientes
+#### Email para empresas parceiras
