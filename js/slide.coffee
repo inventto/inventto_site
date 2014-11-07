@@ -8,7 +8,8 @@ angular.module("inventto", []).
     $scope.acreditamos = Inventto.acreditamos
     $scope.iniciativas = Inventto.iniciativas
     $scope.inventtores = Inventto.inventtores
-    $scope.jonatas = Inventto.inventtores.jonatas
+    for nick, inventtor of Inventto.inventtores
+      $scope[nick] = inventtor
     $scope.projetos = Inventto.projetos
     $scope.servicos = Inventto.servicos
     $scope.ferramentas = Inventto.ferramentas
