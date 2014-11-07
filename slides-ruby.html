@@ -1,0 +1,496 @@
+---
+layout: slides
+---
+
+<div class="reveal" ng-controller="Slides">
+  <div class="slides">
+    <section>
+      <h1>Ruby</h1>
+      <h3>A Programmer's Best Friend</h3>
+      <small> <a href="http://invent.to/[[jonatas.name]]">[[ jonatas.name ]]</a>(<a href="http://twitter.com/[[jonatas.social.twitter]]">@[[jonatas.social.twitter]]</a>)</small>
+      <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
+    </section>
+    <section data-markdown>
+      # Agenda
+
+      * Quem sou eu?
+      * Por que estou aqui?
+      * A linguagem Ruby
+    </section>
+    <section>
+      <section data-markdown>
+        # Jônatas Davi Paganini
+
+        * Bacharel em Sistemas de Informação - UNIPAR
+        * Sócio da [invent.to]()
+        * Também estou no [ideia.me]()
+        * Fomentando o [hacker club](https://www.facebook.com/groups/beltraohc)
+        * evangelista [open source](http://github.com/jonatas)
+      </section>
+      <section data-markdown># Por que estou aqui?</section>
+      <section data-markdown># Ruby mudou a minha vida </section>
+      <section data-markdown># Ruby mudou a minha forma de pensar</section>
+      <section data-markdown># Ruby mudou a minha orientação a objetos</section>
+      <section data-markdown># Ruby me fez um programador java melhor :)</section>
+      <section data-markdown># Eu ganho dinheiro com Ruby</section>
+      <section data-markdown># Eu me divirto **muito** com Ruby</section>
+      <section data-markdown># Com Ruby é fácil de inventar :) </section>
+    </section>
+    <section>
+      <section data-markdown># Linha de comando</section>
+      <section>
+        <h2>Script como argumento</pre>
+        <pre>
+          <code contenteditable class="sh">$ ruby -e "p Time.now"
+2014-11-06 20:27:28 -0200</code>
+      </section>
+      <section>
+        <h2>Hello World!</h2>
+        <pre>
+          <code contenteditable class="ruby">$ ruby -e '3.times { puts "Olá Mundo!"}'</code>
+          <code>Olá Mundo!
+Olá Mundo!
+Olá Mundo!
+</code>
+        </pre>
+      </section>
+      <section data-markdown>
+      # Interaja com seu código
+
+      * irb - interactive ruby
+      * pry - pé de cabra profissional
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Sintaxe</section>
+      <section>
+        <h2>Variável local!</h2>
+        <pre>
+          <code contenteditable class="ruby">email = "jonatasdp@gmail.com"</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Variável de instância!</h2>
+        <pre>
+          <code contenteditable class="ruby">@nascido_em = Time.mktime(1986,12,10)</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Variável global!</h2>
+        <pre>
+          <code contenteditable class="ruby">$gambis = true</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Operadores</h2>
+        <pre>
+          <code>2 + 3 * 3.5</code>
+          <code>"ruby" * 10</code>
+        </pre>
+      </section>
+    </section>
+    <section>
+      <section>
+        <h2>Classes e métodos!</h2>
+        <pre>
+          <code contenteditable class="ruby">
+class Pessoa
+  def initialize ano,mes,dia
+    @nascido_em = Time.mktime(ano,mes,dia)
+  end
+  def idade
+    Time.now - @nascido_em
+  end
+end</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Acessibilidade as classes!</h2>
+        <pre>
+          <code contenteditable class="ruby">class Pessoa
+  attr_accessor :nascido_em
+  attr_writer :cpf
+
+  protected
+  def idade
+    (Time.now - @nascido_em) / 1.ano
+  end
+
+  private
+  def saldo_bancario
+    0.0 # :(
+  end
+end</code>
+        </pre>
+      </section>
+      <section data-markdown># Blocos de código</section>
+      <section>
+        <h5>Blocos de código</h5>
+        <pre>
+          <code contenteditable class="ruby">plus_one = -> {|n| n + 1}</code>
+          <code>plus_one.call 3 # => 4</code> 
+        </pre>
+      </section>
+      <section>
+        <h5>Criando seu blocos de código</h5>
+        <pre>
+          <code contenteditable class="ruby">def calcular_idade pessoa
+  idade = Time.now - pessoa.data_nascimento
+  yield idade
+end</code>
+        </pre>
+      </section>
+      <section>
+        <h5>Usando o bloco de código criado</h5>
+        <pre>
+        <code contenteditable class="ruby">calcular_idade pessoa do |idade|
+  puts "#{pessoa.nome} tem #{idade}"
+end</code>
+        </pre>
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Arrays</section>
+      <section>
+        <h5>Arrays são vetores</h5>
+        <pre><code contenteditable class="ruby">idades = [18,19,22,27,32]</code></pre>
+      </section>
+      <section>
+        <h5>Array se comportam como filas e pilhas</h5>
+        <pre><code contenteditable class="ruby">idades = [1,2,3,4]
+idades.push 19 # adiciona novo elemento a lista "idades"
+idades.shift # remove primeiro elemento
+idades.pop # remove último elemento
+</code></pre>
+      </section>
+      <section>
+        <h5>Array e seletores de elementos</h5>
+        <pre><code contenteditable class="ruby">idades = [1,2,3,4]
+idades[0] # => 1 array inicia em zero
+idades[1] # => 2
+idades[-1] # => 4 retorna o último elemento
+idades[1,2] # => [2,3] retorna 2 elementos apartir do índice 1
+idades[-3..-1] # => [3, 4] retorna os últimos 2
+idades[-3...-1] # => [2, 3, 4] retorna os últimos 3</code>
+        </pre>
+      </section>
+      <section>
+        <h5>Seletores de elementos também podem atribuir elementos</h5>
+        <pre><code contenteditable class="ruby">
+idades <<  23
+idades[3] = 28 # substituindo o quarto elemento do array
+idades[2,4] = [22,33,44] # substituindo as idades entre as posições 2 e 4</code>
+        </pre>
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Hashes</section>
+      <section>
+        <h5>Hashes são simples e declarativos</h5>
+        <pre><code contenteditable class="ruby">minicurso = {
+  titulo: "Introdução a linguagem Ruby",
+  duracao: 2.horas
+  autor: {
+    nome: "Jônatas Davi Paganini",
+    site: "http://ideia.me",
+    email: "jonatas@invent.to"
+  }
+}</code></pre>
+    </section>
+    <section>
+      <h5>Hashes são fáceis de manipular</h5>
+      <pre><code contenteditable class="ruby">minicurso[:titulo] # => "Introdução a linguagem Ruby"
+minicurso[:autor][:site] # => "http://ideia.me"
+minicurso[:autor][:links] = [
+  minicurso[:autor][:site],
+  "http://invent.to", 
+  "http://github.com/jonatas"
+]# atribuindo um novo atributo para o autor do minicurso</code></pre>
+    </section>
+  </section>
+
+    <section>
+      <section data-markdown># Expressividade da linguagem</section>
+      <section>
+        <h2>#comofaz?</h2>
+        <pre>
+          <code contenteditable class="ruby">
+$ irb
+>> 1.ano
+NoMethodError: undefined method `ano' for 1:Fixnum
+  from (irb):1
+    from /Users/jonatasdp/.rvm/rubies/ruby-2.1.2/bin/irb:11:in `<main>''
+>> 1.class
+=> Fixnum</code>
+        </pre>
+      </section>
+      <section>
+        <h1><span class="fi-lightbulb large"></span> Tudo é um objeto </h1>
+        <pre>
+          <code contenteditable class="ruby">class Fixnum
+  def ano
+    self * 60 * 60 * 24 * 30 * 12
+  end
+  alias anos ano
+end
+</code></pre>
+      </section>
+      <section data-markdown># Linearidade da linguagem</section>
+      <section>
+        <h2>Isto não é linear!!</h2>
+        <pre>
+          <code contenteditable class="ruby">def idade
+  (Time.now - @nascido_em) / self * 60 * 60 * 24 * 12
+end</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Isto também não é linear!!</h2>
+        <pre>
+          <code contenteditable class="ruby">class Fixnum
+  def ano
+    self * 60 * 60 * 24 * 30 * 12
+  end
+  alias anos ano
+end
+</code></pre>
+      </section>
+      <section>
+        <h5>Isto é linear!</h5>
+        <pre>
+          <code contenteditable class="ruby">class Fixnum
+  def segundos
+    self
+  end
+  def minutos
+    self * 60.segundos
+  end
+  def horas
+    self * 60.minutos
+  end
+  def dias
+    self * 24.horas
+  end
+  def semanas
+    self * 7.dias
+  end
+  def meses
+    self * 30.dias
+  end
+  def anos
+    self * 12.meses
+  end
+  def decadas
+    self * 10.anos
+  end
+end
+</code></pre>
+      </section>
+      <section>
+        <h2>Isto também é linear!</h2>
+        <pre>
+          <code contenteditable class="ruby">def idade
+  (Time.now - @nascido_em) / 1.ano
+end</code>
+        </pre>
+      </section>
+      <section>
+        <h2>Permite expressividade </h2>
+        <pre>
+         <code>>> Time.now + 2.anos + 3.meses + 2.horas + 3.minutos
+=> 2017-01-24 23:30:20 -0200</code>
+        </pre>
+      </section>
+    </section>
+  <section>
+    <section data-markdown># N maneiras de expressar-se no código</section>
+    <section>
+      <h5>tabuada.rb</h5>
+        <pre>
+          <code contenteditable class="ruby">(1..9).each do |numero|
+  puts "tabuada do #{numero}"
+  (1..9).each do |multiplicador|
+    resultado = numero * multiplicador
+    puts "#{numero} x #{multiplicador} = #{resultado}"
+  end
+  puts "------",""
+end </code>
+<code>tabuada do 1
+1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+1 x 4 = 4
+1 x 5 = 5
+1 x 6 = 6
+1 x 7 = 7
+1 x 8 = 8
+1 x 9 = 9
+------
+
+tabuada do 2
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+------
+
+tabuada do 3
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+------
+
+tabuada do 4
+4 x 1 = 4
+4 x 2 = 8
+4 x 3 = 12
+4 x 4 = 16
+4 x 5 = 20
+4 x 6 = 24
+4 x 7 = 28
+4 x 8 = 32
+4 x 9 = 36
+------
+
+tabuada do 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+------
+
+tabuada do 6
+6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+------
+
+tabuada do 7
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+------
+
+tabuada do 8
+8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+------
+
+tabuada do 9
+9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54
+9 x 7 = 63
+9 x 8 = 72
+9 x 9 = 81
+------</code>
+      </pre>
+    </section>
+    <section>
+      <h5>tabuada_array.rb</h5>
+        <pre>
+          <code contenteditable class="ruby">
+def computar_tabuadas
+  tabuadas = []
+  (1..9).each do |numero|
+    tabuada = []
+      (1..9).each do |multiplicador|
+         tabuada << numero * multiplicador
+      end
+    tabuadas << [numero, tabuada]
+  end
+  tabuadas
+end
+p computar_tabuadas
+</code>
+<code contenteditable class="ruby">[
+  [1, [1, 2, 3, 4, 5, 6, 7, 8, 9]],
+  [2, [2, 4, 6, 8, 10, 12, 14, 16, 18]],
+  [3, [3, 6, 9, 12, 15, 18, 21, 24, 27]],
+  [4, [4, 8, 12, 16, 20, 24, 28, 32, 36]],
+  [5, [5, 10, 15, 20, 25, 30, 35, 40, 45]],
+  [6, [6, 12, 18, 24, 30, 36, 42, 48, 54]],
+  [7, [7, 14, 21, 28, 35, 42, 49, 56, 63]],
+  [8, [8, 16, 24, 32, 40, 48, 56, 64, 72]],
+  [9, [9, 18, 27, 36, 45, 54, 63, 72, 81]]
+]</code>
+    </section>
+    <section>
+      <h5>tabuada_hash.rb</h5>
+        <pre>
+          <code contenteditable class="ruby">
+def tabuada_hash
+  tabuada = {}
+  (1..9).each do |numero|
+    tabuada[numero] = {}
+    (1..9).each do |multiplicador|
+      tabuada[numero][multiplicador] = numero * multiplicador
+    end
+  end
+  tabuada
+end
+
+p tabuada_hash
+</code>
+<code contenteditable class="ruby">{
+  1=>{1=>1, 2=>2, 3=>3, 4=>4, 5=>5, 6=>6, 7=>7, 8=>8, 9=>9},
+  2=>{1=>2, 2=>4, 3=>6, 4=>8, 5=>10, 6=>12, 7=>14, 8=>16, 9=>18},
+  3=>{1=>3, 2=>6, 3=>9, 4=>12, 5=>15, 6=>18, 7=>21, 8=>24, 9=>27},
+  4=>{1=>4, 2=>8, 3=>12, 4=>16, 5=>20, 6=>24, 7=>28, 8=>32, 9=>36},
+  5=>{1=>5, 2=>10, 3=>15, 4=>20, 5=>25, 6=>30, 7=>35, 8=>40, 9=>45},
+  6=>{1=>6, 2=>12, 3=>18, 4=>24, 5=>30, 6=>36, 7=>42, 8=>48, 9=>54},
+  7=>{1=>7, 2=>14, 3=>21, 4=>28, 5=>35, 6=>42, 7=>49, 8=>56, 9=>63},
+  8=>{1=>8, 2=>16, 3=>24, 4=>32, 5=>40, 6=>48, 7=>56, 8=>64, 9=>72},
+  9=>{1=>9, 2=>18, 3=>27, 4=>36, 5=>45, 6=>54, 7=>63, 8=>72, 9=>81}
+}</code>
+   </section>
+    <section>
+      <h1>Obrigado!</h1>
+      <p>&nbsp;</p>
+      <p>
+        <small><a href="http://invent.to/jonatas">[[ inventtores.jonatas.nome ]]</a>( <a href="http://twitter.com/jonatasdp">@jonatasdp</a> )  </small>
+      </p>
+      <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
+      <p><small><a href="http://invent.to/slides-ruby">http://invent.to/slides-ruby</a></small></p>
+    </section>
+  </div>
+</div>
+
