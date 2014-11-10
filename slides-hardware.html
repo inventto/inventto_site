@@ -155,14 +155,52 @@ layout: slides
           </code>
         </pre>
       </section>
+      <section data-markdown>
+        ## Software com microcontroladores
+      </section>
+      <section>
+        <h3>Exemplo com o MSP430</h3>
+        <pre>
+          <code contenteditable class="c">
+          typedef unsigned char byte;
+
+          #define P1IN *((byte *)0x20)
+          #define P1OUT *((byte *)0x21)
+          #define P1DIR *((byte *)0x22)
+          #define P4IN *((byte *) 0x1c )
+          #define P4OUT *((byte *) 0x1d )
+          #define P4DIR *((byte *) 0x1e )
+          #define WDTCL *((short *)0x120)
+          #define WDTHOLD 0x0080
+          #define WDTPW 0x5a00
+
+          void main(void){ 
+          WDTCTL = WDTPW + WDTHOLD;
+          P1DIR |= 0x02;
+
+            while( 1==1 ){
+              if( (P1IN & 0x01) != 0) {
+                P1OUT = P1OUT | 2;
+              } else {
+              P1OUT = P1OUT & 0xfd;
+              } 
+            }
+          </code>
+        </pre>
+      </section>
+      <section data-markdown>
+        ## Comunicação com dispositivos externos
+      </section>
+      <section data-markdown>
+        ### Serial
+        ### Bluetooth
+        ### HTTP
+      </section>
     </section>
     <section>
       <h1>Obrigado!</h1>
       <p>&nbsp;</p>
-      <p>
-      <small><a href="http://invent.to/jonatas">[[ inventtores.jonatas.nome ]]</a>( <a href="http://twitter.com/jonatasdp">@jonatasdp</a> )  </small>
-      </p>
-      <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
+      <p><a href="http://invent.to">invent.to</a></p>
       <p><small><a href="http://invent.to/slides-ruby">http://invent.to/slides-ruby</a></small></p>
     </section>
   </div>
