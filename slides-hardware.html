@@ -1,0 +1,208 @@
+---
+layout: slides
+---
+
+<div class="reveal" ng-controller="Slides">
+  <div class="slides">
+    <section>
+      <h1>Hardware</h1>
+      <h3>Programando e prototipando</h3>
+      <small> <a href="http://invent.to/[[marlon.nick]]">[[ marlon.name ]]</a></small>
+      <p><a href="http://invent.to">invent.to</a></p>
+    </section>
+    <section>
+      <section data-markdown>
+        # Hardware
+
+        * O que é?
+      </section>
+      <section data-markdown>
+        #Eletrônica
+      </section>
+      <section data-markdown>
+        #Dispositivos embarcados
+      </section>
+      <section data-markdown>
+        #Conceito práticos
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        # Marlon Henrique Scalabrin
+
+        * Graduação em Engenharia da Computação pela Universidade Estadual de Ponta Grossa
+        * Graduação em Tecnologia em Automação Industrial pela Universidade Tecnológica Federal do Paraná (2011)
+        * Especialização em Tecnologia Java pela Universidade Tecnológica Federal do Paraná (2010)
+        * Mestrado em Engenharia Elétrica e Informática Industrial pela Universidade Tecnológica Federal do Paraná (2012)
+        * Sócio da [invent.to]()
+      </section>
+      <section data-markdown># Experiência com hardware</section>
+    </section>
+    <section>
+      <section data-markdown>
+        # Eletrônica
+
+        * Introdução a prototipação eletrônica.
+      </section>
+      <section data-markdown>
+        # Conceitos básicos de eletrônica
+      </section>
+      <section data-markdown>
+        ## Protoboards
+
+        ![Protoboard](/img/protoboard.jpg)
+      </section>
+      <section data-markdown>
+        ## Principais componentes eletrônicos
+
+        ![Protoboard](/img/componentes.jpg)
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        # Dispositivos embarcados
+        * Microcontroladores
+        * Microcomputadores
+      </section>
+      <section data-markdown>
+        ## Microcontroladores
+      </section>
+      <section data-markdown>
+        ### MCP2200
+
+        ![Protoboard](/img/mcp2200.jpg)
+      </section>
+      <section data-markdown>
+        ### MSP430
+
+        ![Protoboard](/img/msp430.jpg)
+      </section>
+      <section data-markdown>
+        ## Microcomputadores
+      </section>
+      <section data-markdown>
+        ### Arduíno
+
+        ![Protoboard](/img/arduino.jpg)
+      </section>
+      <section data-markdown>
+        ### BeagleBone
+
+        ![Protoboard](/img/beaglebone.png)
+      </section>
+      <section data-markdown>
+        ### RasperberryPi
+
+        ![Protoboard](/img/rpi.jpg)
+      </section>
+    </section>
+    <section>
+      <section data-markdown>
+        # Conceitos práticos
+      </section>
+      <section data-markdown>
+        ## Prototipação de hardware
+      </section>
+      <section data-markdown>
+        ### Sensores
+
+        ![Sensor de pressão](/img/sensor-pressao.jpg)
+      </section>
+      <section data-markdown>
+        ### Primeiro protótipo
+      </section>
+      <section data-markdown>
+        ## Software com RaspberryPi
+      </section>
+      <section>
+        <pre>
+          <code contenteditable class="python">
+            import RPi.GPIO as GPIO
+
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(23, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+            GPIO.setup(24, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+
+            while True:
+              if(GPIO.input(23) ==1):
+                print(“Button 1 pressed”)
+              if(GPIO.input(24) == 0):
+                print(“Button 2 pressed”)
+
+            GPIO.cleanup()
+          </code>
+        </pre>
+      </section>
+      <section data-markdown>
+        ## Software com Arduíno
+      </section>
+      <section>
+        <pre>
+          <code contenteditable class="arduino">
+            int ledPin = 13;
+            int inPin = 7;
+            int val = 0;
+
+            void setup() {
+              pinMode(ledPin, OUTPUT);
+              pinMode(inPin, INPUT);
+            }
+
+            void loop() {
+              val = digitalRead(inPin);
+              digitalWrite(ledPin, val);
+            }
+          </code>
+        </pre>
+      </section>
+      <section data-markdown>
+        ## Software com microcontroladores
+      </section>
+      <section>
+        <h3>Exemplo com o MSP430</h3>
+        <pre>
+          <code contenteditable class="c">
+          typedef unsigned char byte;
+
+          #define P1IN *((byte *)0x20)
+          #define P1OUT *((byte *)0x21)
+          #define P1DIR *((byte *)0x22)
+          #define P4IN *((byte *) 0x1c )
+          #define P4OUT *((byte *) 0x1d )
+          #define P4DIR *((byte *) 0x1e )
+          #define WDTCL *((short *)0x120)
+          #define WDTHOLD 0x0080
+          #define WDTPW 0x5a00
+
+          void main(void){ 
+          WDTCTL = WDTPW + WDTHOLD;
+          P1DIR |= 0x02;
+
+            while( 1==1 ){
+              if( (P1IN & 0x01) != 0) {
+                P1OUT = P1OUT | 2;
+              } else {
+              P1OUT = P1OUT & 0xfd;
+              } 
+            }
+          </code>
+        </pre>
+      </section>
+      <section data-markdown>
+        ## Comunicação com dispositivos externos
+      </section>
+      <section data-markdown>
+        ### Serial
+        ### Bluetooth
+        ### HTTP
+      </section>
+    </section>
+    <section>
+      <h1>Obrigado!</h1>
+      <p>&nbsp;</p>
+      <p><a href="http://invent.to">invent.to</a></p>
+      <p><small><a href="http://invent.to/slides-ruby">http://invent.to/slides-ruby</a></small></p>
+    </section>
+  </div>
+</div>
+
