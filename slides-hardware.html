@@ -97,10 +97,70 @@ layout: slides
       </section>
     </section>
     <section>
+      <section data-markdown>
+        # Conceitos práticos
+      </section>
+      <section data-markdown>
+        ## Prototipação de hardware
+      </section>
+      <section data-markdown>
+        ### Sensores
+
+        ![Sensor de pressão](/img/sensor-pressao.jpg)
+      </section>
+      <section data-markdown>
+        ### Primeiro protótipo
+      </section>
+      <section data-markdown>
+        ## Software com RaspberryPi
+      </section>
+      <section>
+        <pre>
+          <code contenteditable class="python">
+            import RPi.GPIO as GPIO
+
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(23, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+            GPIO.setup(24, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+
+            while True:
+              if(GPIO.input(23) ==1):
+                print(“Button 1 pressed”)
+              if(GPIO.input(24) == 0):
+                print(“Button 2 pressed”)
+
+            GPIO.cleanup()
+          </code>
+        </pre>
+      </section>
+      <section data-markdown>
+        ## Software com Arduíno
+      </section>
+      <section>
+        <pre>
+          <code contenteditable class="arduino">
+            int ledPin = 13;
+            int inPin = 7;
+            int val = 0;
+
+            void setup() {
+              pinMode(ledPin, OUTPUT);
+              pinMode(inPin, INPUT);
+            }
+
+            void loop() {
+              val = digitalRead(inPin);
+              digitalWrite(ledPin, val);
+            }
+          </code>
+        </pre>
+      </section>
+    </section>
+    <section>
       <h1>Obrigado!</h1>
       <p>&nbsp;</p>
       <p>
-        <small><a href="http://invent.to/jonatas">[[ inventtores.jonatas.nome ]]</a>( <a href="http://twitter.com/jonatasdp">@jonatasdp</a> )  </small>
+      <small><a href="http://invent.to/jonatas">[[ inventtores.jonatas.nome ]]</a>( <a href="http://twitter.com/jonatasdp">@jonatasdp</a> )  </small>
       </p>
       <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
       <p><small><a href="http://invent.to/slides-ruby">http://invent.to/slides-ruby</a></small></p>
