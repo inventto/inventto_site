@@ -589,7 +589,33 @@ end
          </code>
        </pre>
      </section>
-     <section data-markdown>#ActiveRecord</section>
+     <section data-markdown>### gem install rails</section>
+     <section>
+       <h2>ActiveRecord</h2>
+       <pre>
+         <code contenteditable class="ruby">
+jonatas = Usuario.new(nome: "Jônatas Davi Paganini", email: "jonatas@invent.to")
+jonatas.nome # => "Jônatas Davi Paganini"
+jonatas.save</code>
+       </pre>
+     </section>
+
+     <section>
+       <h2>Arel</h2>
+       <pre>
+         <code contenteditable class="ruby">usuarios.where(email: "jonatas@invent.to").first ||
+usuarios.where(email: "jonatasdp@gmail.com").first ||
+usuarios.where(usuarios[:nome].eq("Jônatas Davi Paganini").
+  or(usuarios[:email].eq("jonatasdp@gmail.com")).first
+</code>
+       </pre>
+     </section>
+     <section>
+       <h2>ActiveSupport::CoreExtensions::Numeric::Time</h2>
+       <pre>
+         <code contenteditable class="ruby"># equivalent to 365.25.days.to_f.from_now
+1.year.to_f.from_now</code>
+       </pre>
    </section>
     <section>
       <h1>Obrigado!</h1>
