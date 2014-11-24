@@ -1,0 +1,208 @@
+---
+layout: slides
+---
+
+<div class="reveal" ng-controller="Slides">
+  <div class="slides">
+    <section>
+      <h1>Git</h1>
+      <h3>O controlador de versões</h3>
+      <small> <a href="http://invent.to/[[jonatas.name]]">[[ jonatas.name ]]</a>(<a href="http://twitter.com/[[jonatas.social.twitter]]">@[[jonatas.social.twitter]]</a>)</small>
+      <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
+    </section>
+    <section>
+      <section data-markdown>
+        # Jônatas Davi Paganini
+
+        * Bacharel em Sistemas de Informação - UNIPAR
+        * Sócio da [invent.to]()
+        * Também estou no [ideia.me]()
+        * Fomentando o [hacker club](https://www.facebook.com/groups/beltraohc)
+        * evangelista [open source](http://github.com/jonatas)
+        * Usuário GIT desde 2008
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Controle de versão
+### As histórias</section>
+      <section data-markdown># CVS
+### Concurrent Version System (1990)</section>
+      <section data-markdown># SVN
+### Apache Subversion (2000)</section>
+      <section data-markdown># GIT
+### Linus Tolvards (2005)</section>
+    </section>
+    <section>
+      <section data-markdown># Comandos básicos</section>
+      <section data-markdown># Init
+    git init .
+      </section>
+      <section data-markdown># Primeiro arquivo
+    echo 'aprendendo sobre git' > readme.txt
+      </section>
+      <section data-markdown># Add
+    git add readme.txt
+      </section>
+      <section data-markdown># Commit
+    git commit readme.txt -m "Meu primeiro arquivo versionado com git"
+      </section>
+      <section data-markdown># Remote add
+### Adiciona um servidor de repositório remoto
+    git remote add inventto git@git.invent.to:jonatas/exemplo.git
+      </section>
+      <section data-markdown># Push
+### Envia alterações do master para inventto
+    git push inventto master
+      </section>
+      <section data-markdown># Pull
+### Recebe alterações do master da inventto
+    git pull inventto master
+      </section>
+      <section data-markdown># Branch (ramo)
+### Verifica branch atual (padrão "master")
+    git branch
+      </section>
+      <section data-markdown># Criar um branch
+### Cria um novo branch
+    git checkout -b tentativa-perigosa
+      </section>
+      <section data-markdown># Altera branch
+### Muda branch atual para master
+    git checkout master
+### Muda branch atual para tentativa-perigosa
+    git checkout tentativa-perigosa
+      </section>
+      <section data-markdown># Merge branch
+### Merge tentativa perigosa no master
+    git merge tentativa-perigosa
+      </section>
+      <section data-markdown># Tag
+### Tags marcam versões estáveis
+    git tag -a v0.1 -m "Finalmente funcionou! Primeira versão BETA!"
+      </section>
+    </section>
+    <section>
+      <section data-markdown># GIT Workflow</section>
+      <section data-markdown>![](/img/git-workflow.png)</section>
+      <section data-markdown>## Criando branch de trabalho
+    git checkout -b 1-minha-funcionalidade-principal
+      </section>
+      <section data-markdown># Pull Request
+    git push origin 1-minha-funcionalidade-principal
+      </section>
+      <section data-markdown># Code Review
+    git remote add jonatas-job git@git.invent.to:/jonatas/exemplo.git
+    git pull jonatas-job 1-minha-funcionalidade-principal
+      </section>
+      <section data-markdown># Merge master
+    git checkout master
+    git merge jonatas-job 1-minha-funcionalidade-principal
+      </section>
+      <section data-markdown># Push master
+    git commit -am "pair com @ciclano. mergido code do @fulano. 2h. it closes #1"
+    git push origin master
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Comandos úteis</section>
+      <section data-markdown># git log
+    git log
+    Tue Nov 11 11:57:21 2014 -0200 82c65a0 (HEAD, origin/master, origin/HEAD, deploy/master, master) adding rails examples on active
+    Tue Nov 11 10:07:34 2014 -0200 6b77647 fixing slide brdinheiro  [Lucas Cardoso]
+    Tue Nov 11 09:30:41 2014 -0200 c9b0b8b Merge branch 'master' of github.com:inventto/inventto_site  [Jônatas Paganini]
+    Tue Nov 11 09:29:53 2014 -0200 a16a0ee adding more slides. DSL and modules  [Jônatas Paganini]
+    Tue Nov 11 09:23:45 2014 -0200 f7f81ae Merge branch 'master' of github.com:inventto/inventto_site  [Jose Luiz Tafarel]
+    Mon Nov 10 19:31:57 2014 -0200 1d37fea adicionando informações do tafarel  [Jose Luiz Tafarel]
+    Mon Nov 10 14:24:30 2014 -0200 e618b65 fixing link address  [Jônatas Paganini]
+    Mon Nov 10 14:07:28 2014 -0200 312ab07 Merge pull request #34 from jltafarel/master  [Jônatas Davi Paganini]
+      </section>
+      <section data-markdown>## git checkout [revision]
+### Volta a um commit específico</section>
+      <section data-markdown>## git diff -r [revision] [file]
+##### Verifica diferença com um commit específico em um arquivo</section>
+    </section>
+    <section>
+      <section data-markdown># Coisas legais</section>
+      <section data-markdown># GIT hooks
+        * pre-commit
+        * prepare-commit-msg
+        * commit-msg
+        * post-checkout
+        * pre-receive
+        * update
+        * post-receive
+      </section>
+      <section data-markdown># Configuração txt
+    ➜  inventto-site git:(master) ✗ cat .git/config
+    [core]
+      repositoryformatversion = 0
+      filemode = true
+      bare = false
+      logallrefupdates = true
+      ignorecase = true
+      precomposeunicode = false
+    [remote "origin"]
+      url = git@github.com:inventto/inventto_site.git
+      fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+      remote = origin
+      merge = refs/heads/master
+    [remote "deploy"]
+      url = jonatas@ideia.me:/code/inventto_site.git
+      fetch = +refs/heads/*:refs/remotes/deploy/*
+      </section>
+      <section data-markdown># Deploy
+    [remote "deploy"]
+      url = jonatas@ideia.me:/code/inventto_site.git
+      </section>
+      <section data-markdown>## post-receive hook
+      jonatas@li296-36:~$ cat /code/inventto_site.git/hooks/post-receive 
+      SITE_NAME=inventto_site
+      GIT_REPO=/code/$SITE_NAME.git
+      TMP_GIT_CLONE=$HOME/tmp/$SITE_NAME
+      PUBLIC_WWW=/var/www/sites/$SITE_NAME
+      PATH=/usr/local/rvm/gems/ruby-1.9.3-p362/bin:/usr/local/rvm/gems/ruby-1.9.3-p362@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p362/bin:$PATH
+
+      git clone $GIT_REPO $TMP_GIT_CLONE
+      cd $TMP_GIT_CLONE
+      rm -rf $PUBLIC_WWW
+      jekyll build -s $TMP_GIT_CLONE -d $PUBLIC_WWW
+      chgrp -R inventto $PUBLIC_WWW
+      cd $HOME
+      rm -Rf $TMP_GIT_CLONE
+      exit
+    </section>
+    <section data-markdown># Deploy
+    git push deploy master</section>
+  </section>
+  <section>
+    <section data-markdown># Recursos</section>
+    <section data-markdown># Estudo
+* [git-scm.com/book/pt-br/v1](http://git-scm.com/book/pt-br/v1)
+* [try.github.com](http://try.github.com)
+    </section>
+    <section data-markdown># Ferramentas
+* [gitlab.com](http://gitlab.com)
+* [gitolite.com](http://gitolite.com)
+    </section>
+    <section data-markdown># Serviços
+* [github.com](http://github.com)
+* [bitbucket.com](http://bitbucket.com)
+    </section>
+    <section data-markdown>## Viva o open-source!
+* [github.com/jonatas](http://github.com/jonatas)
+* [github.com/inventto](http://github.com/inventto)
+    </section>
+  </section>
+  <section>
+    <h1>Obrigado!</h1>
+    <p>&nbsp;</p>
+    <p>
+      <small><a href="http://invent.to/jonatas">[[ inventtores.jonatas.nome ]]</a>( <a href="http://twitter.com/jonatasdp">@jonatasdp</a> )  </small>
+    </p>
+    <p><a href="http://invent.to">invent.to</a> <a href="http://ideia.me"><span class="fi-lightbulb large"></span> ideia.me</a></p>
+    <p><small><a href="http://invent.to/slides-git">http://invent.to/slides-git</a></small></p>
+  </section>
+  </div>
+</div>
+
