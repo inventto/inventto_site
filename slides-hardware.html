@@ -8,6 +8,8 @@ layout: slides
       <h1>Hardware</h1>
       <h3>Programando e prototipando</h3>
       <small> <a href="http://invent.to/[[marlon.nick]]">[[ marlon.name ]]</a></small>
+      <br/>
+      <small> <a href="http://invent.to/[[tafarel.nick]]">[[ tafarel.name ]]</a></small>
       <p><a href="http://invent.to">invent.to</a></p>
     </section>
     <section>
@@ -64,6 +66,107 @@ layout: slides
         ## Principais componentes eletrônicos
 
         ![Protoboard](/img/componentes.jpg)
+      </section>
+      <section>
+        <h2>Lei de Ohm</h2>
+
+        <img src="/img/tabela-de-ohm.jpg" />
+
+        <div class='calculo-ohm'>
+          V <input type="number" class="voltage" /> = R <input type="number" class="resistance" /> x I <input type="number" class="current" />
+          <input type="button" class="calcular-ohm" value="Calcular" />
+        </div>
+      </section>
+      <section>
+        <style>
+         .cabeca-resistor{
+           width: 120px;
+           border-radius: 10px;
+           margin: 10px 0;
+           background: #DDB;
+         }
+         .cabeca-resistor select{
+           width: 120px;
+         }
+         .corpo-resistor{
+           width: 100px;
+           margin: 0 10px !important;
+           padding-top: 10px !important;
+           padding-bottom: 10px !important;
+           background: #DDB;
+         }
+         .corpo-resistor select{
+           width: 100px;
+           margin-bottom: 10px;
+           display: block;
+         }
+         .resistor{
+           width: 120px;
+           margin: 0 auto !important;
+         }
+        </style>
+        <h2>Identificando resistores</h2>
+        <div class="resistor">
+          <div class="cabeca-resistor"> 
+            <select id="inteiro">
+              <option value="0" style="background: black"> </option>
+              <option value="1" style="background: brown"> </option>
+              <option value="2" style="background: red"> </option>
+              <option value="3" style="background: orange"> </option>
+              <option value="4" style="background: yellow"> </option>
+              <option value="5" style="background: green"> </option>
+              <option value="6" style="background: blue"> </option>
+              <option value="7" style="background: violet"> </option>
+              <option value="8" style="background: grey"> </option>
+              <option value="9" style="background: white"> </option>
+            </select>
+          </div>
+          <div class="corpo-resistor">
+            <select id="decimal">
+              <option value="0" style="background: black"> </option>
+              <option value="1" style="background: brown"> </option>
+              <option value="2" style="background: red"> </option>
+              <option value="3" style="background: orange"> </option>
+              <option value="4" style="background: yellow"> </option>
+              <option value="5" style="background: green"> </option>
+              <option value="6" style="background: blue"> </option>
+              <option value="7" style="background: violet"> </option>
+              <option value="8" style="background: grey"> </option>
+              <option value="9" style="background: white"> </option>
+            </select>
+            <select id="expoente">
+              <option value="0" style="background: black"> </option>
+              <option value="1" style="background: brown"> </option>
+              <option value="2" style="background: red"> </option>
+              <option value="3" style="background: orange"> </option>
+              <option value="4" style="background: yellow"> </option>
+              <option value="5" style="background: green"> </option>
+              <option value="6" style="background: blue"> </option>
+              <option value="7" style="background: violet"> </option>
+              <option value="8" style="background: grey"> </option>
+              <option value="9" style="background: white"> </option>
+            </select>
+            &nbsp;
+          </div>
+          <div class="cabeca-resistor">
+            &nbsp;
+          </div>
+        </div>
+        <div class="resposta">
+        <div>
+      </section>
+      <section data-markdown>
+        ## Resistor Pull-Up
+
+        ![Pull-Up](/img/pull-up.jpg)
+      </section>
+      <section data-markdown>
+        ## Resistor Pull-Down
+
+        ![Pull-Up](/img/pull_down.png)
+      </section>
+      <section data-markdown>
+        ## Datasheet
       </section>
     </section>
     <section>
