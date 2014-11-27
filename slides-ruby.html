@@ -16,6 +16,10 @@ layout: slides
       * Quem sou eu?
       * Por que estou aqui?
       * A linguagem Ruby
+       * Sintaxe
+       * Expressividade
+       * Linearidade
+       * DSL - exemplos
     </section>
     <section>
       <section data-markdown>
@@ -35,14 +39,25 @@ layout: slides
       <section data-markdown># Eu ganho dinheiro com Ruby</section>
       <section data-markdown># Eu me divirto **muito** com Ruby</section>
       <section data-markdown># Com Ruby é fácil de inventar :) </section>
+      <section data-markdown># Implementações
+* Ruby - MRI (Matz Ruby Implementation)
+* jRuby - Java
+* IronRuby - C#,.NET
+* mRuby - mini ruby
+* rubinius
+* MacRuby
+* RubyMotion
+
+      </section>
     </section>
     <section>
       <section data-markdown># Linha de comando</section>
       <section>
-        <h2>Script como argumento</pre>
+        <h2>Script como argumento</h2>
         <pre>
           <code contenteditable class="sh">$ ruby -e "p Time.now"
 2014-11-06 20:27:28 -0200</code>
+        </pre>
       </section>
       <section>
         <h2>Hello World!</h2>
@@ -78,7 +93,7 @@ Olá Mundo!
       <section>
         <h2>Variável global!</h2>
         <pre>
-          <code contenteditable class="ruby">$gambis = true</code>
+          <code contenteditable class="ruby">$gambiarra = true</code>
         </pre>
       </section>
       <section>
@@ -95,7 +110,7 @@ Olá Mundo!
         <pre>
           <code contenteditable class="ruby">
 class Pessoa
-  def initialize ano,mes,dia
+  def initialize ano, mes, dia
     @nascido_em = Time.mktime(ano,mes,dia)
   end
   def idade
@@ -123,6 +138,36 @@ end</code>
 end</code>
         </pre>
       </section>
+    </section>
+    <section>
+      <section>
+        <h1>module</h1>
+        <pre>
+          <code contenteditable class="ruby">module CursoRuby
+  module IntroducaoRuby
+    def hello_world
+      print "Hello world"
+    end
+  end
+end
+</code>
+        </pre>
+        
+      </section>
+      <section>
+        <h1>module</h1>
+        <h2>include</h2>
+        <pre>
+          <code contenteditable class="ruby">module CursoRuby
+  module RubyAvancado
+    include IntroducaoRuby
+  end
+end
+</code>
+        </pre>
+      </section>
+    </section>
+    <section>
       <section data-markdown># Blocos de código</section>
       <section>
         <h5>Blocos de código</h5>
@@ -219,9 +264,10 @@ $ irb
 >> 1.ano
 NoMethodError: undefined method `ano' for 1:Fixnum
   from (irb):1
-    from /Users/jonatasdp/.rvm/rubies/ruby-2.1.2/bin/irb:11:in `<main>''
+    from /Users/jonatasdp/.rvm/rubies/ruby-2.1.2/bin/irb:11:in `main''
 >> 1.class
-=> Fixnum</code>
+=> Fixnum
+</code>
         </pre>
       </section>
       <section>
@@ -235,12 +281,22 @@ NoMethodError: undefined method `ano' for 1:Fixnum
 end
 </code></pre>
       </section>
-      <section data-markdown># Linearidade da linguagem</section>
+      <section data-markdown># Linearidade</section>
       <section>
         <h2>Isto não é linear!!</h2>
         <pre>
           <code contenteditable class="ruby">def idade
-  (Time.now - @nascido_em) / self * 60 * 60 * 24 * 12
+  (Time.now - @nascido_em) /  1 * 60 * 60 * 24 * 12
+end</code>
+        </pre>
+      </section>
+
+      <section>
+        <h2>Um pouco melhor</h2>
+        <pre>
+          <code contenteditable class="ruby">def idade
+  um_ano =  1 * 60 * 60 * 24 * 12
+  (Time.now - @nascido_em) / um_ano
 end</code>
         </pre>
       </section>
@@ -303,7 +359,7 @@ end</code>
       </section>
     </section>
   <section>
-    <section data-markdown># N maneiras de expressar-se no código</section>
+    <section data-markdown># N maneiras de dizer a mesma coisa</section>
     <section>
       <h5>tabuada.rb</h5>
         <pre>
@@ -452,6 +508,7 @@ p computar_tabuadas
   [8, [8, 16, 24, 32, 40, 48, 56, 64, 72]],
   [9, [9, 18, 27, 36, 45, 54, 63, 72, 81]]
 ]</code>
+   </pre>
     </section>
     <section>
       <h5>tabuada_hash.rb</h5>
@@ -467,8 +524,6 @@ def tabuada_hash
   end
   tabuada
 end
-
-p tabuada_hash
 </code>
 <code contenteditable class="ruby">{
   1=>{1=>1, 2=>2, 3=>3, 4=>4, 5=>5, 6=>6, 7=>7, 8=>8, 9=>9},
@@ -481,6 +536,86 @@ p tabuada_hash
   8=>{1=>8, 2=>16, 3=>24, 4=>32, 5=>40, 6=>48, 7=>56, 8=>64, 9=>72},
   9=>{1=>9, 2=>18, 3=>27, 4=>36, 5=>45, 6=>54, 7=>63, 8=>72, 9=>81}
 }</code>
+</pre>
+   </section>
+   </section>
+   <section>
+     <section data-markdown># Domain Specific Languages</section>
+     <section data-markdown>### gem install brazilian-rails</section>
+     <section>
+
+       <h2><pre><code contenteditable class="ruby">require "brdinheiro"</code></pre></h2>
+       <pre>
+         <code contenteditable class="ruby">10.reais.por_extenso # "=> dez reais"
+10.reais.to_s # => "10,00"
+10.reais # => #&lt;Dinheiro:0x007f9ba4bc3f80 @quantia=1000>
+10.reais.parcelar 3 # => [#&lt;Dinheiro:0x007f9ba4e51ae0 @quantia=333>, #&lt;Dinheiro:0x007f9ba4e51ae0 @quantia=333>, #&lt;Dinheiro:0x007f9ba4e51ab8 @quantia=334>]
+</code>
+       </pre>
+     </section>
+     <section>
+       <h2>Parcelar</h2>
+       <pre>
+         <code contenteditable class="ruby">puts 10.reais.parcelar(3).collect(&:por_extenso)</code>
+         <code>três reais e trinta e três centavos
+três reais e trinta e três centavos
+três reais e trinta e quatro centavos
+         </code>
+       </pre>
+     </section>
+
+     <section data-markdown>### gem install mechanize</section>
+     <section>
+       <h2>Exemplo de busca no google</h2>
+       
+       <pre>
+         <code contenteditable class="ruby">require 'rubygems'
+require 'mechanize'
+
+a = Mechanize.new { |agent|
+  agent.user_agent_alias = 'Mac Safari'
+}
+
+a.get('http://google.com/') do |page|
+  search_result = page.form_with(:name => 'f') do |search|
+    query = search.fields.find{|e|e.name == 'q'}
+    query.value = "Jônatas Davi Paganini"
+  end.submit
+
+  search_result.links.each do |link|
+    puts link.text
+  end
+end
+         </code>
+       </pre>
+     </section>
+     <section data-markdown>### gem install rails</section>
+     <section>
+       <h2>ActiveRecord</h2>
+       <pre>
+         <code contenteditable class="ruby">
+jonatas = Usuario.new(nome: "Jônatas Davi Paganini", email: "jonatas@invent.to")
+jonatas.nome # => "Jônatas Davi Paganini"
+jonatas.save</code>
+       </pre>
+     </section>
+
+     <section>
+       <h2>Arel</h2>
+       <pre>
+         <code contenteditable class="ruby">usuarios.where(email: "jonatas@invent.to").first ||
+usuarios.where(email: "jonatasdp@gmail.com").first ||
+usuarios.where(usuarios[:nome].eq("Jônatas Davi Paganini").
+  or(usuarios[:email].eq("jonatasdp@gmail.com")).first
+</code>
+       </pre>
+     </section>
+     <section>
+       <h2>ActiveSupport::CoreExtensions::Numeric::Time</h2>
+       <pre>
+         <code contenteditable class="ruby"># equivalent to 365.25.days.to_f.from_now
+1.year.to_f.from_now</code>
+       </pre>
    </section>
     <section>
       <h1>Obrigado!</h1>
