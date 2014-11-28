@@ -12,29 +12,33 @@ layout: slides
     </section>
     <section>
       <section data-markdown>
-        # Jônatas Davi Paganini
+        ## Jônatas Davi Paganini
 
-        * Bacharel em Sistemas de Informação - UNIPAR
+        * Usuário GIT desde 2008
         * Sócio da [invent.to]()
         * Também estou no [ideia.me]()
         * Fomentando o [hacker club](https://www.facebook.com/groups/beltraohc)
-        * evangelista [open source](http://github.com/jonatas)
-        * Usuário GIT desde 2008
+        * Evangelista [open source](http://github.com/jonatas)
+        * Bacharel em Sistemas de Informação - UNIPAR
       </section>
     </section>
     <section>
       <section data-markdown>## Quem usa controle de versão?</section>
-      <section data-markdown># Backup offline
-* Disquete
-* HD Externo
-* Servidor de dados
-* Pendrive
+      <section data-markdown>
+        # Backup offline
+
+        * Disquete
+        * HD Externo
+        * Servidor de dados
+        * Pendrive
       </section>
-      <section data-markdown># Backup online
-* FTP
-* Dropbox
-* Copy
-* Google Drive
+      <section data-markdown>
+        # Backup online
+
+        * FTP
+        * Dropbox
+        * Copy
+        * Google Drive
       </section>
     </section>
     <section>
@@ -88,39 +92,64 @@ layout: slides
     </section>
     <section>
       <section data-markdown># Ramificação</section>
-      <section data-markdown># git branch
-### Verifica branch atual (padrão "master")
-    git branch
+      <section data-markdown>
+      # git branch
+
+      Verifica branch atual (padrão "master")
+
+        git branch
       </section>
-      <section data-markdown># Criar um branch
-### Cria um novo branch
-    git checkout -b tentativa-perigosa
+      <section data-markdown>
+      # Criar um branch
+
+      Cria um novo branch
+
+          git checkout -b tentativa-perigosa
       </section>
-      <section data-markdown># Altera branch
-### Muda branch atual para master
-    git checkout master
-### Muda branch atual para tentativa-perigosa
-    git checkout tentativa-perigosa
+      <section data-markdown>
+      # Altera branch
+
+      Muda branch atual para master
+
+          git checkout master
+
+      Muda branch atual para tentativa-perigosa
+
+          git checkout tentativa-perigosa
       </section>
-      <section data-markdown># Merge branch
-### Merge tentativa perigosa no master
-    git merge tentativa-perigosa
+      <section data-markdown>
+      # Merge branch
+
+          git merge tentativa-perigosa
+
+      Merge tentativa perigosa no master
       </section>
-      <section data-markdown># Tag
-### Tags marcam versões estáveis
-    git tag -a v0.1 -m "Finalmente funcionou! Primeira versão BETA!"
+      <section data-markdown>
+        # Tag
+
+            git tag -a v0.1 -m "Finalmente funcionou! Primeira versão BETA!"
+
+        Tags marcam versões estáveis
       </section>
     </section>
     <section>
-      <section data-markdown># Submodule
-### Múlltiplos projetos git
+      <section data-markdown>
+      # Submodule
+
+      Múlltiplos projetos git
       </section>
-      <section data-markdown># Init
-    git submodule init
-### Inicializa sistema de submódulos
+      <section data-markdown>
+      # Init
+
+          git submodule init
+
+      Inicializa sistema de submódulos
       </section>
-      <section data-markdown># Add
-    git submodule add git@git.invent.to/jonatas:biblioteca-power.git lib/power
+      <section data-markdown>
+      # Add
+
+          git submodule add git@git.invent.to/jonatas:biblioteca-power.git lib/power
+
 Adiciona outro repositório como diretorio **lib/power**
       </section>
       <section data-markdown># Update
@@ -142,7 +171,13 @@ Sincroniza todos submódulos
     git push origin 1-minha-funcionalidade-principal
       </section>
       <section data-markdown># Code Review
+
+Adiciona o trabalho remoto
+
     git remote add jonatas-job git@git.invent.to:/jonatas/exemplo.git
+
+Baixando o trabalho remoto
+
     git pull jonatas-job 1-minha-funcionalidade-principal
       </section>
       <section data-markdown># Merge master
@@ -167,26 +202,39 @@ Sincroniza todos submódulos
     Mon Nov 10 14:24:30 2014 -0200 e618b65 fixing link address  [Jônatas Paganini]
     Mon Nov 10 14:07:28 2014 -0200 312ab07 Merge pull request #34 from jltafarel/master  [Jônatas Davi Paganini]
       </section>
-      <section data-markdown>## git checkout [revision]
-### Volta a um commit específico</section>
-      <section data-markdown>## git diff -r [revision] [file]
-##### Verifica diferença com um commit específico em um arquivo</section>
+      <section data-markdown>
+      ## git checkout [revision]
+
+      Volta a um commit específico
+
+          git checkout c9b0b8b
+      </section>
+      <section data-markdown>
+      ## git diff -r [revision] [file]
+
+      Verifica diferença com um commit específico em um arquivo
+
+          git diff -r 6b77647 slides-ruby.html
+      </section>
     </section>
     <section>
-      <section data-markdown># Alias
-    git config --global alias.ci commit
-### Via linha de comando
+      <section data-markdown>
+      # Alias
+
+      Via linha de comando
+
+          git config --global alias.ci commit
       </section>
-      <section data-markdown># Alias
-    [alias]
-        ci = commit
-        br = branch
-        co = checkout
-        df = diff
-        dc = diff --cached
-        lg = log -p
-        who = shortlog -s --
-### Via arquivo
+      <section data-markdown>
+      # Alias
+
+      Via arquivo
+
+          [alias]
+           ci = commit
+           br = branch
+           co = checkout
+           df = diff
       </section>
     </section>
     <section>
@@ -195,13 +243,13 @@ Sincroniza todos submódulos
         git commit --amend -m "alterando msg do commit"
       </section>
       <section data-markdown># GIT hooks
-        * pre-commit
-        * prepare-commit-msg
-        * commit-msg
-        * post-checkout
-        * pre-receive
-        * update
-        * post-receive
+* pre-commit
+* prepare-commit-msg
+* commit-msg
+* post-checkout
+* pre-receive
+* update
+* post-receive
       </section>
       <section data-markdown># Configuração txt
     ➜  inventto-site git:(master) ✗ cat .git/config
