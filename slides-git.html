@@ -23,8 +23,23 @@ layout: slides
       </section>
     </section>
     <section>
-      <section data-markdown># Controle de versão
-### As histórias</section>
+      <section data-markdown>## Quem usa controle de versão?</section>
+      <section data-markdown># Backup offline
+* Disquete
+* HD Externo
+* Servidor de dados
+* Pendrive
+      </section>
+      <section data-markdown># Backup online
+* FTP
+* Dropbox
+* Copy
+* Google Drive
+      </section>
+    </section>
+    <section>
+      <section data-markdown>## Controle de versão
+#### As histórias</section>
       <section data-markdown># CVS
 ### Concurrent Version System (1990)</section>
       <section data-markdown># SVN
@@ -33,32 +48,47 @@ layout: slides
 ### Linus Tolvards (2005)</section>
     </section>
     <section>
+      <section data-markdown># Setup</section>
+      <section data-markdown># git config
+    git config --global user.name "Jônatas Davi Paganini"
+    git config --global user.email jonatas@invent.to
+      </section>
+      <section data-markdown>## SSH Public Keys
+    cd ~/.ssh
+    ssh-keygen -t rsa -C "jonatas@invent.to"
+      </section>
+    </section>
+    <section>
       <section data-markdown># Comandos básicos</section>
-      <section data-markdown># Init
+      <section data-markdown># git init 
     git init .
       </section>
       <section data-markdown># Primeiro arquivo
-    echo 'aprendendo sobre git' > readme.txt
+    echo "aprendendo sobre git" > readme.txt
       </section>
-      <section data-markdown># Add
+      <section data-markdown># git add
     git add readme.txt
+### Adiciona o arquivo ao repositório git
       </section>
-      <section data-markdown># Commit
+      <section data-markdown># git commit
     git commit readme.txt -m "Meu primeiro arquivo versionado com git"
       </section>
-      <section data-markdown># Remote add
+      <section data-markdown># git remote add
 ### Adiciona um servidor de repositório remoto
     git remote add inventto git@git.invent.to:jonatas/exemplo.git
       </section>
-      <section data-markdown># Push
+      <section data-markdown># git push
 ### Envia alterações do master para inventto
     git push inventto master
       </section>
-      <section data-markdown># Pull
+      <section data-markdown># git pull
 ### Recebe alterações do master da inventto
     git pull inventto master
       </section>
-      <section data-markdown># Branch (ramo)
+    </section>
+    <section>
+      <section data-markdown># Ramificação</section>
+      <section data-markdown># git branch
 ### Verifica branch atual (padrão "master")
     git branch
       </section>
@@ -79,6 +109,27 @@ layout: slides
       <section data-markdown># Tag
 ### Tags marcam versões estáveis
     git tag -a v0.1 -m "Finalmente funcionou! Primeira versão BETA!"
+      </section>
+    </section>
+    <section>
+      <section data-markdown># Submodule
+### Múlltiplos projetos git
+      </section>
+      <section data-markdown># Init
+    git submodule init
+### Inicializa sistema de submódulos
+      </section>
+      <section data-markdown># Add
+    git submodule add git@git.invent.to/jonatas:biblioteca-power.git lib/power
+Adiciona outro repositório como diretorio **lib/power**
+      </section>
+      <section data-markdown># Update
+    git submodule update
+Atualiza todos submódulos
+      </section>
+      <section data-markdown># Sync
+    git submodule sync
+Sincroniza todos submódulos
       </section>
     </section>
     <section>
@@ -122,7 +173,27 @@ layout: slides
 ##### Verifica diferença com um commit específico em um arquivo</section>
     </section>
     <section>
+      <section data-markdown># Alias
+    git config --global alias.ci commit
+### Via linha de comando
+      </section>
+      <section data-markdown># Alias
+    [alias]
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        dc = diff --cached
+        lg = log -p
+        who = shortlog -s --
+### Via arquivo
+      </section>
+    </section>
+    <section>
       <section data-markdown># Coisas legais</section>
+      <section data-markdown>## Amend
+        git commit --amend -m "alterando msg do commit"
+      </section>
       <section data-markdown># GIT hooks
         * pre-commit
         * prepare-commit-msg
@@ -161,7 +232,6 @@ layout: slides
       GIT_REPO=/code/$SITE_NAME.git
       TMP_GIT_CLONE=$HOME/tmp/$SITE_NAME
       PUBLIC_WWW=/var/www/sites/$SITE_NAME
-      PATH=/usr/local/rvm/gems/ruby-1.9.3-p362/bin:/usr/local/rvm/gems/ruby-1.9.3-p362@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p362/bin:$PATH
 
       git clone $GIT_REPO $TMP_GIT_CLONE
       cd $TMP_GIT_CLONE
@@ -179,6 +249,7 @@ layout: slides
     <section data-markdown># Recursos</section>
     <section data-markdown># Estudo
 * [git-scm.com/book/pt-br/v1](http://git-scm.com/book/pt-br/v1)
+* [git.wiki.kernel.org](https://git.wiki.kernel.org)
 * [try.github.com](http://try.github.com)
     </section>
     <section data-markdown># Ferramentas
