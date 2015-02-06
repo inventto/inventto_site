@@ -27,8 +27,8 @@ Estamos prestes a contratar uma secretária para nos ajudar a gerir e também pr
 Agora também temos telefones fixos! Temos 3 linhas:
 
 * [(46) 3547-2020](tel:+554635472020) - Invent.to
-* [(46) 3547-3030](tel:+554635473030) - Tambo
-* [(46) 3547-4040](tel:+554635474040) - Academias
+* [(46) 3547-3030](tel:+554635473030) - Academias
+* [(46) 3547-4040](tel:+554635474040) - Tambo
 
 # Optando pelo modelo aberto
 
