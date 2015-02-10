@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ page.content | truncatewords: 50 }}">
+    <meta name="description" content="{{ page.content  | strip_html |  truncatewords: 50 }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS -->  	
@@ -31,7 +31,7 @@
 
     <!--Descricao-->
     {% if page.content %}
-    <meta content="{{ page.content | truncatewords: 50 }}" property="og:description">
+    <meta content="{{ page.content | strip_html | truncatewords: 50 }}" property="og:description">
     {% else %}
     <meta content="{{ site.description }}" property="og:description">
     {% endif %}
@@ -59,7 +59,7 @@
          <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
     {% if page.content %}
-         <meta name="twitter:description" content="{{ page.content | truncatewords: 50 }}">
+         <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 50 }}">
     {% else %}
           <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
