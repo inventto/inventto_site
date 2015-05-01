@@ -20,20 +20,20 @@ Na imagem abaixo, mostra uma aplicação real para auxiliar pessoas que estão a
 
 As câmeras estáticas facilitam na precisão pois o espaço não varia. Assim é possível mapear objetos de referência com maior facilidade.
 
-Por exemplo, em um jogo de futebol hoje existem inteligências para saber a distância que um jogador corre no jogo, a velocidade da bola e também a movimentação dos jogadores ou ainda sabe o momento de impedimento. Esse é um mercado que explora a visão computacional a um bom tempo e sabe fazer isso muito bem.
+Por exemplo, em um jogo de futebol aplica várias inteligências para saber a distância que um jogador corre no jogo, a velocidade da bola e a movimentação dos jogadores e calcular em tempo real se o jogo está impedido.
 
-Uma câmera pode observar e reconhecer um campo de futebol com a grama verde consegue também observar as delimitações do campo em branco, a bola, os jogadores e também a [movimentação de cada jogador independente](https://www.youtube.com/results?search_query=soccer+player+tracking).  Usando uma medida de referência como o tamanho do campo é possível criar uma escala para calcular qualquer outra medida relevante ao assunto.  
+Uma câmera pode observar e reconhecer um campo de futebol com a grama verde consegue observar as delimitações do campo em branco, a bola, os jogadores e cada [movimentação de cada jogador independente](https://www.youtube.com/results?search_query=soccer+player+tracking).  Usando uma medida de referência como o tamanho do campo é possível criar uma escala para calcular qualquer outra medida relevante ao assunto.  
 
 Ou ainda observar um super mercado ou estoque de um produto específico, verificar qual produto está acabando em um determinado estoque a partir da contagem de elementos pré-reconhecidos. Este [aplicativo de visão computacional](http://countingsoftware.biz/) permite contar objetos pré-reconhecidos de diversas maneiras:
 
-Contando carros:
+#### Contando carros:
 
 ![Contando carros](http://countingsoftware.biz/images/slide05.jpg)
 
 
 ## Câmeras em movimento
 
-As câmeras em movimento têm a ênfase de trabalhar com funções mais dinâmicas para entender a diferença entre uma imagem e uma sequência de imagens. Logo o nível de processamento é bem mais alto e também precisa de uma série de cálculos extras para trabalhar com a distorção da imagem causada pelo movimento da câmera.
+As câmeras em movimento têm a ênfase de trabalhar com funções mais dinâmicas para entender a diferença entre uma imagem e uma sequência de imagens. Logo o nível de processamento é bem mais alto e precisa de uma série de cálculos extras para trabalhar com a distorção da imagem causada pelo movimento da câmera.
 
 {% youtube CqSDWoAhvLU %}
 
@@ -48,8 +48,6 @@ Este tipo de tecnologia vem sendo explorado a mais de 40 anos, veja este [vídeo
 {% youtube O1oJzUSlTeY %}
 
 ### Inventos legais de visão computacional
-
-Gostou das ideias e aplicabilidades? veja também:
 
 * [Never Ending Image Learner](http://www.computervisiononline.com/blog/never-ending-image-learner) um computador que trabalha 24/7 aprendendo com novas imagens da internet.
 * [Contador de vários tipos de objetos](http://countingsoftware.biz)
