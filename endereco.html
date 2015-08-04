@@ -3,22 +3,33 @@ layout: post
 ---
 <div ng-controller="Inventtores">
   <h1>Endereço</h1>
-  <h2>[[empresa.endereco.rua]], [[empresa.endereco.numero]] - [[empresa.endereco.bairro]]</h2>
-  <h4>[[empresa.endereco.complemento]]</h4>
-  <h2>[[empresa.endereco.cep]], [[empresa.endereco.cidade]]</h2>
-  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Rua+Uni%C3%A3o+da+Vit%C3%B3ria,407+Francisco+Beltr%C3%A3o+-+Paran%C3%A1&amp;aq=0&amp;oq=vida+mais+at&amp;sll=-25.060763,-53.397998&amp;sspn=1.11213,2.024231&amp;ie=UTF8&amp;hq=Academia+Vida+Mais+Ativa+-&amp;hnear=R.+Uni%C3%A3o+da+Vit%C3%B3ria+-+Francisco+Beltr%C3%A3o+-+Paran%C3%A1&amp;ll=-26.07231,-53.038941&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe>
+  <div class="row">
+    <div class="large-6 columns">
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Rua+Uni%C3%A3o+da+Vit%C3%B3ria,407+Francisco+Beltr%C3%A3o+-+Paran%C3%A1&amp;aq=0&amp;oq=vida+mais+at&amp;sll=-25.060763,-53.397998&amp;sspn=1.11213,2.024231&amp;ie=UTF8&amp;hq=Academia+Vida+Mais+Ativa+-&amp;hnear=R.+Uni%C3%A3o+da+Vit%C3%B3ria+-+Francisco+Beltr%C3%A3o+-+Paran%C3%A1&amp;ll=-26.07231,-53.038941&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe>
+    </div>
+    <div class="large-6 columns">
+      <p>[[empresa.endereco.rua]], [[empresa.endereco.numero]] - [[empresa.endereco.bairro]]</p>
+      <p>[[empresa.endereco.complemento]]</p>
+      <p>[[empresa.endereco.cep]], [[empresa.endereco.cidade]]</p>
+      <pre>Em cima da Academia Vida Mais Ativa </pre>
+    </div>
   <hr />
-  <h1>Email</h1>
-  <ul> 
-    <li>Para contato inicial:<a href="mailto:contato@invent.to">contato@invent.to</a></li>
-    <li>Para contato com os desenvolvedores:<a href="mailto:dev@invent.to">dev@invent.to</a></li>
-  </ul>    
-  <hr />
-  <h1>Telefones</h1>
-  <div>
-    <ul>
-      <li><a href="tel:4688068254" class="fi-telephone"> (46) 8806-8254</a> - Marlon </li>
-      <li><a href="tel:4699117879" class="fi-telephone"> (46) 9911-7879</a> - Jônatas </li>
-    </ul>
+  <div class="row">
+    <div class="large-8 columns">
+      <h1>Email</h1>
+      <ul> 
+        <li>Para contato e negócios: <a href="mailto:contato@invent.to">contato@invent.to</a></li>
+        <li>Para contato com os desenvolvedores: <a href="mailto:dev@invent.to">dev@invent.to</a></li>
+        <li>Para contato com todos os coworkers: <a href="mailto:coworkers@invent.to">coworkers@invent.to</a></li>
+      </ul>    
+    </div>
+    <div class="large-4 columns">
+      <h1>Telefones</h1>
+      <ul>
+        <li><a href="tel:4630572020" class="fi-telephone"> (46) 3057-2020</a> - Empresa</li>
+        <li><a href="tel:4688068254" class="fi-telephone"> (46) 8806-8254</a> - Marlon </li>
+        <li><a href="tel:4699117879" class="fi-telephone"> (46) 9911-7879</a> - Jônatas </li>
+      </ul>
+    </div>
   </div>
 </div>
